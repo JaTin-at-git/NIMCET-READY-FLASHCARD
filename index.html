@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>NIMCET READY FLASH CARDS</title>
+</head>
+<body>
+
+<div class="notificationDiv">
+    <div class="notificationID1" id="warning">
+        This is a notification
+    </div>
+</div>
+
+<div class="heading">
+    <h1><span>NIMCET</span> READY</h1>
+    <p>Try to answer the flashcards</p>
+</div>
+
+<div class="topicsSelection">
+    <div class="topicSelectionID1">
+        <h3>Select Topics:</h3>
+        <div class="topicsCheckboxes">
+
+            <div class="topicInput">
+                <input type="checkbox" id="Table8">
+                <label for="Table8">Table 8</label>
+            </div>
+
+            <div class="topicInput">
+                <input type="checkbox" id="Table9">
+                <label for="Table9">Table 9</label>
+            </div>
+
+
+            <div class="topicInput">
+                <input type="checkbox" id="Table13">
+                <label for="Table13">Table 13</label>
+            </div>
+
+
+        </div>
+
+        <div class="quantityDiv">
+            <label for="x">Generate &nbsp;</label>
+            <input type="range" id="x" min="0" max="0">
+            <label for="x" class="selectedQ">0</label>
+            <!--            <input type="number" id="x" min="0" max="100" value="5">-->
+            <label for="x">&nbsp;Flashcards</label>
+        </div>
+
+        <div class="getQuestionsDiv">
+            <div id="getQuestionsButton">Generate Flashcards &rarr;</div>
+        </div>
+    </div>
+</div>
+
+<div class="cardsDiv">
+    <div class="cardsID1">
+    </div>
+</div>
+
+<div class="me">
+    <p>Created with ❤ by <span>Jigyasu Saini</span></p>
+</div>
+
+<script src="QuestionAnswerClass.js"></script>
+<script src="Questions.js"></script>
+<script src="flashcard.js"></script>
+<script src="js.js"></script>
+
+</body>
+</html>

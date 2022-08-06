@@ -1,0 +1,5 @@
+
+Naming id of input checkboxes for topic selection
+>The id of the input shall be the dictionary name.
+>the dictionary contains HTML of questions and answers that are supposed to be asked
+>thinking to create a class instead...

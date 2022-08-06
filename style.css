@@ -1,0 +1,274 @@
+:root {
+    --x: 0deg;
+}
+
+body {
+    margin: 0;
+    border: none;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: relative;
+    min-height: 99vh;
+}
+
+.notificationDiv {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-property: top;
+    transition-duration: .3s;
+    z-index: 100;
+}
+
+.notificationID1 {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #CA2D2F;
+    color: white;
+    padding: .5rem 2rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.heading h1 span {
+    color: #01486b;
+}
+
+.heading h1::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 3px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: black;
+    animation: underline 2s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes underline {
+    to {
+        width: 100%;
+    }
+
+}
+
+/*////////////////topicSelection///////////////*/
+.topicsSelection {
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topicSelectionID1 {
+    max-width: 1000px;
+}
+
+.topicsCheckboxes * {
+    user-select: none;
+}
+
+
+.topicInput {
+    display: inline-block;
+    width: 300px;
+}
+
+.quantityDiv {
+    margin: 2rem 1.5rem .5rem;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.getQuestionsDiv {
+    margin: 0 1rem 1rem;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+#getQuestionsButton {
+    border: 1px solid #075c88;
+    padding: .5rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #075c88;
+    user-select: none;
+}
+
+#getQuestionsButton:active {
+    transform: scale(.99);
+}
+
+/*//////////////////*/
+
+/*//////////////////////*/
+.me {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.me span {
+    color: #01486b;
+    font-weight: bold;
+}
+
+/*///////Flashcard////////////*/
+
+.cardsDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.cardsID1 {
+    position: relative;
+    max-width: 1000px;
+    height: 300px;
+    /*width: 500px;*/
+}
+
+.card {
+    padding: 4rem;
+    position: absolute;
+    width: -webkit-fill-available;
+    min-height: 10%;
+    transition: all 1s;
+    font-family: sans-serif;
+    overflow: hidden;
+    border: 1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+.card:first-of-type {
+    top: 0;
+    transform: translate(-50%, 50%);
+}
+
+.card {
+    top: 200px;
+    transform: rotateX(calc(260deg + var(--x))) rotateY(calc(180deg + var(--x))) rotateZ(calc(190deg + var(--x))) translate(-50%, 50%);
+}
+
+/*/////////////*/
+
+.cardQ {
+    background-color: #075c88;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    transform: rotate(0);
+    /*border: 2px solid black;*/
+    perspective: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 2;
+}
+
+.cardQ .q {
+    position: relative;
+    bottom: 10px;
+    width: max-content;
+    height: max-content;
+}
+
+.card .q * {
+    width: 100%;
+    height: 100%;
+}
+
+.cardQ .prev {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    user-select: none;
+}
+
+.cardQ .showAns {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    user-select: none;
+}
+
+/*////////*/
+
+.cardA {
+    background-color: #075C88;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    transform: rotate3d(0, 1, 0, 180deg);
+    perspective: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.cardA .a {
+    position: relative;
+    bottom: 10px;
+}
+
+.cardA .showQues {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    user-select: none;
+}
+
+.cardA .next {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    user-select: none;
+}
