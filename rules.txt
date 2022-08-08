@@ -1,5 +1,24 @@
 
 Naming id of input checkboxes for topic selection
->The id of the input shall be the dictionary name.
->the dictionary contains HTML of questions and answers that are supposed to be asked
->thinking to create a class instead...
+>The id of the input shall be the topic of the questions
+
+>question and answer are hardcoded as discussed in readme file
+
+>the structure of the qna in questionsAndAnswersAsText.js shall be as discussed below
+let qnaAsText = "" +
+    "T: PnC, there is at least single character after :" +
+    "Q: There must be some topic/question/answer body" +
+    "A:ABCDEF will be displayed as BCDEF... the first character of question and answer is omitted while displayed" +
+    "" +
+    "T: PnC" +
+    "Q: latex expressions must be typed inside $${...latex...}$$ " +
+    "A:$This is a latex expression, so it starts with dollar sign $${\\frac{1}{2}\\left(n-1\\right)!}$$" +
+    "";
+
+> T: stands for topic
+> Q: stands for question
+> A: stands for answer
+
+> the actual topic/question/answer can NOT have T:/Q:/A: in it's body
+> there must at least one non-whitespace character after T:/Q:/A:
+> statements that has latex in it's body must start with $ sign

@@ -1,7 +1,6 @@
 //this script contains all the questions that might be asked in flashcard
 
 
-
 const qa1 = new QuestionAnswer("Table8", "8 x 2", "16");
 const qa2 = new QuestionAnswer("Table8", "8 x 3", "24");
 const qa3 = new QuestionAnswer("Table8", "8 x 4", "32");
@@ -32,7 +31,7 @@ const qa23 = new QuestionAnswer("Table13", "13 x 8", "104");
 const qa24 = new QuestionAnswer("Table13", "13 x 9", "117");
 
 
-const qnaList = [qa1,qa2,qa3,qa4,qa5,qa6,qa7,qa8,qa9,qa10,qa11,qa12,qa13,qa14,qa15,qa16,qa17,qa18,qa19,qa20,qa21,qa22,qa23,qa24];
+let qnaList = [qa1, qa2, qa3, qa4, qa5, qa6, qa7, qa8, qa9, qa10, qa11, qa12, qa13, qa14, qa15, qa16, qa17, qa18, qa19, qa20, qa21, qa22, qa23, qa24];
 
 //use the code given below to create qnaList from start to end
 let end = 8;

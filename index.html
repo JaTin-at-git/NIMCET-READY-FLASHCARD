@@ -5,6 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    CDN for maths, latex.js-->
+    <script type="module">
+        import {LaTeXJSComponent} from "https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs"
+
+        customElements.define("latex-js", LaTeXJSComponent)
+    </script>
+
     <link rel="stylesheet" href="style.css">
 
     <title>NIMCET READY FLASH CARDS</title>
@@ -28,6 +35,11 @@
         <div class="topicsCheckboxes">
 
             <div class="topicInput">
+                <input type="checkbox" id="PnC">
+                <label for="PnC">Permutation and Combination</label>
+            </div>
+
+            <div class="topicInput">
                 <input type="checkbox" id="Table8">
                 <label for="Table8">Table 8</label>
             </div>
@@ -42,7 +54,6 @@
                 <input type="checkbox" id="Table13">
                 <label for="Table13">Table 13</label>
             </div>
-
 
         </div>
 
@@ -71,6 +82,7 @@
 
 <script src="QuestionAnswerClass.js"></script>
 <script src="Questions.js"></script>
+<script src="questionsAndAnswersAsText.js"></script>
 <script src="flashcard.js"></script>
 <script src="js.js"></script>
 

@@ -11,6 +11,7 @@ let topicsSelected = {};
 /////////////////
 
 function main() {
+    qnaList = qnaList.concat(getQuestionsStoredAsText(qnaAsText));
     addListnerToCheckboxes();
     addListenerToRange();
     addListenerToGenerateQuestions();
@@ -34,7 +35,7 @@ function addListnerToCheckboxes() {
             xInput.setAttribute("min", q.toString());
             xInput.setAttribute("max", maxQs.toString());
             xInput.setAttribute("value", q.toString());
-            selectedQ.innerHTML = "&nbsp;" + q.toString() + `/${maxQs} +&nbsp;`;
+            selectedQ.innerHTML = "&nbsp;" + q.toString() + `/${maxQs}&nbsp;`;
             console.log(topicsSelected);
         });
     }
@@ -57,7 +58,7 @@ function addListenerToRange() {
     xInput.addEventListener('change', () => {
         q = parseInt(xInput.value);
         xInput.setAttribute("value", q.toString());
-        selectedQ.innerHTML = "&nbsp;" + q.toString() + `/${getMaxQuestions()} +&nbsp;`;
+        selectedQ.innerHTML = "&nbsp;" + q.toString() + `/${getMaxQuestions()} &nbsp;`;
     });
 }
 
@@ -79,12 +80,13 @@ function addListenerToGenerateQuestions() {
             //retrieve first 'q' questions
             cardsID1.innerHTML = "<h2>Try to answer these Flashcards</h2>";
             let ques = getRelatedQuestions();
-            for (var i=0; i < ques.length; i++){
-                var qna = ques[i];
-                addFlashcard(qna.question, qna.answer, q-i);
-            }
-            addFunctionalityToFlashCards();
 
+            for (var i = 0; i < ques.length; i++) {
+                var qna = ques[i];
+                addFlashcard(qna.question, qna.answer, q - i);
+            }
+
+            addFunctionalityToFlashCards();
         }
     });
 }
@@ -103,10 +105,28 @@ function getRelatedQuestions() {
     return ques.slice(0, q);
 }
 
+//function to create QuestionAnswerClass Objects using the text in qnaAsText
+function getQuestionsStoredAsText(qnaAsText) {
+    var qnas = [];
+    var qnaAsTextArray = qnaAsText.split(/(T:|Q:|A:)/).filter(function (e) {
+        return String(e).match(/(T:|Q:|A:)/) ? "" : String(e).trim();
+    });
+    for (var i = 0; i < qnaAsTextArray.length;i+=3) {
+        var ques = new QuestionAnswer(
+            qnaAsTextArray[i],
+            qnaAsTextArray[i + 1],
+            qnaAsTextArray[i + 2],
+            qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "p",
+            qnaAsTextArray[i + 2].trim().charAt(0) === "$" ? "latex-js" : "p");
+        qnas.push(ques);
+    }
+    return qnas;
+}
+
 function addFlashcard(question, answer, zIndex) {
     var elem = document.createElement('div');
     elem.classList.add('card');
-    elem.setAttribute("style","--x:"+(Math.random() * 3)+"deg");
+    elem.setAttribute("style", "--x:" + (Math.random() * 3) + "deg");
     elem.style.zIndex = zIndex;
     elem.innerHTML = `
             <div class="cardQ">
@@ -115,8 +135,10 @@ function addFlashcard(question, answer, zIndex) {
             <div class="cardA">
                 <div class="a">${answer}</div>
             </div>`;
-    console.log(question);
     cardsID1.appendChild(elem);
+    console.log(question)
+    console.log(answer)
+    console.log("")
 }
 
 

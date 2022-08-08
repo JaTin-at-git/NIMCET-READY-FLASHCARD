@@ -1,11 +1,11 @@
 //This script is intended to create a Question and answer class
 class QuestionAnswer {
     constructor(topic, question, answer, qEnc = "p", aEnc = "p") {
-        this._topic = topic;
-        this._qEnc = qEnc;
-        this._question = question;
-        this._answer = answer;
-        this._aEnc = aEnc;
+        this._topic = topic.trim();
+        this._question = question.substring(1).trim();
+        this._answer = answer.substring(1).trim();
+        this._qEnc = qEnc.trim();
+        this._aEnc = aEnc.trim();
     }
 
     set topic(value) {
@@ -13,11 +13,11 @@ class QuestionAnswer {
     }
 
     get question() {
-        return "<" + this._qEnc + ">" + this._question + "<" + this._qEnc + ">";
+        return "<" + this._qEnc + ">" + this._question + "</" + this._qEnc + ">";
     }
 
     get answer() {
-        return "<" + this._aEnc + ">" + this._answer + "<" + this._aEnc + ">";
+        return "<" + this._aEnc + ">" + this._answer + "</" + this._aEnc + ">";
     }
 
     get qEnc() {

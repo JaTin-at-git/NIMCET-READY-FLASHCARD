@@ -141,7 +141,7 @@ body {
 .cardsDiv {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /*text-align: center;*/
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -196,6 +196,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    align-content: center;
     transition: all 1s;
     transform: rotate(0);
     /*border: 2px solid black;*/
@@ -209,6 +212,7 @@ body {
     bottom: 10px;
     width: max-content;
     height: max-content;
+    padding: 1rem;
 }
 
 .card .q * {
@@ -228,7 +232,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
     position: absolute;
     bottom: 5px;
-    right: 10px; 
+    right: 10px;
     user-select: none;
 }
 
@@ -245,6 +249,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     transition: all 1s;
     transform: rotate3d(0, 1, 0, 180deg);
     perspective: 100px;
@@ -255,6 +262,7 @@ body {
 .cardA .a {
     position: relative;
     bottom: 10px;
+    padding: 1rem;
 }
 
 .cardA .showQues {
@@ -271,4 +279,22 @@ body {
     bottom: 5px;
     right: 10px;
     user-select: none;
+}
+
+/*///////Style belonging to latex rendering///////*/
+latex-js {
+    display: inline-block;
+    /*width: 40%;*/
+    margin-right: 2em;
+    font-weight: bold;
+    /*transform: scale(1.5);*/
+    --textwidth: pp !important;
+    --marginleftwidth: pp !important;
+    --marginrightwidth: pp !important;
+}
+
+.newline {
+    display: block !important;
+    min-height: 1px;
+    min-width: 1px;
 }
