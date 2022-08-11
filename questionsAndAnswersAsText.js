@@ -1,4 +1,4 @@
-let qnaAsText = "" +
+let PnC_TQA = "" +
     "T: PnC" +
     "Q: Total number of Circular permutation of n objects if clockwise and anti-clockwise are different?" +
     "A: (n-1)!" +
@@ -84,7 +84,7 @@ let qnaAsText = "" +
     "A:$$${1}$$" +
     "";
 
-qnaAsText += "" +
+PnC_TQA += "" +
     "T: PnC" +
     "Q: There are 'n' points in a plane out of which 'm' are collinear, then </br> Number of straight lines ? </br> Number of Triangles? </br> Number of Quadrilaterals?" +
     "A:$$${^nC_2-^mC_2+1}$$\n$${^nC_3-^mC_3}$$\n$${^nC_4-^mC_4}$$" +
@@ -105,7 +105,7 @@ qnaAsText += "" +
     "Q:$Number of square in a square of size $${n\\times n}$$ is ?" +
     "A:$$${\\sum_{r=1}^{n}r^2}$$";
 
-qnaAsText += "" +
+PnC_TQA += "" +
     "T: PnC" +
     "Q: Division of (p+q+r) distinct objects into three groups of sizes (p,q,r) respectively ?" +
     "A:$$${\\frac{(p+q+r)!}{p!&nbsp;q!&nbsp;r!}}$$" +
@@ -123,7 +123,7 @@ qnaAsText += "" +
     "A:$$${\\frac{(3n)!}{n!&nbsp;n!&nbsp;n!}\\times\\frac{3!}{3!}}$$" +
     "";
 
-qnaAsText += "" +
+PnC_TQA += "" +
     "T: PnC" +
     "Q: Number of functions from n(A)=r to n(B)=n?<br><br>Distribution of 'n' different things into 'r' differnt boxes if any box can recieve any number of objects?" +
     "A: r<sup>n</sup>" +
@@ -132,7 +132,7 @@ qnaAsText += "" +
     "Q: Number of onto functions from n(A)=r to n(B)=n?<br><br>Distribution of 'n' different things into 'r' differnt boxes if each box has at least one object?" +
     "A:$$${[r^n]-[^{r}C_1(r-1)^n]+[^{r}C_2(r-2)^n]-[^{r}C_3(r-3)^n]...}$$";
 
-qnaAsText += "" +
+PnC_TQA += "" +
     "T: PnC" +
     "Q:$Number of positive integral solution of <br> $${x_1+x_2+x_3+...+x_r=n}$$" +
     "A:$$${^{n-1}C_{r-1}}$$" +
@@ -148,6 +148,22 @@ qnaAsText += "" +
     "T: PnC" +
     "Q: Derangement formulla if 'r' things are placed at correct places?" +
     "A:$$${^nC_r(n-r)![\\frac{1}{0!}-\\frac{1}{1!}+\\frac{1}{2!}-\\frac{1}{3!}...\\frac{-1^{n-r}}{(n-r)!}]}$$";
+
+
+//probability//
+let Probability_TQA = "" +
+    "T: Probability" +
+    "Q: P(B/A) = ?" +
+    "A:$$${\\frac{P(A\\cap B)}{P(A)}}$$" +
+    "" +
+    "T: Probability" +
+    "Q:$If A and B are independent, then<br><br>$${P(A\\cap B) = ?}$$" +
+    "A:$$${P(A\\cap B)=P(A)\\times P(B)}$$" +
+    "" +
+    "T: Probability" +
+    "Q:$Law of total probability for occurance of event E with mutually-exclusive and exhaustive events$${ E_1, E_2, ... , E_n ?}$$" +
+    "A:$$${P(E)=P(E_1)\\times P(E/E_1)+P(E_2)\\times P(E/E_2)...}$$";
+
 
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php

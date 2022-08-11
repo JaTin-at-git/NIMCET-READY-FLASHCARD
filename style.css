@@ -138,148 +138,127 @@ body {
 
 /*///////Flashcard////////////*/
 
-.cardsDiv {
-    display: flex;
-    flex-direction: column;
-    /*text-align: center;*/
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 10rem;
+:root {
+    --i: 0;
 }
 
-.cardsID1 {
-    position: relative;
+
+.scene {
     max-width: 1000px;
-    height: 300px;
-    /*width: 500px;*/
+    min-width: 100vw;
+    display: flex;
+    perspective: 800px;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.card {
-    padding: 4rem;
+.scene .card {
+    width: 240px;
+    height: 300px;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
     position: absolute;
-    width: -webkit-fill-available;
-    min-height: 10%;
-    transition: all 1s;
-    font-family: sans-serif;
-    overflow: hidden;
-    border: 1px solid white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    top: 100px;
+    transform: rotateY(-103deg) translateZ(calc(-200px - var(--i)*1px)) translateX(-100px);
+    z-index: calc(0 - var(--i));
+    /*border: 2px dashed black;*/
     border-radius: 10px;
 }
 
-.card:first-of-type {
+.scene .card:first-of-type {
+    /*z-index: 1;*/
+    transform: rotateY(0);
+}
+
+/*.scene .card:hover {*/
+/*    transform: rotateY(0.5turn);*/
+/*}*/
+
+.scene .card .card__face {
+    position: absolute;
     top: 0;
-    transform: translate(-50%, 50%);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0 linear-gradient(transparent 83%, #00000024);
+    border-radius: 10px;
 }
 
-.card {
-    top: 200px;
-    transform: rotateX(calc(260deg + var(--x))) rotateY(calc(180deg + var(--x))) rotateZ(calc(190deg + var(--x))) translate(-50%, 50%);
+.scene .card .card__face img {
+    width: 240px;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
-/*/////////////*/
+.scene .card .card__face--back {
+    transform: rotateY(0.5turn);
+}
 
-.cardQ {
+.card .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.card .buttons *{
+    cursor: pointer;
+}
+
+.card .q, .card .a {
+    width: 100%;
+    height: 100%;
+    background-color: #01486b;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+}
+
+.card .q::-webkit-scrollbar, .card .a::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card:after {
     background-color: #075c88;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
+    /*background-image: -webkit-linear-gradient(hsla(0, 0%, 100%, .25), hsla(0, 0%, 0%, .25));*/
+    bottom: 0;
+    content: '';
+    right: 0px;
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
+    width: 3px;
+    z-index: -10;
+    -webkit-transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 50%;
+}
+
+.card:before {
+    background-color: #075c88;
+    /*background-image: -webkit-linear-gradient(hsla(0, 0%, 100%, .25), hsla(0, 0%, 0%, .25));*/
+    content: '';
+    height: 100%;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row ;
-    flex-wrap: wrap;
-    align-content: center;
-    transition: all 1s;
-    transform: rotate(0);
-    /*border: 2px solid black;*/
-    perspective: 100px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    z-index: 1;
-}
-
-.cardQ .q {
-    position: relative;
-    bottom: 10px;
-    width: max-content;
-    height: max-content;
-    padding: 1rem;
-}
-
-.card .q * {
-    width: 100%;
-    height: 100%;
-}
-
-.cardQ .prev {
-    color: rgba(255, 255, 255, 0.8);
     position: absolute;
-    bottom: 5px;
-    left: 10px;
-    user-select: none;
-}
-
-.cardQ .showAns {
-    color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    user-select: none;
-}
-
-/*////////*/
-
-.cardA {
-    background-color: #075C88;
-    color: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    transition: all 1s;
-    transform: rotate3d(0, 1, 0, 180deg);
-    perspective: 100px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    z-index: 0;
+    width: 3px;
+    -webkit-transform: translateZ(-5px);
 }
 
-.cardA .a {
-    position: relative;
-    bottom: 10px;
-    padding: 1rem;
-}
-
-.cardA .showQues {
-    color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    user-select: none;
-}
-
-.cardA .next {
-    color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    user-select: none;
-}
 
 /*///////Style belonging to latex rendering///////*/
 latex-js {
