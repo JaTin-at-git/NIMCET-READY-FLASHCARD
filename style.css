@@ -94,7 +94,7 @@ body {
 }
 
 .quantityDiv {
-    margin: 2rem 1.5rem .5rem;
+    margin: 2rem 0 1rem;
     max-width: 1000px;
     display: flex;
     justify-content: center;
@@ -125,14 +125,17 @@ body {
 
 /*//////////////////////*/
 .me {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .me span {
+    display: block;
     color: #01486b;
     font-weight: bold;
 }
@@ -158,7 +161,7 @@ body {
 }
 
 .scene .card {
-    width: 240px;
+    width: 280px;
     height: 300px;
     color: white;
     transition: 1s ease-in-out;
@@ -272,16 +275,6 @@ body {
 
 
 /*///////Style belonging to latex rendering///////*/
-latex-js {
-    display: inline-block;
-    /*width: 100%;*/
-    /*margin-right: 2em;*/
-    font-weight: bold;
-    /*transform: scale(1.5);*/
-    /*word-break: keep-all;*/
-    font-family: sans-serif !important;
-}
-
-.latex-js .body .page {
-    display: block !important;
+latex-js{
+    --marginrightwidth: 100% !important;
 }
