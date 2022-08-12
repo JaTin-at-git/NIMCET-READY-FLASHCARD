@@ -9,7 +9,9 @@ let q = 0;
 let topicsSelected = {};
 let dictionary = {
     "PnC": PnC_TQA,
-    "Probability": Probability_TQA
+    "Probability": Probability_TQA,
+    "SequenceAndSeries": SequenceAndSeries_TQA,
+    "MaD": MaD_TQA
 }
 
 /////////////////
@@ -70,10 +72,12 @@ function addListenerToGenerateFlashcards() {
         } else if (maxQ < q) {
             slideNotification("Please select more topic.")
         } else {
-            //reinitialize the dictionary
+            // reinitialize the dictionary
             for (const [key] of Object.entries(topicsSelected)) {
                 topicsSelected[key] = 1;
             }
+
+            console.log(topicsSelected);
 
             //divide the questions count evenly, almost evenly :)
             divideQuestionsCount(q - Object.entries(topicsSelected).length);
@@ -81,16 +85,16 @@ function addListenerToGenerateFlashcards() {
             //get the questions, shuffle them
             let ques = getQuestions();
             shuffleArray(ques);
-            //console.log(ques)
 
             //add the cards
             document.querySelector(".scene").innerHTML = "<h2>Try to answer these Flashcards</h2>";
-            for (var i = 0; i < ques.length; i++) {
-                var qna = ques[i];
-                addFlashcard(qna.question, qna.answer, 4 * i);
+            for (let i = 0; i < ques.length; i++) {
+                let qna = ques[i];
+                setTimeout(() => {
+                    addFlashcard(qna.question, qna.answer, (4 * i), (i + 1) < ques.length)
+                }, i * 100);
             }
-            // perfectionizeHeightWidthOfCards();
-            addFunctionalityToFlashCards();
+            // addFunctionalityToFlashCards();
         }
     });
 }
@@ -98,25 +102,27 @@ function addListenerToGenerateFlashcards() {
 
 //get random questions from differnt topics
 function getQuestions() {
+    //console.log("inside get Questions");
     var questions = [];
     for (const [key, value] of Object.entries(topicsSelected)) {
         if (topicsSelected[key] === 0) continue;
         var allQuestions = textToQuestions(dictionary[key]);
-        // create two differnt qnos
-        let qnos = [];
-        while (qnos.length < value) {
-            var r = Math.floor(Math.random() * (dictionary[key].match(/T:/g) || []).length);
-            if (qnos.indexOf(r) === -1) qnos.push(r);
-        }
+
+        var qnos = [...Array((dictionary[key].match(/T:/g) || []).length).keys()].map(x => ++x);
+        shuffleArray(qnos);
+        qnos = qnos.slice(0, value + 1);
+
         for (const qno of qnos) {
-            questions.push(allQuestions[qno]);
+            questions.push(allQuestions[qno - 1]);
         }
     }
     return questions;
 }
 
 
-function addFlashcard(question, answer, i) {
+function addFlashcard(question, answer, i, hasNext = true) {
+    //console.log("adding card " + i / 4)
+    //console.log(question)
     var elem = document.createElement('div');
     elem.classList.add('card');
     elem.setAttribute('style', `--i: ${i}`);
@@ -132,13 +138,14 @@ function addFlashcard(question, answer, i) {
             <div class="a">${answer}</div>
             <div class="buttons">
                 <div class="showQues">show Question</div>
-                <div class="next">next</div>
+                ${hasNext ? '<div class="next">next</div>' : ""}
             </div>
         </div>`;
+    addFunctionalityToCards(elem);
     document.querySelector(".scene").appendChild(elem);
-    ////console.log(question)
-    ////console.log(answer)
-    ////console.log("")
+    //console.log(question)
+    //console.log(answer)
+    //console.log("")
 }
 
 //function to convert text to Question objects array
@@ -148,12 +155,7 @@ function textToQuestions(text) {
         return String(e).match(/(T:|Q:|A:)/) ? "" : String(e).trim();
     });
     for (var i = 0; i < qnaAsTextArray.length; i += 3) {
-        var ques = new QuestionAnswer(
-            qnaAsTextArray[i],
-            qnaAsTextArray[i + 1],
-            qnaAsTextArray[i + 2],
-            qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "p",
-            qnaAsTextArray[i + 2].trim().charAt(0) === "$" ? "latex-js" : "p");
+        var ques = new QuestionAnswer(qnaAsTextArray[i], qnaAsTextArray[i + 1], qnaAsTextArray[i + 2], qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "p", qnaAsTextArray[i + 2].trim().charAt(0) === "$" ? "latex-js" : "p");
         qnas.push(ques);
     }
     //console.log(qnas);
@@ -163,44 +165,30 @@ function textToQuestions(text) {
 //function to divide questions count evenly, almost evenly
 //n questions are divided
 function divideQuestionsCount(n) {
-    ////console.log(topicsSelected)
-    ////console.log(n)
+
+    //console.log("dividing " + n + " questions in ")
+    //console.log(topicsSelected)
+
     for (const [key] of Object.entries(topicsSelected)) {
-        if (topicsSelected[key] === 0) continue;
-        if (dictionary[key]) {
-            if (((dictionary[key].match(/T:/g) || []).length > n) && (Math.random() < 0.5)) {
-                topicsSelected[key] += 1;
-                n--;
-            }
-        } else {
-            topicsSelected[key] = 0;
+        if (!dictionary[key]) {
             n++;
+            delete topicsSelected[key];
         }
     }
-    if (n > 0) divideQuestionsCount(n);
+
+    while (n > 0) {
+        const keys = Object.keys(topicsSelected);
+        var lucky = keys[Math.floor(Math.random() * keys.length)];
+        if (topicsSelected[lucky] < (dictionary[lucky].match(/T:/g) || []).length) {
+            topicsSelected[lucky] += 1;
+            n--;
+        }
+    }
+
+    //console.log(topicsSelected)
+
 }
 
-//
-// function perfectionizeHeightWidthOfCards() {
-//     var maxHeight = 0;
-//     var maxWidth = 0;
-//     for (const card of document.querySelectorAll(".card")) {
-//         var cmh = Math.max(card.querySelector(".cardQ").clientHeight, card.querySelector(".cardA").clientHeight);
-//         if (maxHeight < cmh) maxHeight = cmh;
-//         var cmw = Math.max(card.querySelector(".cardQ").clientWidth, card.querySelector(".cardA").clientWidth);
-//         if (maxWidth < cmw) maxWidth = cmw;
-//     }
-//     console.log(maxWidth)
-//     console.log(maxHeight)
-//     for (const card of document.querySelectorAll(".card")) {
-//         // card.style.height = maxHeight + "px";
-//         // card.style.width = maxWidth + "px";
-//         // card.querySelector(".cardQ").style.height = maxHeight + "px";
-//         // card.querySelector(".cardA").style.height = maxHeight + "px";
-//         // card.querySelector(".cardQ").style.width = maxWidth + "px";
-//         // card.querySelector(".cardA").style.width = maxWidth + "px";
-//     }
-// }
 
 ///utility
 function slideNotification(message) {

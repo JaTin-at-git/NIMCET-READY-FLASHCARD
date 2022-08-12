@@ -153,7 +153,7 @@ PnC_TQA += "" +
 //probability//
 let Probability_TQA = "" +
     "T: Probability" +
-    "Q: P(B/A) = ?" +
+    "Q: P(B|A) = ?" +
     "A:$$${\\frac{P(A\\cap B)}{P(A)}}$$" +
     "" +
     "T: Probability" +
@@ -162,8 +162,174 @@ let Probability_TQA = "" +
     "" +
     "T: Probability" +
     "Q:$Law of total probability for occurance of event E with mutually-exclusive and exhaustive events$${ E_1, E_2, ... , E_n ?}$$" +
-    "A:$$${P(E)=P(E_1)\\times P(E/E_1)+P(E_2)\\times P(E/E_2)...}$$";
+    "A:$$${P(E)=P(E_1)\\times P(E/E_1)+P(E_2)\\times P(E/E_2)...}$$ or $${\\sum _{i=1}^n P(E_i)\\times P(E|E_i)}$$" +
+    "" +
+    "T: Probability" +
+    "Q:$$${P(E_i|E)}$$ according to Bayes' law ?" +
+    "A:$$${\\frac{P(E_i)\\times P(E|E_i)}{\\sum_{i=1}^{n} P(E_i)\\times P(E|E_i)}}$$" +
+    "" +
+    "T: Probability" +
+    "Q: Mean of a random variable ?" +
+    "A:$$${\\sum x_iP_i = \\lambda}$$" +
+    "" +
+    "T: Probability" +
+    "Q: Variance of a Random variable ?" +
+    "A:$$${Var(X) = E(X^2) - [E(X)]^2}$$or$${Var(X)=\\sum x_i^2p_i-[\\sum x_ip_i]^2}$$";
 
+Probability_TQA += "" +
+    "T: Probability" +
+    "Q: (Binomial Distribution) If probability of Success is 'p' and that of failure is 'q', then probability of exactly 'r' success in 'n' trials is ?" +
+    "A:$$${P(X=r)=^nC_r \\cdot  p^r\\cdot q^{n-r}}$$" +
+    "" +
+    "T: Probability" +
+    "Q: Mean of a Binomial Variate B(n,p) is ?" +
+    "A:$$${n\\cdot p}$$" +
+    "" +
+    "T: Probability" +
+    "Q: Variance of a Binomial Variate B(n,p) is ?" +
+    "A:$$${n\\cdot p \\cdot q}$$" +
+    "" +
+    "T: Probability" +
+    "Q: Formula of Poisson Distribution ?" +
+    "A:$$${P(X=r) = \\frac{ e^{-\\lambda} \\cdot \\lambda^r}{r!}}$$" +
+    "" +
+    "T: Probability" +
+    "Q: What is ʎ in Poisson Distribution?" +
+    "A:  ʎ= Mean= variance= n.p";
+
+var SequenceAndSeries_TQA = "";
+SequenceAndSeries_TQA += "" +
+    "T: SequenceAndSeries" +
+    "Q: n<sup>th</sup> term of an AP?" +
+    "A:$$${T_n=a+(n-1)d}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Sum of first n terms of an AP?" +
+    "A:$$${S_n=\\frac{n}{2}[2a+(n-1)d]}$$ or $${S_n=\\frac{n}{2}[a+l]}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Terms to take in AP when sum is given, of 3,4 and 5 terms?" +
+    "A: <img src='images/SeriesAndSequence/1.jpeg'>" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Realtion b/w a,b,c if thery are in AP" +
+    "A:$$${b=\\frac{a+c}{2}}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: n<sup>th</sup> term of an GP?" +
+    "A:$$${T_n=ar^{n-1}}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Sum of n terms of a GP?" +
+    "A:$$${S_n=\\frac{a(r^n-1)}{r-1}}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Sum of ∞ terms of a GP?" +
+    "A:$$${S_\\infty =\\frac{a}{1-r}}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Terms to take in GP when product is given, of 3,4 and 5 terms?" +
+    "A: <img src='images/SeriesAndSequence/2.jpeg'>" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Realtion b/w a,b,c if thery are in GP" +
+    "A:$$${b=\\sqrt{a\\cdot c}}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Arrange AM GM HM according to their magnitude" +
+    "A: AM > GM > HM" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Realtion b/w a,b,c if thery are in HP" +
+    "A:$$${b=\\frac{2ac}{a+c}}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: n<sup>th</sup> term of an AGP?" +
+    "A:$$${T_n=AP_{n^{th}term}\\cdot GP_{n^{th}term}}$$ $${T_n=[a+(n-1)d)]\\cdot[ar^{n-1}]}$$" +
+    "" +
+    "T: SequenceAndSeries" +
+    "Q: Sum of ∞ terms of an AGP" +
+    "A:$$${S_\\infty =\\frac{ab}{1-r}+ \\frac{dbr}{(1-r)^2} }$$";
+
+let MaD_TQA = "";
+MaD_TQA += "" +
+    "T: MaD" +
+    "Q: (AB)<sup>T</sup>" +
+    "A: B<sup>T</sup>A<sup>T</sup>" +
+    "" +
+    "T: MaD" +
+    "Q: What is a symmetric matrix?" +
+    "A: A<sup>T</sup>=A" +
+    "" +
+    "T: MaD" +
+    "Q: What is a skew-symmetric matrix?" +
+    "A: A<sup>T</sup>=-A" +
+    "" +
+    "T: MaD" +
+    "Q: Relation between Cofactor and Minor" +
+    "A:$$${C_{ij}=\\pm M_{ij}}$$" +
+    "" +
+    "T: MaD" +
+    "Q: what is adj(A)?" +
+    "A: adj(A) is the transpose of cofactor matrix of A" +
+    "" +
+    "T: MaD" +
+    "Q: General formula for A<sup>-1</sup>" +
+    "A:$$${A^{-1}=\\frac{1}{\\left | A \\right |}\\cdot  adj(A)}$$" +
+    "" +
+    "T: MaD" +
+    "Q: A.adj(A)" +
+    "A:$$${|A|I_n}$$" +
+    "" +
+    "T: MaD" +
+    "Q: (ABC)<sup>-1</sup> = ?" +
+    "A:$$${C^{-1}B^{-1}A^{-1}}$$" +
+    "" +
+    "T: MaD" +
+    "Q: (A<sup>T</sup>)<sup>-1</sup> = ?" +
+    "A: (A<sup>-1</sup>)<sup>T</sup>" +
+    "" +
+    "T: MaD" +
+    "Q: |adj(A)| = ?" +
+    "A: |A|<sup>n-1</sup>" +
+    "" +
+    "T: MaD" +
+    "Q: | adj adj adj(A) | = ?" +
+    "A: |A|<sup>(n-1)<sup>3</sup></sup>" +
+    "" +
+    "T: MaD" +
+    "Q: adj(AB) = ?" +
+    "A: adj(A) adj(B)" +
+    "" +
+    "T: MaD" +
+    "Q: adj(A<sup>T</sup>) = ?" +
+    "A: (adj(A))<sup>T</sup>" +
+    "" +
+    "T: MaD" +
+    "Q: adj adj(A) = ?" +
+    "A: |A|<sup>n-2</sup>A" +
+    "" +
+    "T: MaD" +
+    "Q: adj adj adj(A) = ?" +
+    "A: |A|<sup>n-3</sup>A" +
+    "" +
+    "T: MaD" +
+    "Q: |A<sup>-1</sup>| = ?" +
+    "A: |A|<sup>-1</sup>" +
+    "" +
+    "T: MaD" +
+    "Q: If 'r' is a real number and 'A' is n×n matrix then |rA| = ?" +
+    "A: r<sup>x</sup>|A|" +
+    "";
+
+MaD_TQA += "" +
+    "T: MaD" +
+    "Q: |A<sup>T</sup>| = ?" +
+    "A: |A|" +
+    "" +
+    "T: MaD" +
+    "Q: If equations are represented as <img src='images/MaD/1.png'> then A/C to Cramer's rule x,y,z are given by ?" +
+    "A:  <img src='images/MaD/2.png '>";
 
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php
