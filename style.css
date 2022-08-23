@@ -223,6 +223,7 @@ body {
 
 .card .buttons * {
     cursor: pointer;
+    user-select: none;
 }
 
 .card .q, .card .a {

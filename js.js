@@ -11,7 +11,8 @@ let dictionary = {
     "PnC": PnC_TQA,
     "Probability": Probability_TQA,
     "SequenceAndSeries": SequenceAndSeries_TQA,
-    "MaD": MaD_TQA
+    "MaD": MaD_TQA,
+    "Misc": Misc_TQA
 }
 
 /////////////////
@@ -49,7 +50,7 @@ function getMaxQuestions(topicsSelected) {
     let sum = 0;
     for (const [topic] of Object.entries(topicsSelected)) {
         if (dictionary[topic]) {
-            sum += (dictionary[topic].match(/T:/g) || []).length;
+            sum += (dictionary[topic].match(/Q:/g) || []).length;
         }
     }
     return sum;
@@ -77,11 +78,8 @@ function addListenerToGenerateFlashcards() {
                 topicsSelected[key] = 1;
             }
 
-            console.log(topicsSelected);
-
             //divide the questions count evenly, almost evenly :)
             divideQuestionsCount(q - Object.entries(topicsSelected).length);
-
             //get the questions, shuffle them
             let ques = getQuestions();
             shuffleArray(ques);
@@ -108,10 +106,9 @@ function getQuestions() {
         if (topicsSelected[key] === 0) continue;
         var allQuestions = textToQuestions(dictionary[key]);
 
-        var qnos = [...Array((dictionary[key].match(/T:/g) || []).length).keys()].map(x => ++x);
+        var qnos = [...Array((dictionary[key].match(/Q:/g) || []).length).keys()].map(x => ++x);
         shuffleArray(qnos);
-        qnos = qnos.slice(0, value + 1);
-
+        qnos = qnos.slice(0, value);
         for (const qno of qnos) {
             questions.push(allQuestions[qno - 1]);
         }
@@ -151,14 +148,13 @@ function addFlashcard(question, answer, i, hasNext = true) {
 //function to convert text to Question objects array
 function textToQuestions(text) {
     var qnas = [];
-    var qnaAsTextArray = text.split(/(T:|Q:|A:)/).filter(function (e) {
-        return String(e).match(/(T:|Q:|A:)/) ? "" : String(e).trim();
+    var qnaAsTextArray = text.split(/(Q:|A:)/).filter(function (e) {
+        return String(e).match(/(Q:|A:)/) ? "" : String(e).trim();
     });
-    for (var i = 0; i < qnaAsTextArray.length; i += 3) {
-        var ques = new QuestionAnswer(qnaAsTextArray[i], qnaAsTextArray[i + 1], qnaAsTextArray[i + 2], qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "p", qnaAsTextArray[i + 2].trim().charAt(0) === "$" ? "latex-js" : "p");
+    for (var i = 0; i < qnaAsTextArray.length; i += 2) {
+        var ques = new QuestionAnswer(qnaAsTextArray[i], qnaAsTextArray[i + 1], qnaAsTextArray[i].trim().charAt(0) === "$" ? "latex-js" : "p", qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "p");
         qnas.push(ques);
     }
-    //console.log(qnas);
     return qnas;
 }
 
@@ -179,7 +175,7 @@ function divideQuestionsCount(n) {
     while (n > 0) {
         const keys = Object.keys(topicsSelected);
         var lucky = keys[Math.floor(Math.random() * keys.length)];
-        if (topicsSelected[lucky] < (dictionary[lucky].match(/T:/g) || []).length) {
+        if (topicsSelected[lucky] < (dictionary[lucky].match(/Q:/g) || []).length) {
             topicsSelected[lucky] += 1;
             n--;
         }

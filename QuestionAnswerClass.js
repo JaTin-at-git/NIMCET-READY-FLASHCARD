@@ -1,16 +1,12 @@
 //This script is intended to create a Question and answer class
 class QuestionAnswer {
-    constructor(topic, question, answer, qEnc = "p", aEnc = "p") {
-        this._topic = topic.trim();
+    constructor( question, answer, qEnc = "p", aEnc = "p") {
         this._question = question.substring(1).trim();
         this._answer = answer.substring(1).trim();
         this._qEnc = qEnc.trim();
         this._aEnc = aEnc.trim();
     }
 
-    set topic(value) {
-        this._topic = value;
-    }
 
     get question() {
         return "<" + this._qEnc + ">" + this._question + "</" + this._qEnc + ">";
