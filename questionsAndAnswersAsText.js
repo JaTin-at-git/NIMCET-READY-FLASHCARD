@@ -252,7 +252,7 @@ let MaD_TQA =
     "A: |A|<sup>(n-1)<sup>3</sup></sup>" +
     "" +
     "Q: adj(AB) = ?" +
-    "A: adj(A) adj(B)" +
+    "A: adj(B) adj(A)" +
     "" +
     "Q: adj(A<sup>T</sup>) = ?" +
     "A: (adj(A))<sup>T</sup>" +
@@ -278,12 +278,76 @@ let MaD_TQA =
     "Q: If A = <img src='images/MaD/3.png'> <br>Then A<sup>r</sup> = ?" +
     "A: <img src='images/MaD/4.png'>";
 
+MaD_TQA = "";
+MaD_TQA += "" +
+    "Q: Idompotent matrix => ?" +
+    "A: A<sup>2</sup>=A" +
+    "" +
+    "Q: Orthogonal matrix ?" +
+    "A: AA<sup>'</sup>=I <br> Or, A<sup>'</sup>=A<sup>-1</sup>" +
+    "" +
+    "Q: Nilpotent matrix ?" +
+    "A: A<sup>n</sup>=0" +
+    "" +
+    "Q: <img src='images/MaD/5.png'>" +
+    "A: <img src='images/MaD/6.png'>" +
+    "" +
+    "Q: <img src='images/MaD/7.png'>" +
+    "A: <img src='images/MaD/8.png'>" +
+    "" +
+    "Q: If AB=A and BA=B, then A and B are ?" +
+    "A: Idompotent, A<sup>2</sup>=A and B<sup>2</sup>=B" +
+    "" +
+    "Q: <img src='images/MaD/9.png'>" +
+    "A: <img src='images/MaD/10.png'>" +
+    "" +
+    "Q:$If A is idompotent; i.e, $${A^2=A}$$ then $${(I-A)^n=?}$$" +
+    "A:$$${(I-A)^n=(I-A)}$$" +
+    "" +
+    "Q:$If A is idompotent; i.e, $${A^2=A}$$ then $${(I+A)^n=?}$$" +
+    "A:$$${(I+A)^n=I+[n(n-1)+1]A}$$" +
+    "" +
+    "Q: Max value of determinant of an n×n matrix with entries ∈ {1,0} ?" +
+    "A:$$${\\frac{(n+1)^{\\frac{n+1}{2}}}{2^n}}$$" +
+    "" +
+    "Q: if 2 rows/columns of a matrix are in AP, then its determinant is ?" +
+    "A: 0 😀" +
+    "" +
+    "Q: <img src='images/MaD/11.png'>" +
+    "A: <img src='images/MaD/12.png'>" +
+    "" +
+    "Q: If a,b,c are all differnt and <img src='12.png'> then <br> abc = ?" +
+    "A: abc=1" +
+    "" +
+    "Q: <img src='images/MaD/14.png'>" +
+    "A:$$${-(b^2\\mathbf{p}+c^2\\mathbf{q}+a^2\\mathbf{r})+2abc+pqr}$$" +
+    "" +
+    "Q: If A is skew-symmetric, then A<sup>even</sup> is " +
+    "A: Symmetric matrix" +
+    "" +
+    "Q: If A is skew-symmetric, then A<sup>odd</sup> is " +
+    "A: Skew-Symmetric matrix" +
+    "" +
+    "";
+
 var Misc_TQA = "" +
     "Q:$Compendendo/ Dividendo for $${\\frac{a}{b}=\\frac{c}{d}}$$ = ?" +
     "A:$$${\\frac{a+b}{a-b}=\\frac{c+d}{c-d}}$$" +
     "" +
     "Q: What is the sum of internal angles of a 'n' sided polygon?" +
-    "A: 180(n-2)";
+    "A: 180(n-2)" +
+    "" +
+    "Q:$$${ax^3+bx^2+cx+d=0}$$ then $${\\alpha + \\beta + \\gamma =\\ ? }$$ " +
+    "$${\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha =\\ ? }$$" +
+    "$${\\alpha \\beta \\gamma =\\  ?}$$" +
+    "A:$$${\\alpha + \\beta + \\gamma = \\frac{-b}{a}}$$" +
+    "$${\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = \\frac{c}{a}}$$" +
+    "$${\\alpha \\beta \\gamma = \\frac{-d}{a}}$$" +
+    "" +
+    "Q:$$${ax^2+bx+c=0}$$ then $${\\alpha + \\beta + \\gamma =\\ ? }$$ " +
+    "$${\\alpha \\beta \\gamma =\\  ?}$$" +
+    "A:$$${\\alpha + \\beta + \\gamma = \\frac{-b}{a}}$$" +
+    "$${\\alpha \\beta \\gamma = \\frac{c}{a}}$$";
 
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php
