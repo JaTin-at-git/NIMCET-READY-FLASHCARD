@@ -11,6 +11,7 @@ let dictionary = {
     "PnC": PnC_TQA,
     "Probability": Probability_TQA,
     "SequenceAndSeries": SequenceAndSeries_TQA,
+    "quadraticAndComplex": quadAndComplex,
     "MaD": MaD_TQA,
     "Misc": Misc_TQA
 }

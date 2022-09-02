@@ -182,9 +182,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-.scene .card{
-    display: none;
-}
+    .scene .card {
+        display: none;
+    }
 }
 
 /*.scene .card:hover {*/
@@ -245,6 +245,7 @@ body {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
+
 .card .a p {
     /*height: 100%;*/
     width: 100%;
@@ -283,6 +284,6 @@ body {
 
 
 /*///////Style belonging to latex rendering///////*/
-latex-js{
+latex-js {
     --marginrightwidth: 100% !important;
 }

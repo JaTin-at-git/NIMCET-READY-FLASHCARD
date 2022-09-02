@@ -216,6 +216,14 @@ let SequenceAndSeries_TQA =
     "Q:$$${1^3+2^3+3^3+...+n^3}$$" +
     "A:$$${\\left [ \\frac{n(n+1)}{2} \\right ]^2}$$";
 
+let quadAndComplex = "" +
+    "Q: if ω is the cube root of unity, then <br> ω<sup>3</sup> = ?" +
+    "A: ω<sup>3</sup> = 1" +
+    "" +
+    "Q: if ω is the cube root of unity, then <br> 1 + ω + ω<sup>2</sup> = ?" +
+    "A: 1 + ω + ω<sup>2</sup> = 0" +
+    "";
+
 let MaD_TQA =
     "" +
     "Q: (AB)<sup>T</sup>" +
@@ -276,9 +284,27 @@ let MaD_TQA =
     "A: <img src='images/MaD/2.png '>" +
     "" +
     "Q: If A = <img src='images/MaD/3.png'> <br>Then A<sup>r</sup> = ?" +
-    "A: <img src='images/MaD/4.png'>";
+    "A: <img src='images/MaD/4.png'>" +
+    "" +
+    "Q: |ABC| = ?" +
+    "A: |A|.|B|.|C|" +
+    "" +
+    "Q: For what value of D does non-homogenous equations have unique solution ?" +
+    "A: D≠0" +
+    "" +
+    "Q: For what value of D does non-homogenous equations have no solution ?" +
+    "A:$$${\\text{D = 0 but none of }D_x, D_y \\ or\\  D_z = 0 \\ \\ \\ }$$" +
+    "" +
+    "Q: For what value of D does non-homogenous equations have infinity many solution ?" +
+    "A:$$${D = D_x = D_y = D_z = 0 \\ \\ \\ }$$" +
+    "" +
+    "Q: For what value of D does Homogenous equations have unique solution ?" +
+    "A: D=0, the unique solution is trivial solution, x=y=z=0" +
+    "" +
+    "Q: For what value of D does Homogenous equations have infinity many solution ?" +
+    "A:$$${D = 0 \\ \\ \\ }$$" +
+    ""
 
-MaD_TQA = "";
 MaD_TQA += "" +
     "Q: Idompotent matrix => ?" +
     "A: A<sup>2</sup>=A" +
@@ -316,7 +342,7 @@ MaD_TQA += "" +
     "Q: <img src='images/MaD/11.png'>" +
     "A: <img src='images/MaD/12.png'>" +
     "" +
-    "Q: If a,b,c are all differnt and <img src='12.png'> then <br> abc = ?" +
+    "Q: If a,b,c are all differnt and <img src='images/MaD/13.png'> then <br> abc = ?" +
     "A: abc=1" +
     "" +
     "Q: <img src='images/MaD/14.png'>" +
@@ -327,7 +353,6 @@ MaD_TQA += "" +
     "" +
     "Q: If A is skew-symmetric, then A<sup>odd</sup> is " +
     "A: Skew-Symmetric matrix" +
-    "" +
     "";
 
 var Misc_TQA = "" +
@@ -351,20 +376,3 @@ var Misc_TQA = "" +
 
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php
-
-
-//crazy code
-// var original = MaD_TQA;
-// var qnaAsTextArray = original.split(/(T:|Q:|A:)/).filter(function (e) {
-//  return String(e).trim();
-// });
-// var text = '';
-// for (var i = 0; i < qnaAsTextArray.length; i++) {
-//  if (String(qnaAsTextArray[i]).match(/(T:)/)) {
-//   i++;
-//   text += '"" +';
-//  } else {
-//   text += '"' + qnaAsTextArray[i] + '" +';
-//  }
-// }
-// console.log(text);
