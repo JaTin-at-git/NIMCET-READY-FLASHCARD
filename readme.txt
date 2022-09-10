@@ -5,9 +5,7 @@ Intention of the webpage
 Design
 >Design shall be simple and constant
 >User shall be allowed to select the topics from where questions shall be asked
->The questions/Answers, unfortunately, had to be hardcoded into
-as a Question object(in Questions.js, then objects are appended to qnaList)
-or as a text(in questionsAndAnswersAsText.js)
+>The questions/Answers, unfortunately, had to be hardcoded as text(in questionsAndAnswersAsText.js)
 
 Rules
 >there are some rules to be followed for webpage to function well

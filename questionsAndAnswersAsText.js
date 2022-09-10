@@ -216,7 +216,7 @@ let SequenceAndSeries_TQA =
     "Q:$$${1^3+2^3+3^3+...+n^3}$$" +
     "A:$$${\\left [ \\frac{n(n+1)}{2} \\right ]^2}$$";
 
-let quadAndComplex = "" +
+let complex = "" +
     "Q: if ω is the cube root of unity, then <br> ω<sup>3</sup> = ?" +
     "A: ω<sup>3</sup> = 1" +
     "" +
@@ -293,7 +293,7 @@ let MaD_TQA =
     "A: D≠0" +
     "" +
     "Q: For what value of D does non-homogenous equations have no solution ?" +
-    "A:$$${\\text{D = 0 but none of }D_x, D_y \\ or\\  D_z = 0 \\ \\ \\ }$$" +
+    "A:$$${\\text{D = 0 and Any of }D_x, D_y \\ or\\  D_z \\ne 0 \\ \\ \\ }$$" +
     "" +
     "Q: For what value of D does non-homogenous equations have infinity many solution ?" +
     "A:$$${D = D_x = D_y = D_z = 0 \\ \\ \\ }$$" +
@@ -355,7 +355,49 @@ MaD_TQA += "" +
     "A: Skew-Symmetric matrix" +
     "";
 
-var Misc_TQA = "" +
+MaD_TQA += "" +
+    "Q: A + A' is <br> Symmetric / Skew-Symmetric ?" +
+    "A: Symmetric" +
+    "" +
+    "Q: A - A' is <br> Symmetric / Skew-Symmetric ?" +
+    "A: Skew-Symmetric" +
+    "" +
+    // "Q: Symmetric + Symmetric is <br> Symmetric / Skew-Symmetric ?" +
+    // "A: Symmetric" +
+    // "" +
+    // "Q: Skew-Symmetric + Skew-Symmetric is <br> Symmetric / Skew-Symmetric ?" +
+    // "A: Skew-Symmetric" +
+    // ""
+    "Q: If A and B are Symmetric, then AB + BA is " +
+    "A: Symmetric Matrix" +
+    "" +
+    "Q: If A and B are Symmetric, then AB - BA is" +
+    "A: Skew-Symmetric" +
+    "" +
+    "Q: For a square matrix A, AA' and A'A is " +
+    "A: Symmetric Matrix" +
+    "" +
+    "Q: Determinant of skew-symmetric matrix of odd order ?" +
+    "A: 0 😃" +
+    "" +
+    "Q: Determinant of a diagonal matrix dig(a,b,c) = ?" +
+    "A: a.b.c" +
+    "" +
+    "Q: Trace(AB) = ?" +
+    "A: Trace(A).Trace(B)";
+
+MaD_TQA += "" +
+    "Q: For an n×n matrix A, adj(kA) = ?" +
+    "A:$$${k^{n-1}A}$$" +
+    "" +
+    "Q: What is an involuntary matrix?" +
+    "A: A<sup>-1</sup>=A" +
+    "" +
+    "Q:$$${diag(a_1,a_2,....a_n)\\times diag(b_1,b_2,....b_n)}$$" +
+    "A:$$${diag(a_1 b_1,a_2 b_2,....a_n b_n)}$$"
+
+
+let Misc_TQA = "" +
     "Q:$Compendendo/ Dividendo for $${\\frac{a}{b}=\\frac{c}{d}}$$ = ?" +
     "A:$$${\\frac{a+b}{a-b}=\\frac{c+d}{c-d}}$$" +
     "" +
@@ -367,12 +409,49 @@ var Misc_TQA = "" +
     "$${\\alpha \\beta \\gamma =\\  ?}$$" +
     "A:$$${\\alpha + \\beta + \\gamma = \\frac{-b}{a}}$$" +
     "$${\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = \\frac{c}{a}}$$" +
-    "$${\\alpha \\beta \\gamma = \\frac{-d}{a}}$$" +
+    "$${\\alpha \\beta \\gamma = \\frac{-d}{a}}$$";
+
+let quad = "" +
+    "Q: If one root of quadratic equation is a+ib then another is ?" +
+    "A: a-ib" +
+    "" +
+    "Q:$$${\\text{If one root of quadratic equation is }a+\\sqrt{b} \\text{ then other is ?}}$$" +
+    "A:$$${a-\\sqrt{b}}$$" +
     "" +
     "Q:$$${ax^2+bx+c=0}$$ then $${\\alpha + \\beta + \\gamma =\\ ? }$$ " +
     "$${\\alpha \\beta \\gamma =\\  ?}$$" +
     "A:$$${\\alpha + \\beta + \\gamma = \\frac{-b}{a}}$$" +
-    "$${\\alpha \\beta \\gamma = \\frac{c}{a}}$$";
+    "$${\\alpha \\beta \\gamma = \\frac{c}{a}}$$" +
+    "" +
+    "Q:$$${\\alpha^2 + \\beta^2 = ?}$$" +
+    "A:$$${\\alpha^2 + \\beta^2 = ({\\alpha + \\beta})^2 - 2\\alpha\\beta}$$" +
+    "" +
+    "Q:$$${\\alpha^3 + \\beta^3 = ?}$$" +
+    "A:$$${\\alpha^3 + \\beta^3 = ({\\alpha + \\beta})^3 - 3\\alpha\\beta(\\alpha+\\beta)}$$" +
+    "" +
+    "Q:$$${|\\alpha-\\beta|}$$" +
+    "A:$$${\\sqrt{(\\alpha+\\beta)^2-4\\alpha\\beta}}$$" +
+    "" +
+    "Q:$$${\\alpha^4+\\beta^4}$$" +
+    "A:$$${(\\alpha^2+\\beta^2) - 4\\alpha^2\\beta^2 }$$" +
+    "" +
+    "Q:$$${\\text{Relation between coefficients if } }$$ $${a_1x^2+b_1x+c_1=0 \\text{ and }}$$$${ a_2x^2+b_2x+c_2=0 \\text{ have one common root}}$$" +
+    "A:$$${\\frac{\\alpha^2}{b_1c_2-b_2c_1}=\\frac{-\\alpha}{c_2a_1-c_1a_2}=\\frac{1}{a_1b_2-a_2b_1}}$$" +
+    "" +
+    "Q:$$${\\text{Relation between coefficients if } }$$ $${a_1x^2+b_1x+c_1=0 \\text{ and }}$$$${ a_2x^2+b_2x+c_2=0 \\text{ have same roots}}$$" +
+    "A:$$${\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}}$$" +
+    "" +
+    "Q: Coordinates of vertex for a quadratic equation ?" +
+    "A:$$${\\left ( \\frac{-b}{2a} , \\frac{D}{4a} \\right )}$$" +
+    "" +
+    "Q:$$${\\text{Condition at which } ax^2+bx+c>0 }$$" +
+    "A:$$${D<0 \\Rightarrow  b^2-4ac<0}$$" +
+    "" +
+    "Q:$$${\\text{Roots of }x^2+x+1=0}$$" +
+    "A:$$${\\omega^2,\\omega}$$" +
+    "" +
+    "Q:$$${\\text{Roots of }x^2-x+1=0}$$" +
+    "A:$$${-\\omega^2,-\\omega}$$"
 
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php

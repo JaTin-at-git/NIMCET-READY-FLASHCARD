@@ -207,7 +207,8 @@ body {
 .scene .card .card__face img {
     -o-object-fit: cover;
     object-fit: cover;
-    height: 80%;
+    max-height: 80%;
+    max-width: 150%;
 }
 
 .scene .card .card__face--back {
