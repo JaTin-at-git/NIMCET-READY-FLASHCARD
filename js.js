@@ -14,6 +14,8 @@ let dictionary = {
     "complex": complex,
     "MaD": MaD_TQA,
     "quad": quad,
+    "tRatio": tRatio,
+    "basicTrig": basicTrig,
     "Misc": Misc_TQA
 }
 
@@ -91,7 +93,7 @@ function addListenerToGenerateFlashcards() {
             for (let i = 0; i < ques.length; i++) {
                 let qna = ques[i];
                 setTimeout(() => {
-                    addFlashcard(qna.question, qna.answer, (4 * i), (i + 1) < ques.length)
+                    addFlashcard(qna.question, qna.answer, (4 * i), (i + 1) < ques.length, ques.length)
                 }, i * 100);
             }
             // addFunctionalityToFlashCards();
@@ -119,25 +121,26 @@ function getQuestions() {
 }
 
 
-function addFlashcard(question, answer, i, hasNext = true) {
+function addFlashcard(question, answer, i, hasNext = true, totalQues) {
     //console.log("adding card " + i / 4)
-    //console.log(question)
+    // console.log(question)
     var elem = document.createElement('div');
     elem.classList.add('card');
     elem.setAttribute('style', `--i: ${i}`);
     elem.innerHTML = `<div class="card__face card__face--front">
-            <div class="q"><p>${question}</p></div>
+            <div class="index">${(i/4 + 1)+"/"+(totalQues)}</div>
+            <div class="q"><p class="scroll">${question}</p></div>
             <div class="buttons">
-                ${i === 0 ? "" : "<div class=\"prev\">previous</div>"}
                 <div class="showAns">show answer</div>
+                ${i === 0 ? "" : "<div class=\"prev\">previous</div>"}
             </div>
 
         </div>
         <div class="card__face card__face--back">
-            <div class="a">${answer}</div>
+            <div class="a"><p class="scroll">${answer}</p></div>
             <div class="buttons">
-                <div class="showQues">show Question</div>
                 ${hasNext ? '<div class="next">next</div>' : ""}
+                <div class="showQues">show Question</div>
             </div>
         </div>`;
     addFunctionalityToCards(elem);
@@ -154,7 +157,7 @@ function textToQuestions(text) {
         return String(e).match(/(Q:|A:)/) ? "" : String(e).trim();
     });
     for (var i = 0; i < qnaAsTextArray.length; i += 2) {
-        var ques = new QuestionAnswer(qnaAsTextArray[i], qnaAsTextArray[i + 1], qnaAsTextArray[i].trim().charAt(0) === "$" ? "latex-js" : "p", qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "p");
+        var ques = new QuestionAnswer(qnaAsTextArray[i], qnaAsTextArray[i + 1], qnaAsTextArray[i].trim().charAt(0) === "$" ? "latex-js" : "span", qnaAsTextArray[i + 1].trim().charAt(0) === "$" ? "latex-js" : "span");
         qnas.push(ques);
     }
     return qnas;

@@ -1,6 +1,6 @@
 //This script is intended to create a Question and answer class
 class QuestionAnswer {
-    constructor( question, answer, qEnc = "p", aEnc = "p") {
+    constructor( question, answer, qEnc = "span", aEnc = "soan") {
         this._question = question.substring(1).trim();
         this._answer = answer.substring(1).trim();
         this._qEnc = qEnc.trim();

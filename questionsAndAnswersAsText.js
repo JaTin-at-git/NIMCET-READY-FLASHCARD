@@ -418,10 +418,10 @@ let quad = "" +
     "Q:$$${\\text{If one root of quadratic equation is }a+\\sqrt{b} \\text{ then other is ?}}$$" +
     "A:$$${a-\\sqrt{b}}$$" +
     "" +
-    "Q:$$${ax^2+bx+c=0}$$ then $${\\alpha + \\beta + \\gamma =\\ ? }$$ " +
-    "$${\\alpha \\beta \\gamma =\\  ?}$$" +
-    "A:$$${\\alpha + \\beta + \\gamma = \\frac{-b}{a}}$$" +
-    "$${\\alpha \\beta \\gamma = \\frac{c}{a}}$$" +
+    "Q:$$${ax^2+bx+c=0}$$ then $${\\alpha + \\beta =\\ ? }$$ " +
+    "$${\\alpha \\beta =\\  ?}$$" +
+    "A:$$${\\alpha + \\beta = \\frac{-b}{a}}$$" +
+    "$${\\alpha \\beta = \\frac{c}{a}}$$" +
     "" +
     "Q:$$${\\alpha^2 + \\beta^2 = ?}$$" +
     "A:$$${\\alpha^2 + \\beta^2 = ({\\alpha + \\beta})^2 - 2\\alpha\\beta}$$" +
@@ -451,7 +451,81 @@ let quad = "" +
     "A:$$${\\omega^2,\\omega}$$" +
     "" +
     "Q:$$${\\text{Roots of }x^2-x+1=0}$$" +
-    "A:$$${-\\omega^2,-\\omega}$$"
+    "A:$$${-\\omega^2,-\\omega}$$";
 
+let tRatio = "" +
+    // "Q:$$${\\sin(15) \\text{ and } \\cos(15) = \\ ?}$$" +
+    // "A:$$${\\sin(15) = \\frac{\\sqrt{3}-1}{2\\sqrt{2}}}$$ $${\\cos(15) = \\frac{\\sqrt{3}+1}{2\\sqrt{2}}}$$" +
+    // "" +
+    // "Q:$$${\\sin(75) \\text{ and } \\cos(75) = \\ ?}$$" +
+    // "A:$$${\\sin(75) = \\frac{\\sqrt{3}+1}{2\\sqrt{2}}}$$ $${\\cos(75) = \\frac{\\sqrt{3}-1}{2\\sqrt{2}}}$$" +
+    // "" +
+    // "Q:$$${\\sin(30) \\text{ and } \\cos(30) = \\ ?}$$" +
+    // "A:$$${\\sin(30)=\\frac{1}{2} }$$ $${ \\cos(30) =\\frac{\\sqrt{3}}{2} }$$" +
+    // "" +
+    // "Q:$$${\\sin(45) \\text{ and } \\cos(45) = \\ ?}$$" +
+    // "A:$$${\\sin(45)=\\frac{1}{\\sqrt2} }$$ $${\\cos(45) =\\frac{1}{\\sqrt2} }$$" +
+    // "" +
+    // "Q:$$${\\sin(60) \\text{ and } \\cos(60) = \\ ?}$$" +
+    // "A:$$${\\sin(60)=\\frac{\\sqrt3}{2} }$$ $${ \\cos(60) =\\frac{1}{2} }$$" +
+    // "" +
+    "Q:$$${\\sin(18) \\ \\ \\ \\ \\  \\cos(18) }$$ $${ \\sin(36) \\ \\ \\ \\ \\ \\cos(36)}$$" +
+    "A:$ $${\\sin(18)=\\frac{\\sqrt5-1}{4} \\ \\ \\ \\ \\ \\ \\ \\ \\ \\cos(18)=\\frac{\\sqrt{10+2\\sqrt{5}}}{4}}$$" +
+    "    $${\\sin(36)=\\frac{\\sqrt{10-2\\sqrt{5}}}{4} \\ \\ \\ \\cos(36)=\\frac{\\sqrt5+1}{4}}$$"
+
+let basicTrig = "" +
+    "Q: Relation between angle arc and radius ?" +
+    "A:$$${\\Theta^c = \\frac{arc}{radius}}$$" +
+    "" +
+    "Q: 1 radian = ? degrees" +
+    "A: 1 radian = 57°16′21′′" +
+    "" +
+    "Q:$$${\\sin(A+B)}$$" +
+    "A:$$${\\sin(A)\\cos(B)+\\cos(A)\\sin(B)}$$" +
+    "" +
+    "Q:$$${\\sin(A-B)}$$" +
+    "A:$$${\\sin(A)\\cos(B)-\\cos(A)\\sin(B)}$$" +
+    "" +
+    "Q:$$${\\cos(A+B)}$$" +
+    "A:$$${\\cos(A)\\cos(B) -\\sin(A)\\sin(B)}$$" +
+    "" +
+    "Q:$$${\\cos(A-B)}$$" +
+    "A:$$${\\cos(A)\\cos(B) +\\sin(A)\\sin(B)}$$" +
+    "" +
+    "Q:$$${tan(A+B)}$$" +
+    "A:$$${\\frac{\\tan(A)+\\tan(B)}{1-\\tan(A)\\tan(B)}}$$" +
+    "" +
+    "Q:$$${tan(A-B)}$$" +
+    "A:$$${\\frac{\\tan(A)-\\tan(B)}{1+\\tan(A)\\tan(B)}}$$" +
+    "" +
+    "Q:$$${2\\sin(A)\\cos(B)}$$" +
+    "A:$$${\\sin(A+B)+\\sin(A-B)}$$" +
+    "" +
+    "Q:$$${2\\cos(A)\\cos(B)}$$" +
+    "A:$$${\\cos(A+B)+\\cos(A-B)}$$" +
+    "" +
+    "Q:$$${2\\sin(A)\\sin(B)}$$" +
+    "A:$$${\\cos(A+B)-\\cos(A-B)}$$" +
+    "" +
+    "Q:$$${\\sin(A)+\\sin(B) }$$" +
+    "A:$$${ 2\\sin(\\frac{A+B}{2})\\cos(\\frac{A-B}{2})}$$" +
+    "" +
+    "" +
+    "Q:$$${\\sin(A)-\\sin(B) }$$" +
+    "A:$$${ 2\\cos(\\frac{A+B}{2})\\sin(\\frac{A-B}{2})}$$" +
+    "" +
+    "Q:$$${\\cos(A)+\\cos(B)}$$" +
+    "A:$$${2\\cos(\\frac{A+B}{2})\\cos(\\frac{A-B}{2})}$$" +
+    "" +
+    "Q:$$${\\cos(A)-\\cos(B)}$$" +
+    "A:$$${-2\\sin(\\frac{A+B}{2})\\sin(\\frac{A-B}{2})}$$";
+// "" +
+// "Q:$$${\\sin(A+B)\\sin(A-B)}$$" +
+// "A:$$${\\sin^2(A)-\\sin^2(B)}$$ $${\\cos^2(B)-\\cos^2(A)}$$" +
+// "" +
+// "Q:$$${\\cos(A+B)\\cos(A-B)}$$" +
+// "A:$$${\\cos^2(B)-\\sin^2(A)}$$ $${\\cos^2(A)-\\sin^2(B)}$$";
+
+// \cos(A)\cos(B) -\sin(A)\sin(B)
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php
