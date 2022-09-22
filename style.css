@@ -183,6 +183,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .scene .card {
+        width: 80vw;
         display: none;
     }
 }
