@@ -275,7 +275,7 @@ let MaD_TQA =
     "A: |A|<sup>-1</sup>" +
     "" +
     "Q: If 'r' is a real number and 'A' is n×n matrix then |rA| = ?" +
-    "A: r<sup>x</sup>|A|" +
+    "A: r<sup>n</sup>|A|" +
     "" +
     "Q: |A<sup>T</sup>| = ?" +
     "A: |A|" +
@@ -283,7 +283,7 @@ let MaD_TQA =
     "Q: If equations are represented as <img src='images/MaD/1.png'> then A/C to Cramer's rule x,y,z are given by ?" +
     "A: <img src='images/MaD/2.png '>" +
     "" +
-    "Q: If A = <img src='images/MaD/3.png'> <br>Then A<sup>r</sup> = ?" +
+    "Q: If A = <img src='images/MaD/3.jpg'> <br>Then A<sup>r</sup> = ?" +
     "A: <img src='images/MaD/4.png'>" +
     "" +
     "Q: |ABC| = ?" +
@@ -388,7 +388,7 @@ MaD_TQA += "" +
 
 MaD_TQA += "" +
     "Q: For an n×n matrix A, adj(kA) = ?" +
-    "A:$$${k^{n-1}A}$$" +
+    "A:$$${k^{n-1}adj(A)}$$" +
     "" +
     "Q: What is an involuntary matrix?" +
     "A: A<sup>-1</sup>=A" +
@@ -396,6 +396,27 @@ MaD_TQA += "" +
     "Q:$$${diag(a_1,a_2,....a_n)\\times diag(b_1,b_2,....b_n)}$$" +
     "A:$$${diag(a_1 b_1,a_2 b_2,....a_n b_n)}$$"
 
+MaD_TQA += "" +
+    "Q: Sarrus rule for determinant of <img src='images/MaD/15.png'>" +
+    "A: <img src='images/MaD/16.png'>" +
+    "" +
+    "Q: What is the determinant of <img src='images/MaD/17.png'>" +
+    "A:$$${(x-y)(y-z)(z-x)}$$" +
+    "" +
+    "Q: What is the determinant of <img src='images/MaD/18.png'>" +
+    "A:$$${(x-y)(y-z)(z-x)(x+y+z)}$$" +
+    "" +
+    "Q: What is the determinant of <img src='images/MaD/19.png'>" +
+    "A:$$${(x-y)(y-z)(z-x)(xy+yz+zx)}$$" +
+    "" +
+    "Q: If determinant of an n×n matrix is △, then what is the determinant of its cofactor matrix" +
+    "A:$$${\\Delta^c = \\Delta^{n-1}}$$" +
+    "" +
+    "Q:$If $${ a.x^2 + b.y^2 + c + 2d.x + 2e.y + 2f.xy = 0 }$$ $${\\text{represents pairs of straight lines}}$$ $${ \\text{then represent this in form of determinant.}}$$" +
+    "A: <img src='images/MaD/20.png'>" +
+    "" +
+    "Q: <img src='images/MaD/9.png'>" +
+    "A: <img src='images/MaD/10.png'>"
 
 let Misc_TQA = "" +
     "Q:$Compendendo/ Dividendo for $${\\frac{a}{b}=\\frac{c}{d}}$$ = ?" +
