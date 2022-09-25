@@ -339,15 +339,15 @@ MaD_TQA += "" +
     "Q: if 2 rows/columns of a matrix are in AP, then its determinant is ?" +
     "A: 0 😀" +
     "" +
-    "Q: <img src='images/MaD/11.png'>" +
-    "A: <img src='images/MaD/12.png'>" +
-    "" +
+    // "Q: <img src='images/MaD/11.png'>" +
+    // "A: <img src='images/MaD/12.png'>" +
+    // "" +
     "Q: If a,b,c are all differnt and <img src='images/MaD/13.png'> then <br> abc = ?" +
-    "A: abc=1" +
+    "A: For 1+a<sup>3</sup>, abc=-1 <br>For 1-a<sup>3</sup>, abc=1" +
     "" +
-    "Q: <img src='images/MaD/14.png'>" +
-    "A:$$${-(b^2\\mathbf{p}+c^2\\mathbf{q}+a^2\\mathbf{r})+2abc+pqr}$$" +
-    "" +
+    // "Q: <img src='images/MaD/14.png'>" +
+    // "A:$$${-(b^2\\mathbf{p}+c^2\\mathbf{q}+a^2\\mathbf{r})+2abc+pqr}$$" +
+    // "" +
     "Q: If A is skew-symmetric, then A<sup>even</sup> is " +
     "A: Symmetric matrix" +
     "" +
