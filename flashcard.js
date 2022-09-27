@@ -40,12 +40,14 @@ function addFunctionalityToCards(card) {
         var showAns = card.querySelector(".showAns");
         showAns.addEventListener('click', () => {
             showAns.offsetParent.offsetParent.style.transform = "rotateY(0.5turn)";
+            card.querySelector(".card__face--back").style.zIndex="0";
         });
 
 
         var showQues = card.querySelector(".showQues");
         showQues.addEventListener('click', () => {
             showQues.offsetParent.offsetParent.style.transform = "rotateY(0turn)";
+            card.querySelector(".card__face--back").style.zIndex="-1";
         });
 
 
