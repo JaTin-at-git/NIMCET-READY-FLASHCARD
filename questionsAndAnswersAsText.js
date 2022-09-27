@@ -494,7 +494,7 @@ let tRatio = "" +
     "A:$ $${\\sin(18)=\\frac{\\sqrt5-1}{4} \\ \\ \\ \\ \\ \\ \\ \\ \\ \\cos(18)=\\frac{\\sqrt{10+2\\sqrt{5}}}{4}}$$" +
     "    $${\\sin(36)=\\frac{\\sqrt{10-2\\sqrt{5}}}{4} \\ \\ \\ \\cos(36)=\\frac{\\sqrt5+1}{4}}$$"
 
-let basicTrig = "" +
+let trigSumPro = "" +
     "Q: Relation between angle arc and radius ?" +
     "A:$$${\\Theta^c = \\frac{arc}{radius}}$$" +
     "" +
@@ -540,13 +540,72 @@ let basicTrig = "" +
     "" +
     "Q:$$${\\cos(A)-\\cos(B)}$$" +
     "A:$$${-2\\sin(\\frac{A+B}{2})\\sin(\\frac{A-B}{2})}$$";
-// "" +
-// "Q:$$${\\sin(A+B)\\sin(A-B)}$$" +
-// "A:$$${\\sin^2(A)-\\sin^2(B)}$$ $${\\cos^2(B)-\\cos^2(A)}$$" +
-// "" +
-// "Q:$$${\\cos(A+B)\\cos(A-B)}$$" +
-// "A:$$${\\cos^2(B)-\\sin^2(A)}$$ $${\\cos^2(A)-\\sin^2(B)}$$";
 
-// \cos(A)\cos(B) -\sin(A)\sin(B)
+let trigMultiAngle = "" +
+    "Q:$$${\\sin(2A)}$$ $${\\text{ in terms of sin and cos}}$$" +
+    "A:$$${2\\sin(A)cos(A)}$$" +
+    "" +
+    "Q:$$${\\cos(2A)}$$ $${\\text{ in terms of sin and cos}}$$" +
+    "A:$$${\\cos^2(A)-\\sin^2(A)}$$ $${2\\cos^2(A)-1}$$ $${1-2\\sin^2(A)}$$" +
+    "" +
+    "Q:$$${\\sin(2A)}$$ $${\\text{ in terms of tan}}$$" +
+    "A:$$${\\frac{2\\tan(A)}{1+\\tan^2(A)}}$$" +
+    "" +
+    "Q:$$${\\cos(2A)}$$ $${\\text{ in terms of tan}}$$" +
+    "A:$$${\\frac{1-\\tan^2(A)}{1+\\tan^2(A)}}$$" +
+    "" +
+    "Q:$$${\\tan(2A)}$$ $${\\text{ in terms of tan}}$$" +
+    "A:$$${\\frac{2.tan(A)}{1-\\tan^2(A)}}$$" +
+    "" +
+    "Q:$$${\\sin(3A)}$$" +
+    "A:$$${3\\sin(A)-4\\sin^3(A)}$$" +
+    "Q:$$${\\cos(3A)}$$" +
+    "A:$$${4\\cos^3(A)-3\\cos(A)}$$" +
+    "Q:$$${\\tan(3A)}$$" +
+    "A:$$${\\frac{3\\tan(A)-\\tan^3(A)}{1-3\\tan^2(A)}}$$";
+
+let trigMisc = "" +
+    "Q:$$${1+\\sin(A)}$$" +
+    "A:$$${\\left ( \\sin(\\frac{A}{2}) +\\cos(\\frac{A}{2}) \\right )^2}$$" +
+    "" +
+    "Q:$$${1-\\sin(A)}$$" +
+    "A:$$${\\left ( \\sin(\\frac{A}{2}) -\\cos(\\frac{A}{2}) \\right )^2}$$" +
+    "" +
+    "Q:$$${\\sin(A+B)\\sin(A-B)}$$" +
+    "A:$$${\\sin^2(A)-\\sin^2(B)}$$ $${\\cos^2(B)-\\cos^2(A)}$$" +
+    "" +
+    "Q:$$${\\cos(A+B)\\cos(A-B)}$$" +
+    "A:$$${\\cos^2(B)-\\sin^2(A)}$$ $${\\cos^2(A)-\\sin^2(B)}$$" +
+    "" +
+    "Q:$$${\\sin(\\frac{A}{2})}$$" +
+    "A:$$${\\pm\\sqrt{\\frac{1-\\cos(A)}{2}}}$$" +
+    "" +
+    "Q:$$${\\cos(\\frac{A}{2})}$$" +
+    "A:$$${\\pm\\sqrt{\\frac{1+\\cos(A)}{2}}}$$" +
+    "" +
+    "Q:$$${\\tan(\\frac{A}{2})}$$" +
+    "A:$$${\\pm\\sqrt{\\frac{1-\\cos(A)}{1+\\cos(A)}}}$$";
+
+let trigSeries = "" +
+    "Q:$$${\\sin(60-A).\\sin(A).sin(60+A)}$$" +
+    "A:$$${\\frac{\\sin(3A)}{4}}$$" +
+    "" +
+    "Q:$$${\\cos(60-A).\\cos(A).cos(60+A)}$$" +
+    "A:$$${\\frac{\\cos(3A)}{4}}$$" +
+    "" +
+    "Q:$$${\\tan(60-A).\\tan(A).tan(60+A)}$$" +
+    "A:$$${tan(3A)}$$" +
+    "Q:$$${cos(2^0A)\\cdot cos(2^1A)\\cdot cos(2^2A)\\cdot\\cdot\\cdot cos(2^{n-1}A)}$$" +
+    "A:$$${\\frac{\\sin(2^nA)}{2^n\\cdot \\sin(A)}}$$" +
+    "" +
+    "Q:$$${\\sin(\\alpha) + \\sin(\\alpha + \\beta)  + \\sin(\\alpha + 2\\beta) + \\cdot \\cdot \\cdot + \\sin(\\alpha + (n-1)\\beta)   }$$" +
+    "A:$$${\\frac{\\sin(\\alpha+\\frac{(n-1)\\beta}{2})\\cdot \\sin(\\frac{n\\cdot \\beta}{2})}{\\sin(\\frac{\\beta}{2})}}$$" +
+    "" +
+    "Q:$$${\\cos(\\alpha) + \\cos(\\alpha + \\beta)  + \\cos(\\alpha + 2\\beta) + \\cdot \\cdot \\cdot + \\cos(\\alpha + (n-1)\\beta)   }$$" +
+    "A:$$${\\frac{\\cos(\\alpha+\\frac{(n-1)\\beta}{2})\\cdot \\sin(\\frac{n\\cdot \\beta}{2})}{\\sin(\\frac{\\beta}{2})}}$$" +
+    "" +
+    "Q:$$${\\tan(A)+\\cot(A)}$$" +
+    "A:$$${2\\cdot cosec(2A)}$$"
+
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php

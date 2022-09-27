@@ -15,7 +15,10 @@ let dictionary = {
     "MaD": MaD_TQA,
     "quad": quad,
     "tRatio": tRatio,
-    "basicTrig": basicTrig,
+    "trigSumPro": trigSumPro,
+    "trigMultiAngle": trigMultiAngle,
+    "trigMisc": trigMisc,
+    "trigSeries": trigSeries,
     "Misc": Misc_TQA
 }
 
@@ -128,7 +131,7 @@ function addFlashcard(question, answer, i, hasNext = true, totalQues) {
     elem.classList.add('card');
     elem.setAttribute('style', `--i: ${i}`);
     elem.innerHTML = `<div class="card__face card__face--front">
-            <div class="index">${(i/4 + 1)+"/"+(totalQues)}</div>
+            <div class="index">${(i / 4 + 1) + "/" + (totalQues)}</div>
             <div class="q"><p class="scroll">${question}</p></div>
             <div class="buttons">
                 <div class="showAns">show answer</div>
