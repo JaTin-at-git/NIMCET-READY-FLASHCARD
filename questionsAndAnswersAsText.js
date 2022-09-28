@@ -605,7 +605,44 @@ let trigSeries = "" +
     "A:$$${\\frac{\\cos(\\alpha+\\frac{(n-1)\\beta}{2})\\cdot \\sin(\\frac{n\\cdot \\beta}{2})}{\\sin(\\frac{\\beta}{2})}}$$" +
     "" +
     "Q:$$${\\tan(A)+\\cot(A)}$$" +
-    "A:$$${2\\cdot cosec(2A)}$$"
+    "A:$$${2\\cdot cosec(2A)}$$";
+
+let condTrig = "" +
+    "Q:$If A+B+C=π, then $${\\sin(A)+\\sin(B)+\\sin(C)}$$" +
+    "A:$$${4 \\cos(\\frac{A}{2}) \\cos(\\frac{B}{2}) \\cos(\\frac{C}{2})}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\cos(A)+\\cos(B)+\\cos(C)}$$" +
+    "A:$$${1+4  \\sin(\\frac{A}{2})  \\sin(\\frac{B}{2})  \\sin(\\frac{C}{2})}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\tan(A)+\\tan(B)+\\tan(C)}$$" +
+    "A:$$${\\tan(A)\\tan(B)\\tan(C)}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\sin(2A)+\\sin(2B)+\\sin(2C)}$$" +
+    "A:$$${4  \\sin(A)   \\sin(B)   \\sin(C)}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\cos(2A)+\\cos(2B)+\\cos(2C)}$$" +
+    "A:$$${-1-4  \\cos(A)   \\cos(B)   \\cos(C)}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\tan(2A)+\\tan(2B)+\\tan(2C)}$$" +
+    "A:$$${\\tan(2A) \\tan(2B) \\tan(2C)}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\tan(\\frac{A}{2})\\tan(\\frac{B}{2})+\\tan(\\frac{B}{2})\\tan(\\frac{C}{2})+\\tan(\\frac{C}{2})\\tan(\\frac{A}{2})}$$" +
+    "A:$$${1}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\cot(A)\\cot(B)+\\cot(B)\\cot(C)+\\cot(C)\\cot(A)}$$" +
+    "A:$$${1}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\sin^2(A)+\\sin^2(B)+\\sin^2(C)}$$" +
+    "A:$$${2+2\\cos(A) \\cos(B) \\cos(C)}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\cos^2(A)+\\cos^2(B)+\\cos^2(C)}$$" +
+    "A:$$${1-2\\cos(A) \\cos(B) \\cos(C)}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\sin^2(\\frac{A}{2})+\\sin^2(\\frac{B}{2})+\\sin^2(\\frac{C}{2})}$$" +
+    "A:$$${1-2\\sin(\\frac{A}{2})\\sin(\\frac{B}{2})\\sin(\\frac{C}{2})}$$" +
+    "" +
+    "Q:$If A+B+C=π, then $${\\cos^2(\\frac{A}{2})+\\cos^2(\\frac{B}{2})+\\cos^2(\\frac{C}{2})}$$" +
+    "A:$$${2+2\\sin(\\frac{A}{2})\\sin(\\frac{B}{2})\\sin(\\frac{C}{2})}$$"
 
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php

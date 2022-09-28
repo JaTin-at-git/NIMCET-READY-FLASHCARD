@@ -19,12 +19,16 @@ let dictionary = {
     "trigMultiAngle": trigMultiAngle,
     "trigMisc": trigMisc,
     "trigSeries": trigSeries,
+    "condTrig": condTrig,
     "Misc": Misc_TQA
 }
+
+let test = [];
 
 /////////////////
 
 function main() {
+    initialize();
     addListnerToCheckboxes();
     addListenerToRange();
     addListenerToGenerateFlashcards();
@@ -34,6 +38,43 @@ main();
 
 
 ///////////////
+function initialize() {
+    for (const topic of test) {
+        addTestNotes(topic);
+    }
+}
+
+function addTestNotes(topic) {
+    var scene = document.querySelector(".scene");
+    var element = document.createElement("div");
+    element.classList.add("noteDiv");
+    element.innerHTML = `
+       <div class="noteID1">
+       </div>
+    `;
+    scene.appendChild(element);
+
+    var allQuestions = textToQuestions(topic);
+    for (let i = 0; i < allQuestions.length; i++) {
+        let qna = allQuestions[i];
+        setTimeout(() => {
+            addNote(`${i+1}/${allQuestions.length}`, qna.question, qna.answer);
+        }, i * 100);
+    }
+}
+
+function addNote(index, q, a) {
+    var noteID1 = document.querySelector(".noteID1");
+    var element = document.createElement("div");
+    element.classList.add("note");
+    element.classList.add("scroll");
+    element.innerHTML = `
+     <span class="noteIndex">${index}</span>
+     <span class="Q">${q}</span>
+     <span class="A">${a}</span>
+    `;
+    noteID1.appendChild(element);
+}
 
 function addListnerToCheckboxes() {
     for (const checkbox of checkboxes) {
@@ -114,7 +155,6 @@ function getQuestions() {
         var allQuestions = textToQuestions(dictionary[key]);
 
         var qnos = [...Array((dictionary[key].match(/Q:/g) || []).length).keys()].map(x => ++x);
-        shuffleArray(qnos);
         qnos = qnos.slice(0, value);
         for (const qno of qnos) {
             questions.push(allQuestions[qno - 1]);
