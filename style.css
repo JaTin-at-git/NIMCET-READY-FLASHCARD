@@ -41,6 +41,8 @@ body {
     font-size: 3rem;
     position: relative;
     margin-bottom: 0;
+    text-align: center;
+
 }
 
 .heading h1 span {
@@ -397,13 +399,13 @@ latex-js {
     align-content: center;
     align-items: center;
     min-width: 100vw;
-    padding: 5rem;
+    padding: 0 5rem;
 }
 
 .noteID1 {
     max-width: 1000px;
     width: 100%;
-    padding: 2rem;
+    padding:0 2rem;
 }
 
 .note {

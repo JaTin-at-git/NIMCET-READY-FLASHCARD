@@ -49,9 +49,11 @@ function initialize() {
 
 function addTestNotes(topic) {
     var scene = document.querySelector(".scene");
+    scene.innerHTML=``;
     var element = document.createElement("div");
     element.classList.add("noteDiv");
     element.innerHTML = `
+       <h2 style="font-size: xx-large; text-decoration: underline">Notes</h2>
        <div class="noteID1">
        </div>
     `;
