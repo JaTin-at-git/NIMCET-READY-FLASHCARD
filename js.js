@@ -32,6 +32,7 @@ function main() {
     addListnerToCheckboxes();
     addListenerToRange();
     addListenerToGenerateFlashcards();
+    addListenerToGenerateNotes();
 }
 
 main();
@@ -40,7 +41,9 @@ main();
 ///////////////
 function initialize() {
     for (const topic of test) {
-        addTestNotes(topic);
+        if (topic) {
+            addTestNotes(dictionary[topic]);
+        }
     }
 }
 
@@ -58,18 +61,17 @@ function addTestNotes(topic) {
     for (let i = 0; i < allQuestions.length; i++) {
         let qna = allQuestions[i];
         setTimeout(() => {
-            addNote(`${i+1}/${allQuestions.length}`, qna.question, qna.answer);
+            addNote(qna.question, qna.answer);
         }, i * 100);
     }
 }
 
-function addNote(index, q, a) {
+function addNote(q, a) {
     var noteID1 = document.querySelector(".noteID1");
     var element = document.createElement("div");
     element.classList.add("note");
     element.classList.add("scroll");
     element.innerHTML = `
-     <span class="noteIndex">${index}</span>
      <span class="Q">${q}</span>
      <span class="A">${a}</span>
     `;
@@ -81,9 +83,12 @@ function addListnerToCheckboxes() {
         checkbox.addEventListener('change', function () {
             if (this.checked) {
                 topicsSelected[this.id] = 1;
+                test.push(this.id);
             } else {
                 delete topicsSelected[this.id];
+                delete test[test.indexOf(this.id)];
             }
+            console.log(test);
             q = Object.keys(topicsSelected).length;
             var maxQs = getMaxQuestions(topicsSelected);
             xInput.setAttribute("min", q.toString());
@@ -145,6 +150,9 @@ function addListenerToGenerateFlashcards() {
     });
 }
 
+function addListenerToGenerateNotes() {
+    document.querySelector("#getNotes").addEventListener('click', initialize);
+}
 
 //get random questions from differnt topics
 function getQuestions() {

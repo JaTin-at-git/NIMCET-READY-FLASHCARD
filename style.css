@@ -107,7 +107,16 @@ body {
     justify-content: center;
 }
 
-#getQuestionsButton {
+.getQuestionsDivID1 {
+    max-width: 300px;
+    max-height: 200px;
+    display: inline-flex;
+    overflow-x: scroll;
+    transform: translateX(12%);
+    box-sizing: border-box;
+}
+
+#getQuestionsButton, #getNotes {
     border: 1px solid #075c88;
     padding: .5rem;
     border-radius: 10px;
@@ -115,10 +124,28 @@ body {
     font-weight: bold;
     background-color: #075c88;
     user-select: none;
+    display: block;
+    min-width: fit-content;
+    margin: 0 1rem 10px;
 }
 
-#getQuestionsButton:active {
+#getNotes{
+    border: 1px solid #818080;
+    background-color: #818080;
+}
+
+#getQuestionsButton:active. #getNotes:active {
     transform: scale(.99);
+}
+
+.noteID1{
+    counter-reset: my-sec-counter;
+}
+
+.note::before {
+    /* Increment "my-sec-counter" by 1 */
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter) ". ";
 }
 
 /*//////////////////*/
@@ -364,7 +391,7 @@ latex-js {
 }
 
 /*/////////*/
-.noteDiv{
+.noteDiv {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -373,13 +400,13 @@ latex-js {
     padding: 5rem;
 }
 
-.noteID1{
+.noteID1 {
     max-width: 1000px;
     width: 100%;
     padding: 2rem;
 }
 
-.note{
+.note {
     width: calc(100% - 4rem);
     display: flex;
     flex-direction: column;
@@ -389,22 +416,22 @@ latex-js {
     box-shadow: rgb(0 0 0 / 9%) 7px 3px 12px 0px;
 }
 
-.note:nth-of-type(2n){
+.note:nth-of-type(2n) {
     box-shadow: rgb(0 0 0 / 9%) -7px 3px 12px 0px;
 }
 
-.noteIndex{
+.noteIndex {
     color: #4f4f4f;
     margin-bottom: 1rem;
 }
 
-.Q{
+.Q {
     color: red;
     font-weight: bold;
     margin-bottom: 3px;
 }
 
-.A{
+.A {
     color: darkgreen;
 }
 
