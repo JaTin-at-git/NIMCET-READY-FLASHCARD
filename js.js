@@ -144,7 +144,7 @@ function addListenerToGenerateFlashcards() {
             //add the cards
             document.querySelector(".scene").innerHTML = `
                 <h2>Try to answer these Flashcards</h2>
-                <div class="card" style="position: relative; margin-bottom: 7.5rem"></div>
+                <div class="card" style="position: relative; margin-bottom: 7.5rem; z-index: -1000"></div>
             `;
             for (let i = 0; i < ques.length; i++) {
                 let qna = ques[i];
