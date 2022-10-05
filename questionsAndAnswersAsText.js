@@ -559,8 +559,10 @@ let trigMultiAngle = "" +
     "" +
     "Q:$$${\\sin(3A)}$$" +
     "A:$$${3\\sin(A)-4\\sin^3(A)}$$" +
+    "" +
     "Q:$$${\\cos(3A)}$$" +
     "A:$$${4\\cos^3(A)-3\\cos(A)}$$" +
+    "" +
     "Q:$$${\\tan(3A)}$$" +
     "A:$$${\\frac{3\\tan(A)-\\tan^3(A)}{1-3\\tan^2(A)}}$$";
 
@@ -584,7 +586,26 @@ let trigMisc = "" +
     "A:$$${\\pm\\sqrt{\\frac{1+\\cos(A)}{2}}}$$" +
     "" +
     "Q:$$${\\tan(\\frac{A}{2})}$$" +
-    "A:$$${\\pm\\sqrt{\\frac{1-\\cos(A)}{1+\\cos(A)}}}$$";
+    "A:$$${\\pm\\sqrt{\\frac{1-\\cos(A)}{1+\\cos(A)}}}$$" +
+    "$${\\frac{1-\\cos(A)}{\\sin(A)}}$$" +
+    "$${\\frac{\\sin(A)}{1+\\cos(A)}}$$" +
+    "$${\\cosec(x)-\\cot(x)}$$" +
+    "" +
+    "Q:$$${\\cot(\\frac{A}{2})}$$" +
+    "A:$$${\\pm\\sqrt{\\frac{1+\\cos(A)}{1-\\cos(A)}}}$$" +
+    "$${\\frac{1+\\cos(A)}{\\sin(A)}}$$" +
+    "$${\\frac{\\sin(A)}{1-\\cos(A)}}$$" +
+    "$${\\cosec(x)+\\cot(x)}$$" +
+    "" +
+    "Q:$$${\\tan(3\\theta)\\cdot\\tan(2\\theta)\\cdot\\tan(\\theta)}$$" +
+    "A:$$${\\tan(3\\theta)-\\tan(2\\theta)-\\tan(\\theta)}$$" +
+    "" +
+    "Q:$$${1+\\cos(A)}$$" +
+    "A:$$${2\\cos^2(\\frac{A}{2})}$$" +
+    "" +
+    "Q:$$${1-\\cos(A)}$$" +
+    "A:$$${2\\sin^2(\\frac{A}{2})}$$" +
+    "";
 
 let trigSeries = "" +
     "Q:$$${\\sin(60-A).\\sin(A).sin(60+A)}$$" +
@@ -642,7 +663,51 @@ let condTrig = "" +
     "A:$$${1-2\\sin(\\frac{A}{2})\\sin(\\frac{B}{2})\\sin(\\frac{C}{2})}$$" +
     "" +
     "Q:$If A+B+C=π, then $${\\cos^2(\\frac{A}{2})+\\cos^2(\\frac{B}{2})+\\cos^2(\\frac{C}{2})}$$" +
-    "A:$$${2+2\\sin(\\frac{A}{2})\\sin(\\frac{B}{2})\\sin(\\frac{C}{2})}$$"
+    "A:$$${2+2\\sin(\\frac{A}{2})\\sin(\\frac{B}{2})\\sin(\\frac{C}{2})}$$";
 
+let generalSoln = "" +
+    "Q: Sin(x)=0<br>then x = ?" +
+    "A: x=nπ" +
+    "" +
+    "Q: Cos(x)=0<br>then x = ?" +
+    "A:$$${x=(2n+1)\\frac{\\pi}{2}}$$" +
+    "" +
+    "Q: tan(x)=0<br>then x = ?" +
+    "A:$$${x=n\\pi}$$" +
+    "" +
+    "Q:$$${\\sin(x)=\\sin(\\alpha)}$$<br>then x = ?" +
+    "A:$$${x=n\\pi+(-1)^n\\alpha}$$" +
+    "" +
+    "Q:$$${\\cos(x)=\\cos(\\alpha)}$$<br>then x = ?" +
+    "A:$$${x=2n\\pi\\pm\\alpha}$$" +
+    "" +
+    "Q:$$${\\tan(x)=\\tan(\\alpha)}$$<br>then x = ?" +
+    "A:$$${x=n\\pi+\\alpha}$$" +
+    "" +
+    "Q:$$${\\sin^2(x)=\\sin^2(\\alpha)}$$<br>then x = ?" +
+    "A:$$${x=n\\pi\\pm\\alpha}$$" +
+    "" +
+    "Q:$$${\\cos^2(x)=\\cos^2(\\alpha)}$$<br>then x = ?" +
+    "A:$$${x=n\\pi\\pm\\alpha}$$" +
+    "" +
+    "Q:$$${\\tan^2(x)=\\tan^2(\\alpha)}$$<br>then x = ?" +
+    "A:$$${x=n\\pi\\pm\\alpha}$$" +
+    "";
+
+let trigMiscFacts = "" +
+    "Q:$Min and Max value of $${A=k_1\\sin^n(\\theta)+k_2\\cos^m(\\theta)}$$ if 'n,m' are even is" +
+    "A:$Min and Max value will occur at any of $${0^{\\circ},30^{\\circ},45^{\\circ},60^{\\circ},90^{\\circ},15^{\\circ}}$$" +
+    "" +
+    "Q: Sine law for<br> <img src='images/Trig/img.png'>" +
+    "A:$$${\\frac{\\sin(A)}{a}=\\frac{\\sin(B)}{b}=\\frac{\\sin(C)}{c}=\\lambda=\\frac{1}{\\beta}}$$" +
+    "" +
+    "Q: Cosine law for<br> <img src='images/Trig/img.png'>" +
+    "A:$$${\\cos(A)=\\frac{b^2+c^2-a^2}{2bc}}$$ $${\\cos(B)=\\frac{c^2+a^2-b^2}{2ca}}$$ $${\\cos(C)=\\frac{a^2+b^2-c^2}{2ab}}$$" +
+    "" +
+    "Q: Angle between hour hand and minute hand of a clock?" +
+    "A:$$${\\left | 30h - 6m \\right |}$$<br>where, $${'h'=hours+\\frac{min}{60}}$$  $${'m'=minutes}$$" +
+    "" +
+    "Q:$Min and Max value of $${a\\sin(\\theta)+b\\cos(\\theta)}$$" +
+    "A:$$${-\\sqrt{a^2+b^2} \\leqslant  a\\sin(\\theta)+b\\cos(\\theta) \\leqslant \\sqrt{a^2+b^2}}$$"
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php

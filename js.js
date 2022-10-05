@@ -20,6 +20,8 @@ let dictionary = {
     "trigMisc": trigMisc,
     "trigSeries": trigSeries,
     "condTrig": condTrig,
+    "generalSoln": generalSoln,
+    "trigMiscFacts": trigMiscFacts,
     "Misc": Misc_TQA
 }
 
@@ -49,7 +51,7 @@ function initialize() {
 
 function addTestNotes(topic) {
     var scene = document.querySelector(".scene");
-    scene.innerHTML=``;
+    scene.innerHTML = ``;
     var element = document.createElement("div");
     element.classList.add("noteDiv");
     element.innerHTML = `
@@ -140,7 +142,10 @@ function addListenerToGenerateFlashcards() {
             shuffleArray(ques);
 
             //add the cards
-            document.querySelector(".scene").innerHTML = "<h2>Try to answer these Flashcards</h2>";
+            document.querySelector(".scene").innerHTML = `
+                <h2>Try to answer these Flashcards</h2>
+                <div class="card" style="position: relative; margin-bottom: 5rem"></div>
+            `;
             for (let i = 0; i < ques.length; i++) {
                 let qna = ques[i];
                 setTimeout(() => {
