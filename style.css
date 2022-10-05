@@ -196,6 +196,7 @@ body {
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
     border-radius: 10px;
+    z-index: -1000;
 }
 
 .scene .card:not(:first-of-type) {
