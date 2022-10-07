@@ -22,15 +22,16 @@ let dictionary = {
     "condTrig": condTrig,
     "generalSoln": generalSoln,
     "trigMiscFacts": trigMiscFacts,
+    "algebraicFormulas": algebraicFormulas,
     "Misc": Misc_TQA
 }
 
-let test = [];
+let topicForNotes = ["algebraicFormulas"];
 
 /////////////////
 
 function main() {
-    initialize();
+    addAllNotes();
     addListnerToCheckboxes();
     addListenerToRange();
     addListenerToGenerateFlashcards();
@@ -41,15 +42,15 @@ main();
 
 
 ///////////////
-function initialize() {
-    for (const topic of test) {
+function addAllNotes() {
+    for (const topic of topicForNotes) {
         if (topic) {
-            addTestNotes(dictionary[topic]);
+            addNotesOfTopic(dictionary[topic]);
         }
     }
 }
 
-function addTestNotes(topic) {
+function addNotesOfTopic(topic) {
     var scene = document.querySelector(".scene");
     scene.innerHTML = ``;
     var element = document.createElement("div");
@@ -87,12 +88,12 @@ function addListnerToCheckboxes() {
         checkbox.addEventListener('change', function () {
             if (this.checked) {
                 topicsSelected[this.id] = 1;
-                test.push(this.id);
+                topicForNotes.push(this.id);
             } else {
                 delete topicsSelected[this.id];
-                delete test[test.indexOf(this.id)];
+                delete topicForNotes[topicForNotes.indexOf(this.id)];
             }
-            console.log(test);
+            console.log(topicForNotes);
             q = Object.keys(topicsSelected).length;
             var maxQs = getMaxQuestions(topicsSelected);
             xInput.setAttribute("min", q.toString());
@@ -144,7 +145,7 @@ function addListenerToGenerateFlashcards() {
             //add the cards
             document.querySelector(".scene").innerHTML = `
                 <h2>Try to answer these Flashcards</h2>
-                <div class="card" style="position: relative; margin-bottom: 7.5rem; z-index: -1000"></div>
+                <div class="card" style="position: relative; margin-bottom: 7.5rem"></div>
             `;
             for (let i = 0; i < ques.length; i++) {
                 let qna = ques[i];
@@ -158,7 +159,7 @@ function addListenerToGenerateFlashcards() {
 }
 
 function addListenerToGenerateNotes() {
-    document.querySelector("#getNotes").addEventListener('click', initialize);
+    document.querySelector("#getNotes").addEventListener('click', addAllNotes);
 }
 
 //get random questions from differnt topics

@@ -1,3 +1,22 @@
+// This file contains questions over 1the following topics:
+// PnC_TQA
+// Probability_TQA
+// SequenceAndSeries_TQA
+// complex
+// MaD_TQA
+// Misc_TQA
+// quad
+// tRatio
+// trigSumPro
+// trigMultiAngle
+// trigMisc
+// trigSeries
+// condTrig
+// generalSoln
+// trigMiscFacts
+// Misc_TQA
+
+
 let PnC_TQA = "" +
     "Q: Total number of Circular permutation of n objects if clockwise and anti-clockwise are different?" +
     "A: (n-1)!" +
@@ -293,7 +312,7 @@ let MaD_TQA =
     "A: D≠0" +
     "" +
     "Q: For what value of D does non-homogenous equations have no solution ?" +
-    "A:$$${\\text{D = 0 and Any of }D_x, D_y \\ or\\  D_z \\ne 0 \\ \\ \\ }$$" +
+    "A:$$${\\text{D = 0 and Any of }D_x, D_y \\ or\\  D_z \e 0 \\ \\ \\ }$$" +
     "" +
     "Q: For what value of D does non-homogenous equations have infinity many solution ?" +
     "A:$$${D = D_x = D_y = D_z = 0 \\ \\ \\ }$$" +
