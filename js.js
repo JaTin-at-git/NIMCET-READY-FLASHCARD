@@ -79,7 +79,7 @@ function addNote(q, a) {
     element.classList.add("scroll");
     element.innerHTML = `
      <span class="Q">${q}</span>
-     <span class="A">${a}</span>
+     <span class="A"><span style="color: black">Answer:</span><br>${a}</span>
     `;
     noteID1.appendChild(element);
 }

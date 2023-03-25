@@ -48,7 +48,8 @@ body {
     .heading h1 {
         font-size: 2.5rem;
     }
-    .heading h2{
+
+    .heading h2 {
         font-size: 1rem;
     }
 }
@@ -173,6 +174,7 @@ body {
     /*bottom: 0;*/
     /*left: 50%;*/
     /*transform: translatex(-50%);*/
+    background: url("background1.jpg") repeat;
 }
 
 .me span {
@@ -199,6 +201,7 @@ body {
     align-content: space-between;
     flex-direction: column;
     overflow: hidden;
+    background: url("background1.jpg") repeat;
 }
 
 .scene .card {
@@ -258,20 +261,11 @@ body {
     left: 3px;
 }
 
-.scene .card .card__face img, .note img {
+.scene .card .card__face img {
     width: 100%;
     height: auto;
 }
 
-.note img {
-    max-width: 80%;
-}
-
-@media only screen and (min-width: 600px) {
-    .note img {
-        max-width: 50%;
-    }
-}
 
 .scene .card .card__face--back {
     transform: rotateY(0.5turn);
@@ -294,7 +288,7 @@ body {
     user-select: none;
 }
 
-.card .next{
+.card .next {
     width: 80px;
     text-align: right;
 }
@@ -419,39 +413,47 @@ latex-js {
 }
 
 /*/////////*/
-.noteDiv {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    min-width: 100vw;
-    padding: 0 5rem;
-}
+/*MF note*/
 
-.noteID1 {
-    max-width: 1000px;
-    width: 100%;
-    padding: 0 2rem;
+.noteDiv{
+    max-width: 100%;
 }
 
 .note {
-    width: calc(100% - 4rem);
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    box-shadow: rgb(0 0 0 / 9%) 7px 3px 12px 0px;
+    text-align: left;
+
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1rem 0;
-    padding: 2rem;
+    align-content: flex-start;
+    align-items: flex-start;
+
     overflow: scroll;
-    box-shadow: rgb(0 0 0 / 9%) 7px 3px 12px 0px;
+    background-color: white;
+}
+
+
+
+.note .Q span:first-of-type,.note .A span:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .note:nth-of-type(2n) {
     box-shadow: rgb(0 0 0 / 9%) -7px 3px 12px 0px;
 }
 
-.noteIndex {
-    color: #4f4f4f;
-    margin-bottom: 1rem;
+.note img {
+    max-height: 150px;
+    object-fit: contain;
 }
 
 .Q {

@@ -25,7 +25,7 @@ let straightLines =""+
     "A: <img src='images/straightLines/straightLines%20(2).jpg'>" +
     ""+
     "Q: Coordinates of point p = ?<img src='images/straightLines/straightLines%20(3).jpg'>"+
-    "A: <img src='images/straightLines/straightLines%20(4).jpg'><img src='images/straightLines/straightLines%20(4).jpg'>" +
+    "A: <img src='images/straightLines/straightLines%20(4).jpg'>" +
     "" +
     "Q: Line AB is intersected by line L at C, find ration AC:CB <img src='images/straightLines/straightLines%20(5.0).jpg'>" +
     "A: <img src='images/straightLines/straightLines%20(5.1).jpg'>" +
