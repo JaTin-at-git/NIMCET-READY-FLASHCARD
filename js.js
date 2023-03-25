@@ -27,7 +27,7 @@ let dictionary = {
     "straightLines": straightLines
 }
 
-let topicForNotes = ["straightLines"];
+let topicForNotes = [];
 
 /////////////////
 
