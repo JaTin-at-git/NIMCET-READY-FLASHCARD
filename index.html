@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    CDN for maths, latex.js-->
+    <script type="module">
+        import {LaTeXJSComponent} from "https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs"
+
+        customElements.define("latex-js", LaTeXJSComponent)
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>NIMCET READY FLASH CARDS</title>
+</head>
+<body>
+
+<div class="notificationDiv">
+    <div class="notificationID1" id="warning">
+        This is a notification
+    </div>
+</div>
+
+<div class="heading">
+    <h1><span>NIMCET</span> READY</h1>
+    <h2 style="margin: 2rem 0 0">MATHEMATICS</h2>
+    <p style="margin-top: 3px">Try to answer the flashcards</p>
+</div>
+
+<div class="topicsSelection">
+    <div class="topicSelectionID1">
+        <h3>Select Topics:</h3>
+        <div class="topicsCheckboxes">
+
+            <div class="topicInput">
+                <input type="checkbox" id="PnC">
+                <label for="PnC">Permutation and Combination</label>
+            </div>
+
+            <div class="topicInput">
+                <input type="checkbox" id="Probability">
+                <label for="Probability">Probability</label>
+            </div>
+
+            <div class="topicInput">
+                <input type="checkbox" id="SequenceAndSeries">
+                <label for="SequenceAndSeries">Sequence And Series</label>
+            </div>
+
+            <div class="topicInput">
+                <input type="checkbox" id="complex">
+                <label for="complex">Complex</label>
+            </div>
+
+            <div class="topicInput">
+                <input type="checkbox" id="MaD">
+                <label for="MaD">Matrix and Determinant</label>
+            </div>
+
+            <div class="topicInput">
+                <input type="checkbox" id="quad">
+                <label for="quad">Quadratic Equations</label>
+            </div>
+
+
+
+
+            <div class="topicGroup">
+                <h4 style="color: #818080; margin: 10px 0">Basic Trigonometry</h4>
+                <div class="topicInput">
+                    <input type="checkbox" id="tRatio">
+                    <label for="tRatio">T-Ratio Values</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="trigSumPro">
+                    <label for="trigSumPro">Sum Product formulas</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="trigMultiAngle">
+                    <label for="trigMultiAngle">Multiple Angles</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="trigMisc">
+                    <label for="trigMisc">Miscellaneous Formulas</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="trigSeries">
+                    <label for="trigSeries">Trigonometry Series</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="condTrig">
+                    <label for="condTrig">Conditional Identities</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="generalSoln">
+                    <label for="generalSoln">General Solutions</label>
+                </div>
+                <div class="topicInput">
+                    <input type="checkbox" id="trigMiscFacts">
+                    <label for="trigMiscFacts">Miscellaneous Facts</label>
+                </div>
+            </div>
+
+
+            <div class="topicInput">
+                <input type="checkbox" id="algebraicFormulas">
+                <label for="algebraicFormulas">Algebraic Formulas</label>
+            </div>
+
+            <br><br>
+
+            <div class="topicInput">
+                <input type="checkbox" id="Misc">
+                <label for="Misc">Miscellaneous</label>
+            </div>
+
+        </div>
+
+        <div class="quantityDiv">
+            <label for="x">Generate &nbsp;</label>
+            <input type="range" id="x" min="0" max="0">
+            <label for="x" class="selectedQ">0</label>
+            <label for="x">&nbsp;Flashcards</label>
+        </div>
+
+        <div class="getQuestionsDiv">
+            <div class="getQuestionsDivID1 scroll">
+                <div id="getQuestionsButton">Generate Flashcards &rarr;</div>
+                <div id="getNotes">Generate all Notes &rarr;</div>
+            </div>
+        </div>
+    </div>
+    <div class="otherFlashLinks">
+        <a href="https://jatin-at-git.github.io/Nimcet-Ready-Flashcard-APTITUDE/">APTITUDE</a>
+    </div>
+</div>
+
+
+<div class="scene">
+</div>
+
+<div class="me">
+    <p>Created with ❤ by <span>Jigyasu Saini</span></p>
+</div>
+
+<script src="QuestionAnswerClass.js"></script>
+<script src="Questions.js"></script>
+<script src="questionsAndAnswersAsText.js"></script>
+<script src="questionsAndAnswersAsText2.js"></script>
+<script src="flashcard.js"></script>
+<script src="js.js"></script>
+
+</body>
+</html>
