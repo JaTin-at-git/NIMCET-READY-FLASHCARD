@@ -23,10 +23,11 @@ let dictionary = {
     "generalSoln": generalSoln,
     "trigMiscFacts": trigMiscFacts,
     "algebraicFormulas": algebraicFormulas,
-    "Misc": Misc_TQA
+    "Misc": Misc_TQA,
+    "straightLines": straightLines
 }
 
-let topicForNotes = ["algebraicFormulas"];
+let topicForNotes = ["straightLines"];
 
 /////////////////
 
@@ -202,8 +203,8 @@ function addFlashcard(question, answer, i, hasNext = true, totalQues) {
                 <div class="showQues">show Question</div>
             </div>
         </div>`;
-    addFunctionalityToCards(elem);
     document.querySelector(".scene").appendChild(elem);
+    addFunctionalityToCards(elem);
     //console.log(question)
     //console.log(answer)
     //console.log("")

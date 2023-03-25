@@ -9,11 +9,11 @@ class QuestionAnswer {
 
 
     get question() {
-        return "<" + this._qEnc + ">" + this._question + "</" + this._qEnc + ">";
+        return "<" + this._qEnc +` style="display: flex; flex-direction: column;"` + ">" + this._question + "</" + this._qEnc + ">";
     }
 
     get answer() {
-        return "<" + this._aEnc + ">" + this._answer + "</" + this._aEnc + ">";
+        return "<" + this._aEnc +` style="display: flex; flex-direction: column;"` + ">" + this._answer + "</" + this._aEnc + ">";
     }
 
     get qEnc() {
