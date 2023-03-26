@@ -24,7 +24,8 @@ let dictionary = {
     "trigMiscFacts": trigMiscFacts,
     "algebraicFormulas": algebraicFormulas,
     "Misc": Misc_TQA,
-    "straightLines": straightLines
+    "straightLines": straightLines,
+    "secondDegree" :secondDegree
 }
 
 let topicForNotes = [];
@@ -82,6 +83,7 @@ function addNote(q, a) {
      <span class="A"><span style="color: black">Answer:</span><br>${a}</span>
     `;
     noteID1.appendChild(element);
+    element.scrollIntoView();
 }
 
 function addListnerToCheckboxes() {

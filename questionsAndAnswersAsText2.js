@@ -71,3 +71,33 @@ let straightLines =""+
     "" +
     "Q: Family of angle bisector of two lines <img src='images/straightLines/straightLines%20(32).jpg'>" +
     "A: <img src='images/straightLines/straightLines%20(33).jpg'>";
+
+var secondDegree = "" +
+    "Q: Determinant of second degree equation <img src='images/secondDegree/secondDegree%20(1).jpg'>" +
+    "A: <img src='images/secondDegree/secondDegree%20(2).jpg'>" +
+    "" +
+    "Q: Condition for second degree equation <img src='images/secondDegree/secondDegree%20(1).jpg'> to represents a pair of straight lines?" +
+    "A: Determinant = 0 and <img src='images/secondDegree/secondDegree%20(3).jpg'>" +
+    "" +
+    "Q: Condition for second degree equation <img src='images/secondDegree/secondDegree%20(1).jpg'> to represents a pair of Conic Section?" +
+    "A: Determinant NOT equals to 0 and <img src='images/secondDegree/secondDegree%20(4).jpg'><img src='images/secondDegree/secondDegree%20(5).jpg'>" +
+    "" +
+    "Q: Angle between the lines represented by <img src='images/secondDegree/secondDegree%20(1).jpg'>" +
+    "A: <img src='images/secondDegree/secondDegree%20(6).jpg'>" +
+    "" +
+    "Q: If <img src='images/secondDegree/secondDegree%20(7).jpg'> represents pair of lines passing through origin then SUM of their slopes is" +
+    "A: <img src='images/secondDegree/secondDegree%20(8).jpg'>" +
+    "" +
+    "Q: If <img src='images/secondDegree/secondDegree%20(7).jpg'> represents pair of lines passing through origin then PRODUCT of their slopes is" +
+    "A: <img src='images/secondDegree/secondDegree%20(9).jpg'>" +
+    "" +
+    "Q: If <img src='images/secondDegree/secondDegree%20(7).jpg'> represents pair of lines passing through origin then DIFFERENCE of their slopes is" +
+    "A: <img src='images/secondDegree/secondDegree%20(10).jpg'>" +
+    "" +
+    "Q: Equation of angle bisector of <img src='images/secondDegree/secondDegree%20(7).jpg'>" +
+    "A: <img src='images/secondDegree/secondDegree%20(11).jpg'>"+
+    "" +
+    "Q: Equation of perpendiculars of <img src='images/secondDegree/secondDegree%20(7).jpg'>" +
+    "A: <img src='images/secondDegree/secondDegree.jpg'>";
+
+
