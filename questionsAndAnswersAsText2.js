@@ -100,4 +100,66 @@ var secondDegree = "" +
     "Q: Equation of perpendiculars of <img src='images/secondDegree/secondDegree%20(7).jpg'>" +
     "A: <img src='images/secondDegree/secondDegree.jpg'>";
 
-
+var circle = "" +
+    "Q: Centre and radius of circle represented by <img src='images/circle/circle%20(2).jpg'>" +
+    "A: <img src='images/circle/circle%20(3).jpg'>" +
+    "" +
+    "Q: Equation of circle when endpoints of diameter are given <img src='images/circle/circle%20(4).jpg'>" +
+    "A: <img src='images/circle/circle%20(5).jpg'>" +
+    "" +
+    "Q: Equation of circle passing through origin and cutting axises at (0,b) and (a,0) <img src='images/circle/circle%20(6).jpg'>" +
+    "A: <img src='images/circle/circle%20(7).jpg'>" +
+    "" +
+    "Q:$$${\\text{Condition of tangency of circle } S:x^2+y^2=r^2 }$$" +
+    "A: <img src='images/circle/circle%20(8).jpg'>" +
+    ""+
+    "Q:$$${\\text{Condition of tangency of circle } S:x^2+y^2+2gx+2fy+c=0 }$$" +
+    "A: <img src='images/circle/circle%20(9).jpg'><img src='images/circle/circle%20(10).jpg'>" +
+    "" +
+    "Q: Length of intercepts made by circle of the axises <img src='images/circle/circle%20(11).jpg'>" +
+    "A: <img src='images/circle/circle%20(12).jpg'>" +
+    "" +
+    "Q:$$${\\text{Equation of tangent at point }(x_1,y_1) \\text{ on the circle}}$$" +
+    "A: <img src='images/circle/circle%20(13).jpg'>" +
+    "" +
+    "Q:$$${\\text{Equation of tangent with slope } 'm' \\text{ on circle }x^2+y^2=r^2}$$" +
+    "A: <img src='images/circle/circle%20(14).jpg'>" +
+    ""+
+    "Q:$$${\\text{Equation of tangent with slope } 'm' \\text{ on circle }x^2+y^2+2gx+2fy+c=0}$$" +
+    "A: <img src='images/circle/circle%20(15).jpg'>" +
+    "" +
+    "Q: Equation of radial axis of two circles S1 and S2?" +
+    "A: S1-S2=0" +
+    "" +
+    "Q: Angle at which two circles intersects <img src='images/circle/circle%20(16).jpg'>" +
+    "A: <img src='images/circle/circle%20(17).jpg'>" +
+    "" +
+    "Q: If two circles intersects orthagonally then ?" +
+    "A: <img src='images/circle/circle%20(18).jpg'>" +
+    "" +
+    "Q: Equations of director circle?" +
+    "A:$$${x^2+y^2=2r^2}$$$${(x-h)^2+(y-k)^2=2r^2}$$$${(x+g)^2+(y+f)^2=2(g^2+f^2-c)}$$" +
+    "" +
+    "Q: Family of circles for <img src='images/circle/circle%20(20).jpg'>" +
+    "A:$$${S_1+\\lambda S_2=0}$$" +
+    ""  +
+    "Q: Family of circles for <img src='images/circle/circle%20(21).jpg'>" +
+    "A:$$${S+\\lambda L=0}$$" +
+    "" +
+    "Q: Equation of a pair of tangents from a point (x1, y1) outside the circle" +
+    "A: <img src='images/circle/circle%20(22).jpg'>" +
+    "" +
+    "Q: length of tangent drawn from a point (x1,y1) outside of the circle" +
+    "A:$$${\\sqrt{S_1} \\text{ or } \\sqrt{S(x_1,y_1)}}$$" +
+    "" +
+    "Q: Equation of chord of contact <img src='images/circle/circle%20(24).jpg'>" +
+    "A: <img src='images/circle/circle%20(25).jpg'>" +
+    "" +
+    "Q: Equation of chord bisected at (x1,y1) <img src='images/circle/circle%20(26).jpg'>" +
+    "A: T=S(x1,y1)" +
+    "" +
+    "Q: If four points A,B,C and D are concyclic then <img src='images/circle/circle%20(27).jpg'>" +
+    "A: DO.OB=CO.OA" +
+    "" +
+    "Q: Angle made by chord at the circumference of the circle <img src='images/circle/circle%20(28).jpg'>" +
+    "A:$$${(x-x_1)(x-x_2)+(y-y_1)(y-y_2)=\\pm\\cot\\theta[(y-y_1)(x-x_2)-(y-y_2)(x-x_1)]}$$"
