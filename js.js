@@ -31,7 +31,7 @@ let dictionary = {
     "ellipseHyperbola": ellipseHyperbola,
 }
 
-let topicForNotes = ["ellipseHyperbola"];
+let topicForNotes = [];
 
 /////////////////
 
@@ -86,7 +86,7 @@ function addNote(q, a) {
      <span class="A"><span style="color: black">Answer:</span><br>${a}</span>
     `;
     noteID1.appendChild(element);
-    element.scrollIntoView();
+    //element.scrollIntoView();
 }
 
 function addListnerToCheckboxes() {
