@@ -421,7 +421,7 @@ latex-js {
 
 .note {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     font-size: 1rem;
     box-shadow: rgb(0 0 0 / 9%) 7px 3px 12px 0px;
     text-align: left;
@@ -435,6 +435,8 @@ latex-js {
 
     overflow: scroll;
     background-color: white;
+
+    min-width: min(80vw, 550px)
 }
 
 

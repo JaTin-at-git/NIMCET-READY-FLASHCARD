@@ -26,7 +26,9 @@ let dictionary = {
     "Misc": Misc_TQA,
     "straightLines": straightLines,
     "secondDegree" :secondDegree,
-    "circle": circle
+    "circle": circle,
+    "parabola": parabola,
+    "ellipse": ellipse
 }
 
 let topicForNotes = [];

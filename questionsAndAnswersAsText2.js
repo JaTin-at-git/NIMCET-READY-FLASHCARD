@@ -162,4 +162,125 @@ var circle = "" +
     "A: DO.OB=CO.OA" +
     "" +
     "Q: Angle made by chord at the circumference of the circle <img src='images/circle/circle%20(28).jpg'>" +
-    "A:$$${(x-x_1)(x-x_2)+(y-y_1)(y-y_2)=\\pm\\cot\\theta[(y-y_1)(x-x_2)-(y-y_2)(x-x_1)]}$$"
+    "A:$$${(x-x_1)(x-x_2)+(y-y_1)(y-y_2)=\\pm\\cot\\theta[(y-y_1)(x-x_2)-(y-y_2)(x-x_1)]}$$";
+
+var parabola="" +
+    "Q:$$${\\text{Parametric coordinates of }y^2=4ax }$$" +
+    "A:$$${(at^2,2at)}$$" +
+    "" +
+    "Q: Focal Distance of point P on parabola" +
+    "A: x+a " +
+    "" +
+    "Q:$$${\\text{Condition of tangency for }y^2=4ax}$$" +
+    "A:$$${c=\\frac{a}{m}}$$"+
+    "Q:$$${\\text{Condition of tangency for }y^2=-4ax}$$" +
+    "A:$$${c=\\frac{-a}{m}}$$"+
+    "Q:$$${\\text{Condition of tangency for }x^2=4ay}$$" +
+    "A:$$${c=-am^2}$$"+
+    "Q:$$${\\text{Condition of tangency for }x^2=-4ay}$$" +
+    "A:$$${c=am^2}$$"+
+    "" +
+    "Q: Slope of tangent at (at²,2at)" +
+    "A:$$${\\frac{1}{t}}$$"+
+    "Q: Slope of normal at (at²,2at)" +
+    "A:$$${-t}$$" +
+    "" +
+    "Q: Point at which y=mx+a/m touches parabola y²=4ax" +
+    "A:$$${(\\frac{a}{m^2},\\frac{2a}{m})}$$" +
+    "" +
+    "Q: Point at which tangents met <img src='images/parabola/parabola.jpg'>" +
+    "A:$$${(at_1t_2,a(t_1+t_2))}$$" +
+    "" +
+    "Q: Angle made by tangents from extremetirs of focal chord of parabola?" +
+    "A: 90degree, also they met at directrix" +
+    "" +
+    "Q: <img src='images/parabola/parabola%20(1).jpg'>" +
+    "A: <img src='images/parabola/parabola%20(2).jpg'>" +
+    "" +
+    "Q: Normal of a parabola y²=4ax with slope m" +
+    "A:$$${y=mx-2am-am^3}$$" +
+    "" +
+    "Q: normal at P(t) met parabola again at Q(t'). value of t'=? <img src='images/parabola/parabola%20(3).jpg'>" +
+    "A: <img src='images/parabola/parabola%20(4).jpg'>" +
+    ""+
+    "Q: Point from which normal with slope m is drawm to the parabola y²=4ax is" +
+    "A:$$${(am^2,-2am)}$$" +
+    "" +
+    "Q: Relation between t1 and t2 if PQ is focal chord <img src='images/parabola/parabola%20(5).jpg'>" +
+    "A:$$${t_1\\cdot t_2=-1}$$" +
+    "" +
+    "Q: Length of focal chord <img src='images/parabola/parabola%20(5).jpg'>" +
+    "A:$$${PQ=(a+at_1^2)+(a+at_2^2)}$$$${PQ=a(t+\\frac{1}{t})^2}$$$${PQ=\\frac{4a}{\\sin^2{\\theta}}}$$" +
+    "" +
+    "Q: Relation between SP, SQ and latus rectum? <img src='images/parabola/parabola%20(5).jpg'>" +
+    "A:$Semi latus ractum is the harmonic mean of focal lengths: $${\\frac{1}{SP}+\\frac{1}{SQ}=\\frac{1}{a}}$$" +
+    "" +
+    "Q: Speciality about the Circle described on the focal length as diameter?" +
+    "A: Circle touches the tangent at vertex <img src='images/parabola/parabola%20(6).jpg'>" +
+    ""+
+    "Q: Speciality about the Circle described on the focal Chord as diameter?" +
+    "A: Circle touches the directrix <img src='images/parabola/parabola%20(7).jpg'>";
+
+var ellipse="" +
+    "Q: Eccentricity of ellipse <img src='images/ellipse/ellipse.jpg'>" +
+    "A:$$${0< e<1}$$$${e=\\frac{F_1P}{PL}}$$" +
+    "" +
+    "Q: Focci of ellipse" +
+    "A:$$${(\\pm ae,0)}$$" +
+    "" +
+    "Q: Equation of directrix of ellipse?" +
+    "A:$$${x=\\pm \\frac{\\text{a}}{e}}$$" +
+    "" +
+    "Q: Relation between a,b,e of ellipse" +
+    "A:$$${e^2=1-\\frac{b^2}{a}}$$" +
+    "" +
+    "Q: Length of latus rectum or ellipse" +
+    "A:$$${\\frac{2b^2}{a}}$$" +
+    "" +
+    "Q: Focal lengths of ellipse" +
+    "A:$$${a-ex_1, a+ex_1}$$" +
+    "" +
+    "Q: Parametric Coordinates of ellipse" +
+    "A:$$${(a\\cos\\theta, b\\sin\\theta)}$$ where a is below x and b is below y" +
+    "" +
+    "Q: Equation of auxilary circle of ellipse <img src='images/ellipse/ellipse%20(1).jpg'>" +
+    "A:$$${x^2+y^2=a^2}$$" +
+    "" +
+    "Q: Equation of director circle of ellipse <img src='images/ellipse/ellipse%20(2).jpg'>" +
+    "A:$$${x^2+y^2=a^2+b^2}$$" +
+    "" +
+    "Q: Condition of tangency for ellipse" +
+    "A:$$${c^2=a^2m^2+b^2}$$" +
+    "" +
+    "Q: Slope form of tangent of ellipse" +
+    "A:$$${y=mx+\\sqrt{a^2m^2+b^2}}$$" +
+    "" +
+    "Q: Parametric form of tangent of ellipse" +
+    "A:$$${\\frac{x}{a}\\cos\\theta + \\frac{y}{b}\\sin\\theta = 1 }$$" +
+    "" +
+    "Q: Parametric form of normal to ellipse" +
+    "A:$$${\\frac{ax}{\\cos\\theta} - \\frac{by}{\\sin\\theta} = a^2-b^2 }$$" +
+    "" +
+    "Q: Area of ellipse" +
+    "A:$$${\\pi a b}$$" +
+    "" +
+    "Q: Area(PQR):Area(P'Q'R') = AreaInELLIPSE:AreaInCIRCLE<img src='images/ellipse/ellipse%20(3).jpg'>" +
+    "A:$$${\\frac{b}{a}}$$" +
+    "" +
+    "Q: Relation between semi latus rectum and focal lengths <img src='images/ellipse/ellipse%20(5).jpg'>" +
+    "A:$Semi latus rectum is the harmonic mean of focal lengths: $${\\frac{1}{FP}+\\frac{1}{FQ}=2\\frac{a}{b^2}}$$" +
+    "" +
+    "Q: Speciality of the circle described on focal length as diameter?" +
+    "A: It touches the auxiliary circle <img src='images/ellipse/ellipse%20(4).jpg'>" +
+    "" +
+    "Q: Locus of feet of perpendicular(p) from foci(S) upon any tangent is" +
+    "A: Auxiliary Circle <img src='images/ellipse/ellipse%20(7).jpg'>" +
+    "" +
+    "Q: Product of perpendiculars from foci upon any tangent is" +
+    "A: (SP)(S'P')=b² <img src='images/ellipse/ellipse%20(8).jpg'>" +
+    "" +
+    "Q: Tangent at extremeties of latus rectum met axis at" +
+    "A: Directris(D') and auxiliary circle(R) <img src='images/ellipse/ellipse%20(6).jpg'>" +
+    "" +
+    "Q: If tangent at N cuts directrix at M, then angle(NSM) is, where S is focus" +
+    "A: 90degrees <img src='images/ellipse/ellipse%20(9).jpg'>" ;
