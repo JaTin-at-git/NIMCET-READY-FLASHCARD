@@ -219,7 +219,13 @@ var parabola = "" +
     "A: Circle touches the tangent at vertex <img src='images/parabola/parabola%20(6).jpg'>" +
     "" +
     "Q: Speciality about the Circle described on the focal Chord as diameter?" +
-    "A: Circle touches the directrix <img src='images/parabola/parabola%20(7).jpg'>";
+    "A: Circle touches the directrix <img src='images/parabola/parabola%20(7).jpg'>" +
+    "" +
+    "Q: Angle made by chord of contact from any point of x=-4a at vertex of parabola y^2=4ax" +
+    "A: 90degrees <img src='images/parabola/parabola%20(8).jpg'>" +
+    "" +
+    "Q: If angle made by chord of contact(PQ) at vertex is 90degree, then locus of it's mid-point is" +
+    "A: <img src='images/parabola/parabola%20(9).jpg'>";
 
 var ellipseHyperbola = "" +
     "Q: Eccentricity of ellipse <img src='images/ellipse/ellipse.jpg'>" +
@@ -343,7 +349,8 @@ var ellipseHyperbola = "" +
     "A:$$${\\frac{x}{a}+\\frac{y}{b}=0}$$$${\\frac{x}{a}-\\frac{y}{b}=0}$$" +
     "" +
     "Q: Angle between assymptotes of hyperbola" +
-    "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2-b^2} \\right |}$$";
+    "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2-b^2} \\right |}$$" +
+    "" ;
 
 
 

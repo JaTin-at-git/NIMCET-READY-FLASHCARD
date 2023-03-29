@@ -366,11 +366,17 @@ latex-js {
     height: 90%;
     transform: scale(1.2);
     transform-origin: top;
+    --size: 20px !important;
 }
 
 @media only screen and (max-width: 600px) {
     latex-js {
         transform: scale(1.5);
+        --size: 15px !important;
+    }
+
+    .card latex-js {
+        --size: 13px !important;
     }
 }
 
