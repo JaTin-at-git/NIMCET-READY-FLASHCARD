@@ -268,28 +268,40 @@ var ellipseHyperbola = "" +
     "A:$$${x^2+y^2=a^2-b^2}$$" +
     "" +
     "Q: Condition of tangency for ellipse" +
-    "A:$$${c^2=a^2m^2+b^2}$$" +
+    "A:$$${c^2=a^2m^2+b^2}$$ where a is under x and b is under y" +
     "" +
     "Q: Condition of tangency for hyperbola" +
-    "A:$$${c^2=a^2m^2-b^2}$$" +
+    "A:$$${c^2=a^2m^2-b^2}$$ where a is under x and b is under y" +
+    "" +
+    "Q: Condition of normal for ellipse" +
+    "A:$$${\\frac{(a^2-b^2)m}{\\sqrt{a^2 + b^2m^2}}}$$ where a is under x and b is under y" +
+    "" +
+    "Q: Condition of normal for hyperbola" +
+    "A:$$${\\frac{(a^2+b^2)m}{\\sqrt{a^2 - b^2m^2}}}$$ where a is under x and b is under y" +
     "" +
     "Q: Slope form of tangent of ellipse" +
-    "A:$$${y=mx+\\sqrt{a^2m^2+b^2}}$$" +
+    "A:$$${y=mx+\\sqrt{a^2m^2+b^2}}$$ where a is under x and b is under y" +
     "" +
     "Q: Slope form of tangent of hyperbola" +
-    "A:$$${y=mx+\\sqrt{a^2m^2-b^2}}$$" +
+    "A:$$${y=mx+\\sqrt{a^2m^2-b^2}}$$ where a is under x and b is under y" +
     "" +
     "Q: Parametric form of tangent of ellipse" +
-    "A:$$${\\frac{x}{a}\\cos\\theta + \\frac{y}{b}\\sin\\theta = 1 }$$" +
+    "A:$$${\\frac{x}{a}\\cos\\theta + \\frac{y}{b}\\sin\\theta = 1 }$$ where a is under x and b is under y" +
     "" +
     "Q: Parametric form of tangent of hyperbola" +
-    "A:$$${\\frac{x}{a}\\sec\\theta - \\frac{y}{b}\\tan\\theta = 1 }$$" +
+    "A:$$${\\frac{x}{a}\\sec\\theta - \\frac{y}{b}\\tan\\theta = 1 }$$ where a is under x and b is under y" +
     "" +
     "Q: Parametric form of normal to ellipse" +
-    "A:$$${\\frac{ax}{\\cos\\theta} - \\frac{by}{\\sin\\theta} = a^2-b^2 = a^2e^2 }$$" +
+    "A:$$${\\begin{cases}\n" +
+    "\\frac{ax}{\\cos\\theta} - \\frac{by}{\\sin\\theta} = a^2-b^2 = a^2e^2 & \\text{ horizontal ellipse} \\\\ \n" +
+    "\\frac{ax}{\\cos\\theta} - \\frac{by}{\\sin\\theta} = a^2-b^2 = -a^2e^2  & \\text{ vertical ellipse} \n" +
+    "\\end{cases}}$$ where a is under x and b is under y" +
     "" +
     "Q: Parametric form of normal to hyperbola" +
-    "A:$$${\\frac{ax}{\\sec\\theta} + \\frac{by}{\\tan\\theta} = a^2+b^2 = a^2e^2 }$$" +
+    "A:$$${\\begin{cases}\n" +
+    "\\frac{ax}{\\sec\\theta} + \\frac{by}{\\tan\\theta} = a^2+b^2 = a^2e^2  & \\text{ horizontal hyperbola} \\\\ \n" +
+    "\\frac{ax}{\\sec\\theta} + \\frac{by}{\\tan\\theta} = a^2+b^2 = -a^2e^2   & \\text{ vertical hyperbola} \n" +
+    "\\end{cases}}$$ where a is under x and b is under y" +
     "" +
     "Q: Area of ellipse" +
     "A:$$${\\pi a b}$$" +
@@ -327,11 +339,11 @@ var ellipseHyperbola = "" +
     "Q: Eccentricity of rectangular hyperbola" +
     "A:$$${\\sqrt{2}}$$" +
     "" +
-    "Q:$Assymptotes of hyperbola $${\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1}$$" +
+    "Q:$Assymptotes of hyperbola $${\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1}$$" +
     "A:$$${\\frac{x}{a}+\\frac{y}{b}=0}$$$${\\frac{x}{a}-\\frac{y}{b}=0}$$" +
     "" +
     "Q: Angle between assymptotes of hyperbola" +
-    "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2+b^2} \\right |}$$";
+    "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2-b^2} \\right |}$$";
 
 
 
