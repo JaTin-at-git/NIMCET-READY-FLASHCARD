@@ -17,14 +17,14 @@ let algebraicFormulas = "" +
     "Q:$$${a^2+b^2+c^2-ab-bc-ca}$$" +
     "A:$$${\\frac{1}{2}[(a-b)^2+(b-c)^2+(c-a)^2]}$$";
 
-let straightLines =""+
+let straightLines = "" +
     "Q: Distance between two points (x1,y1) and (x2,y2)?" +
     "A:$$${\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}$$" +
     "" +
-    "Q: <img src='images/straightLines/straightLines%20(1).jpg'>"+
+    "Q: <img src='images/straightLines/straightLines%20(1).jpg'>" +
     "A: <img src='images/straightLines/straightLines%20(2).jpg'>" +
-    ""+
-    "Q: Coordinates of point p = ?<img src='images/straightLines/straightLines%20(3).jpg'>"+
+    "" +
+    "Q: Coordinates of point p = ?<img src='images/straightLines/straightLines%20(3).jpg'>" +
     "A: <img src='images/straightLines/straightLines%20(4).jpg'>" +
     "" +
     "Q: Line AB is intersected by line L at C, find ration AC:CB <img src='images/straightLines/straightLines%20(5.0).jpg'>" +
@@ -62,7 +62,7 @@ let straightLines =""+
     "" +
     "Q: Foot of perpendicular of a point on a line <img src='images/straightLines/straightLines%20(26).jpg'>" +
     "A: <img src='images/straightLines/straightLines%20(26).jpg'><img src='images/straightLines/straightLines%20(27).jpg'>" +
-    ""+
+    "" +
     "Q: Image of a point in a line <img src='images/straightLines/straightLines%20(28).jpg'>" +
     "A: <img src='images/straightLines/straightLines%20(28).jpg'><img src='images/straightLines/straightLines%20(29).jpg'>" +
     "" +
@@ -95,7 +95,7 @@ var secondDegree = "" +
     "A: <img src='images/secondDegree/secondDegree%20(10).jpg'>" +
     "" +
     "Q: Equation of angle bisector of <img src='images/secondDegree/secondDegree%20(7).jpg'>" +
-    "A: <img src='images/secondDegree/secondDegree%20(11).jpg'>"+
+    "A: <img src='images/secondDegree/secondDegree%20(11).jpg'>" +
     "" +
     "Q: Equation of perpendiculars of <img src='images/secondDegree/secondDegree%20(7).jpg'>" +
     "A: <img src='images/secondDegree/secondDegree.jpg'>";
@@ -112,7 +112,7 @@ var circle = "" +
     "" +
     "Q:$$${\\text{Condition of tangency of circle } S:x^2+y^2=r^2 }$$" +
     "A: <img src='images/circle/circle%20(8).jpg'>" +
-    ""+
+    "" +
     "Q:$$${\\text{Condition of tangency of circle } S:x^2+y^2+2gx+2fy+c=0 }$$" +
     "A: <img src='images/circle/circle%20(9).jpg'><img src='images/circle/circle%20(10).jpg'>" +
     "" +
@@ -124,7 +124,7 @@ var circle = "" +
     "" +
     "Q:$$${\\text{Equation of tangent with slope } 'm' \\text{ on circle }x^2+y^2=r^2}$$" +
     "A: <img src='images/circle/circle%20(14).jpg'>" +
-    ""+
+    "" +
     "Q:$$${\\text{Equation of tangent with slope } 'm' \\text{ on circle }x^2+y^2+2gx+2fy+c=0}$$" +
     "A: <img src='images/circle/circle%20(15).jpg'>" +
     "" +
@@ -142,7 +142,7 @@ var circle = "" +
     "" +
     "Q: Family of circles for <img src='images/circle/circle%20(20).jpg'>" +
     "A:$$${S_1+\\lambda S_2=0}$$" +
-    ""  +
+    "" +
     "Q: Family of circles for <img src='images/circle/circle%20(21).jpg'>" +
     "A:$$${S+\\lambda L=0}$$" +
     "" +
@@ -164,7 +164,7 @@ var circle = "" +
     "Q: Angle made by chord at the circumference of the circle <img src='images/circle/circle%20(28).jpg'>" +
     "A:$$${(x-x_1)(x-x_2)+(y-y_1)(y-y_2)=\\pm\\cot\\theta[(y-y_1)(x-x_2)-(y-y_2)(x-x_1)]}$$";
 
-var parabola="" +
+var parabola = "" +
     "Q:$$${\\text{Parametric coordinates of }y^2=4ax }$$" +
     "A:$$${(at^2,2at)}$$" +
     "" +
@@ -172,16 +172,16 @@ var parabola="" +
     "A: x+a " +
     "" +
     "Q:$$${\\text{Condition of tangency for }y^2=4ax}$$" +
-    "A:$$${c=\\frac{a}{m}}$$"+
+    "A:$$${c=\\frac{a}{m}}$$" +
     "Q:$$${\\text{Condition of tangency for }y^2=-4ax}$$" +
-    "A:$$${c=\\frac{-a}{m}}$$"+
+    "A:$$${c=\\frac{-a}{m}}$$" +
     "Q:$$${\\text{Condition of tangency for }x^2=4ay}$$" +
-    "A:$$${c=-am^2}$$"+
+    "A:$$${c=-am^2}$$" +
     "Q:$$${\\text{Condition of tangency for }x^2=-4ay}$$" +
-    "A:$$${c=am^2}$$"+
+    "A:$$${c=am^2}$$" +
     "" +
     "Q: Slope of tangent at (at²,2at)" +
-    "A:$$${\\frac{1}{t}}$$"+
+    "A:$$${\\frac{1}{t}}$$" +
     "Q: Slope of normal at (at²,2at)" +
     "A:$$${-t}$$" +
     "" +
@@ -202,7 +202,7 @@ var parabola="" +
     "" +
     "Q: normal at P(t) met parabola again at Q(t'). value of t'=? <img src='images/parabola/parabola%20(3).jpg'>" +
     "A: <img src='images/parabola/parabola%20(4).jpg'>" +
-    ""+
+    "" +
     "Q: Point from which normal with slope m is drawm to the parabola y²=4ax is" +
     "A:$$${(am^2,-2am)}$$" +
     "" +
@@ -217,49 +217,79 @@ var parabola="" +
     "" +
     "Q: Speciality about the Circle described on the focal length as diameter?" +
     "A: Circle touches the tangent at vertex <img src='images/parabola/parabola%20(6).jpg'>" +
-    ""+
+    "" +
     "Q: Speciality about the Circle described on the focal Chord as diameter?" +
     "A: Circle touches the directrix <img src='images/parabola/parabola%20(7).jpg'>";
 
-var ellipse="" +
+var ellipseHyperbola = "" +
     "Q: Eccentricity of ellipse <img src='images/ellipse/ellipse.jpg'>" +
-    "A:$$${0< e<1}$$$${e=\\frac{F_1P}{PL}}$$" +
+    "A:$$${0< e<1}$$$${e=\\frac{F_2P}{PL}}$$" +
     "" +
-    "Q: Focci of ellipse" +
+    "Q: Eccentricity of hyperbola <img src='images/hyperbola/hyperbola.jpg'>" +
+    "A:$$${e>1}$$$${e=\\frac{SP}{PL}}$$" +
+    "" +
+    "Q: Focci of ellipse/hyperbola" +
     "A:$$${(\\pm ae,0)}$$" +
     "" +
-    "Q: Equation of directrix of ellipse?" +
+    "Q: Equation of directrix of ellipse/hyperbola?" +
     "A:$$${x=\\pm \\frac{\\text{a}}{e}}$$" +
     "" +
     "Q: Relation between a,b,e of ellipse" +
     "A:$$${e^2=1-\\frac{b^2}{a}}$$" +
     "" +
-    "Q: Length of latus rectum or ellipse" +
+    "Q: Relation between a,b,e of hyperbola" +
+    "A:$$${e^2=1+\\frac{b^2}{a}}$$" +
+    "" +
+    "Q: Length of latus rectum or ellipse/hyperbola" +
     "A:$$${\\frac{2b^2}{a}}$$" +
     "" +
     "Q: Focal lengths of ellipse" +
     "A:$$${a-ex_1, a+ex_1}$$" +
     "" +
+    "Q: Focal lengths of hyperbola" +
+    "A:$$${-a+ex_1, a+ex_1}$$" +
+    "" +
     "Q: Parametric Coordinates of ellipse" +
     "A:$$${(a\\cos\\theta, b\\sin\\theta)}$$ where a is below x and b is below y" +
     "" +
+    "Q: Parametric Coordinates of hyperbola" +
+    "A:$$${(a\\sec\\theta, b\\tan\\theta)}$$ where a is under x and b is under y" +
+    "" +
     "Q: Equation of auxilary circle of ellipse <img src='images/ellipse/ellipse%20(1).jpg'>" +
+    "A:$$${x^2+y^2=a^2}$$" +
+    "" +
+    "Q: Equation of auxilary circle of hyperbola <img src='images/hyperbola/hyperbola%20(2).jpg'>" +
     "A:$$${x^2+y^2=a^2}$$" +
     "" +
     "Q: Equation of director circle of ellipse <img src='images/ellipse/ellipse%20(2).jpg'>" +
     "A:$$${x^2+y^2=a^2+b^2}$$" +
     "" +
+    "Q: Equation of director circle of hyperbola <img src='images/hyperbola/hyperbola%20(3).jpg'>" +
+    "A:$$${x^2+y^2=a^2-b^2}$$" +
+    "" +
     "Q: Condition of tangency for ellipse" +
     "A:$$${c^2=a^2m^2+b^2}$$" +
+    "" +
+    "Q: Condition of tangency for hyperbola" +
+    "A:$$${c^2=a^2m^2-b^2}$$" +
     "" +
     "Q: Slope form of tangent of ellipse" +
     "A:$$${y=mx+\\sqrt{a^2m^2+b^2}}$$" +
     "" +
+    "Q: Slope form of tangent of hyperbola" +
+    "A:$$${y=mx+\\sqrt{a^2m^2-b^2}}$$" +
+    "" +
     "Q: Parametric form of tangent of ellipse" +
     "A:$$${\\frac{x}{a}\\cos\\theta + \\frac{y}{b}\\sin\\theta = 1 }$$" +
     "" +
+    "Q: Parametric form of tangent of hyperbola" +
+    "A:$$${\\frac{x}{a}\\sec\\theta - \\frac{y}{b}\\tan\\theta = 1 }$$" +
+    "" +
     "Q: Parametric form of normal to ellipse" +
-    "A:$$${\\frac{ax}{\\cos\\theta} - \\frac{by}{\\sin\\theta} = a^2-b^2 }$$" +
+    "A:$$${\\frac{ax}{\\cos\\theta} - \\frac{by}{\\sin\\theta} = a^2-b^2 = a^2e^2 }$$" +
+    "" +
+    "Q: Parametric form of normal to hyperbola" +
+    "A:$$${\\frac{ax}{\\sec\\theta} + \\frac{by}{\\tan\\theta} = a^2+b^2 = a^2e^2 }$$" +
     "" +
     "Q: Area of ellipse" +
     "A:$$${\\pi a b}$$" +
@@ -270,17 +300,41 @@ var ellipse="" +
     "Q: Relation between semi latus rectum and focal lengths <img src='images/ellipse/ellipse%20(5).jpg'>" +
     "A:$Semi latus rectum is the harmonic mean of focal lengths: $${\\frac{1}{FP}+\\frac{1}{FQ}=2\\frac{a}{b^2}}$$" +
     "" +
-    "Q: Speciality of the circle described on focal length as diameter?" +
+    "Q: Speciality of the circle described on focal-length of ellipse/hyperbola as diameter?" +
     "A: It touches the auxiliary circle <img src='images/ellipse/ellipse%20(4).jpg'>" +
     "" +
-    "Q: Locus of feet of perpendicular(p) from foci(S) upon any tangent is" +
+    "Q: Locus of feet of perpendicular(p) from foci(S) upon any tangent on ellipse/hyperbola is" +
     "A: Auxiliary Circle <img src='images/ellipse/ellipse%20(7).jpg'>" +
     "" +
-    "Q: Product of perpendiculars from foci upon any tangent is" +
+    "Q: Product of perpendiculars from foci upon any tangent of ellipse/hyperbola" +
     "A: (SP)(S'P')=b² <img src='images/ellipse/ellipse%20(8).jpg'>" +
     "" +
-    "Q: Tangent at extremeties of latus rectum met axis at" +
+    "Q: Tangent at extremeties of latus-rectum of ellipse/hyperbola met axis at" +
     "A: Directris(D') and auxiliary circle(R) <img src='images/ellipse/ellipse%20(6).jpg'>" +
     "" +
-    "Q: If tangent at N cuts directrix at M, then angle(NSM) is, where S is focus" +
-    "A: 90degrees <img src='images/ellipse/ellipse%20(9).jpg'>" ;
+    "Q: If tangent at N cuts directrix at M, then angle(NSM) is, where S is focus of ellipse/hyperbola" +
+    "A: 90degrees <img src='images/ellipse/ellipse%20(9).jpg'>" +
+    "" +
+    "Q: Equation of conjugate hyperbola" +
+    "A:$$${\\frac{-x^2}{a^2}+\\frac{y^2}{b^2}=-1}$$" +
+    "" +
+    "Q: Relation between eccentricity of hyperbola(e) and eccentricity of it's conjugate(e_c)" +
+    "A:$$${\\frac{1}{e^2}+\\frac{1}{e_c^2}=1}$$" +
+    "" +
+    "Q: Equation of rectangular hyperbols" +
+    "A:$$${x^2-y^2=a^2}$$" +
+    "" +
+    "Q: Eccentricity of rectangular hyperbola" +
+    "A:$$${\\sqrt{2}}$$" +
+    "" +
+    "Q:$Assymptotes of hyperbola $${\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1}$$" +
+    "A:$$${\\frac{x}{a}+\\frac{y}{b}=0}$$$${\\frac{x}{a}-\\frac{y}{b}=0}$$" +
+    "" +
+    "Q: Angle between assymptotes of hyperbola" +
+    "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2+b^2} \\right |}$$";
+
+
+
+
+
+
