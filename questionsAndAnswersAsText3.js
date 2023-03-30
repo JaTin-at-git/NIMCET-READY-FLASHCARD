@@ -32,7 +32,7 @@ var vector = "" +
     "Q:$$${(\\vec{a}+\\vec{b})\\cdot(\\vec{a}-\\vec{b})=?}$$" +
     "A:$$${(\\vec{a^2}-\\vec{b^2})}$$" +
     "" +
-    "Q:$$${(\\vec{a}\\times\\vec{b})\\cdot(\\vec{a}\\times\\vec{b})=?}$$" +
+    "Q:$$${(\\vec{a}\\times\\vec{b})\\cdot(\\vec{c}\\times\\vec{d})=?}$$" +
     "A:$$${(\\vec{a}\\cdot\\vec{c})(\\vec{b}\\cdot\\vec{d})-(\\vec{a}\\cdot\\vec{d})(\\vec{b}\\cdot\\vec{c})}$$" +
     "" +
     "Q: Scalar tripple product <img src='images/vector/vector%20(13).jpg'>" +
@@ -53,10 +53,35 @@ var vector = "" +
     "Q: Volume of Tetrahedron <img src='images/vector/vector%20(20).jpg'>" +
     "A: <img src='images/vector/vector%20(21).jpg'>" +
     "" +
-    "Q:$$${\\text{Scalar Tripple product: } \\vec{a}\\times(\\vec{b}\\times\\vec{c})}$$" +
+    "Q:$$${\\text{Vector Tripple product: } \\vec{a}\\times(\\vec{b}\\times\\vec{c})}$$" +
     "A:$$${\\vec{a}\\times(\\vec{b}\\times\\vec{c})=(\\vec{a}\\cdot\\vec{c})\\vec{b}-(\\vec{b}\\cdot\\vec{a})\\vec{c}}$$" +
     "" +
     "Q:$$${\\text{If: } \\vec{a}\\times(\\vec{b}\\times\\vec{c})=(\\vec{a}\\times\\vec{b})\\times\\vec{c}}$$" +
     "A: a and c are collinear" +
     "" +
-    "";
+    "Q: Work done = ?" +
+    "A:$$${\\vec{Displacement}\\cdot\\vec{F}}$$" +
+    ""+
+    "Q: Torque acting on A about O = ?" +
+    "A: <img src='images/vector/vector%20(22).jpg'>" +
+    "" +
+    "Q: Torque acting on A about the line L = ?" +
+    "A: <img src='images/vector/vector%20(23).jpg'>" +
+    "" +
+    "Q: If |OQ| = |OP| + |PQ| <img src='images/vector/vector%20(2).jpg'>" +
+    "A: O,P,Q are collinear" +
+    "" +
+    "Q: <img src='images/vector/vector%20(24).jpg'>" +
+    "A: <img src='images/vector/vector%20(25).jpg'>" +
+    ""+
+    "Q: <img src='images/vector/vector%20(26).jpg'> then A and B are" +
+    "A: <img src='images/vector/vector%20(27).jpg'>" +
+    "" +
+    "Q: If A and B are collinear then" +
+    "A: <ul><li>Ratio of corresponding coordinates are same</li><li>B=λA</li><li>A×B=0</li></ul>" +
+    ""+
+    "Q: If A, B and C are coplainar then" +
+    "A: [A B C] = 0" +
+    ""+
+    "Q: If A, B, C, D are coplainar then" +
+    "A: (A-B).(C×D) = 0" ;
