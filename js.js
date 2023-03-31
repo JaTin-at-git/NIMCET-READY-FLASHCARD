@@ -29,10 +29,11 @@ let dictionary = {
     "circle": circle,
     "parabola": parabola,
     "ellipseHyperbola": ellipseHyperbola,
-    "vector": vector
+    "vector": vector,
+    "setsAndRelations": setsAndRelations
 }
 
-let topicForNotes = [];
+let topicForNotes = ["MaD"];
 
 /////////////////
 

@@ -109,7 +109,7 @@ let PnC_TQA = "" +
     "A:$$${ \\frac{(3n)!}{n!&nbsp;n!&nbsp;n!} \\times \\frac{3!}{3!}}$$" +
     "" +
     "Q: Number of functions from n(A)=r to n(B)=n?<br><br>Distribution of 'n' different things into 'r' differnt boxes if any box can recieve any number of objects?" +
-    "A: r<sup>n</sup>" +
+    "A:$$${r^n}$$" +
     "" +
     "Q: Number of onto functions from n(A)=r to n(B)=n?<br><br>Distribution of 'n' different things into 'r' differnt boxes if each box has at least one object?" +
     "A:$$${[r^n]-[^{r}C_1(r-1)^n]+[^{r}C_2(r-2)^n]-[^{r}C_3(r-3)^n]...}$$" +
@@ -172,7 +172,7 @@ let Probability_TQA =
 
 let SequenceAndSeries_TQA =
     "" +
-    "Q: n<sup>th</sup> term of an AP?" +
+    "Q:$$${n^{th}\\text{ term of an AP?}}$$" +
     "A:$$${T_n=a+(n-1)d}$$" +
     "" +
     "Q: Sum of first n terms of an AP?" +
@@ -184,7 +184,7 @@ let SequenceAndSeries_TQA =
     "Q: Realtion b/w a,b,c if thery are in AP" +
     "A:$$${b= \\frac{a+c}{2}}$$" +
     "" +
-    "Q: n<sup>th</sup> term of an GP?" +
+    "Q:$$${n^{th}\\text{ term of an GP?}}$$" +
     "A:$$${T_n=ar^{n-1}}$$" +
     "" +
     "Q: Sum of n terms of a GP?" +
@@ -205,7 +205,7 @@ let SequenceAndSeries_TQA =
     "Q: Realtion b/w a,b,c if thery are in HP" +
     "A:$$${b= \\frac{2ac}{a+c}}$$" +
     "" +
-    "Q: n<sup>th</sup> term of an AGP?" +
+    "Q:$$${n^{th}\\text{ term of an AGP?}}$$" +
     "A:$$${T_n=AP_{n^{th}term} \\cdot GP_{n^{th}term}}$$ $${T_n=[a+(n-1)d)] \\cdot[ar^{n-1}]}$$" +
     "" +
     "Q: Sum of ∞ terms of an AGP" +
@@ -236,23 +236,23 @@ let SequenceAndSeries_TQA =
     "A:$$${\\left [ \\frac{n(n+1)}{2} \\right ]^2}$$";
 
 let complex = "" +
-    "Q: if ω is the cube root of unity, then <br> ω<sup>3</sup> = ?" +
-    "A: ω<sup>3</sup> = 1" +
+    "Q: if ω is the cube root of unity, then <br> ω³ = ?" +
+    "A: ω³ = 1" +
     "" +
-    "Q: if ω is the cube root of unity, then <br> 1 + ω + ω<sup>2</sup> = ?" +
-    "A: 1 + ω + ω<sup>2</sup> = 0" +
+    "Q: if ω is the cube root of unity, then <br> 1 + ω + ω² = ?" +
+    "A: 1 + ω + ω² = 0" +
     "";
 
 let MaD_TQA =
     "" +
-    "Q: (AB)<sup>T</sup>" +
-    "A: B<sup>T</sup>A<sup>T</sup>" +
+    "Q:$$${(AB)^T}$$" +
+    "A:$$${B^TA^T}$$" +
     "" +
     "Q: What is a symmetric matrix?" +
-    "A: A<sup>T</sup>=A" +
+    "A:$$${A^T=A}$$" +
     "" +
     "Q: What is a skew-symmetric matrix?" +
-    "A: A<sup>T</sup>=-A" +
+    "A:$$${A^T=-A}$$" +
     "" +
     "Q: Relation between Cofactor and Minor" +
     "A:$$${C_{ij}= \\pm M_{ij}}$$" +
@@ -260,49 +260,49 @@ let MaD_TQA =
     "Q: what is adj(A)?" +
     "A: adj(A) is the transpose of cofactor matrix of A" +
     "" +
-    "Q: General formula for A<sup>-1</sup>" +
+    "Q:$$${\\text{General formula for } A^{-1}}$$" +
     "A:$$${A^{-1}= \\frac{1}{ \\left | A \\right |} \\cdot adj(A)}$$" +
     "" +
     "Q: A.adj(A)" +
     "A:$$${|A|I_n}$$" +
     "" +
-    "Q: (ABC)<sup>-1</sup> = ?" +
+    "Q:$$${(ABC)^{-1} = ?}$$" +
     "A:$$${C^{-1}B^{-1}A^{-1}}$$" +
     "" +
-    "Q: (A<sup>T</sup>)<sup>-1</sup> = ?" +
-    "A: (A<sup>-1</sup>)<sup>T</sup>" +
+    "Q:$$${(A^T)^{-1}= ?}$$" +
+    "A:$$${(A^{-1})^T}$$" +
     "" +
     "Q: |adj(A)| = ?" +
-    "A: |A|<sup>n-1</sup>" +
+    "A:$$${|A|^{n-1}}$$" +
     "" +
     "Q: | adj adj adj(A) | = ?" +
-    "A: |A|<sup>(n-1)<sup>3</sup></sup>" +
+    "A:$$${|A|^{(n-1)^3}}$$" +
     "" +
     "Q: adj(AB) = ?" +
     "A: adj(B) adj(A)" +
     "" +
-    "Q: adj(A<sup>T</sup>) = ?" +
-    "A: (adj(A))<sup>T</sup>" +
+    "Q:$$${adj(A^T) = ?}$$" +
+    "A:$$${(adj(A))^T}$$" +
     "" +
     "Q: adj adj(A) = ?" +
-    "A: |A|<sup>n-2</sup>A" +
+    "A:$$${|A|^{(n-2)}A}$$" +
     "" +
     "Q: adj adj adj(A) = ?" +
-    "A: |A|<sup>n-3</sup>A" +
+    "A:$$${|A|^{(n-3)}A}$$" +
     "" +
-    "Q: |A<sup>-1</sup>| = ?" +
-    "A: |A|<sup>-1</sup>" +
+    "Q:$$${|A^{-1}| = ?}$$" +
+    "A:$$${|A|^{-1}}$$" +
     "" +
     "Q: If 'r' is a real number and 'A' is n×n matrix then |rA| = ?" +
-    "A: r<sup>n</sup>|A|" +
+    "A:$$${r^n|A|}$$" +
     "" +
-    "Q: |A<sup>T</sup>| = ?" +
+    "Q:$$${|A^T| = ?}$$" +
     "A: |A|" +
     "" +
     "Q: If equations are represented as <img src='images/MaD/1.png'> then A/C to Cramer's rule x,y,z are given by ?" +
     "A: <img src='images/MaD/2.png '>" +
     "" +
-    "Q: If A = <img src='images/MaD/3.jpg'> <br>Then A<sup>r</sup> = ?" +
+    "Q: If A = <img src='images/MaD/3.jpg'> <br>Then <latex-js>$${A^r=?}$$</latex-js>" +
     "A: <img src='images/MaD/4.png'>" +
     "" +
     "Q: |ABC| = ?" +
@@ -312,13 +312,13 @@ let MaD_TQA =
     "A: D≠0" +
     "" +
     "Q: For what value of D does non-homogenous equations have no solution ?" +
-    "A:$$${\\text{D = 0 and Any of }D_x, D_y \\ or\\  D_z \e 0 \\ \\ \\ }$$" +
+    "A:$$${\\text{D = 0 and Any of }D_x, D_y \\text{ or } D_z \\text{ not equals to }0 }$$" +
     "" +
     "Q: For what value of D does non-homogenous equations have infinity many solution ?" +
     "A:$$${D = D_x = D_y = D_z = 0 \\ \\ \\ }$$" +
     "" +
     "Q: For what value of D does Homogenous equations have unique solution ?" +
-    "A: D=0, the unique solution is trivial solution, x=y=z=0" +
+    "A: D≠0, the unique solution is trivial solution, x=y=z=0" +
     "" +
     "Q: For what value of D does Homogenous equations have infinity many solution ?" +
     "A:$$${D = 0 \\ \\ \\ }$$" +
@@ -326,13 +326,13 @@ let MaD_TQA =
 
 MaD_TQA += "" +
     "Q: Idompotent matrix => ?" +
-    "A: A<sup>2</sup>=A" +
+    "A: A²=A" +
     "" +
     "Q: Orthogonal matrix ?" +
-    "A: AA<sup>'</sup>=I <br> Or, A<sup>'</sup>=A<sup>-1</sup>" +
+    "A:$$${AA'=I}$$  Or $${A'=A^{-1}}$$" +
     "" +
     "Q: Nilpotent matrix ?" +
-    "A: A<sup>n</sup>=0" +
+    "A:$$${A^n=0}$$" +
     "" +
     "Q: <img src='images/MaD/5.png'>" +
     "A: <img src='images/MaD/6.png'>" +
@@ -341,15 +341,15 @@ MaD_TQA += "" +
     "A: <img src='images/MaD/8.png'>" +
     "" +
     "Q: If AB=A and BA=B, then A and B are ?" +
-    "A: Idompotent, A<sup>2</sup>=A and B<sup>2</sup>=B" +
+    "A: Idompotent, A²=A and B²=B" +
     "" +
     "Q: <img src='images/MaD/9.png'>" +
     "A: <img src='images/MaD/10.png'>" +
     "" +
-    "Q:$If A is idompotent; i.e, $${A^2=A}$$ then $${(I-A)^n=?}$$" +
+    "Q:$$${\\text{If A is idompotent; i.e, }A^2=A \\text{ then }}$$ $${(I-A)^n=?}$$" +
     "A:$$${(I-A)^n=(I-A)}$$" +
     "" +
-    "Q:$If A is idompotent; i.e, $${A^2=A}$$ then $${(I+A)^n=?}$$" +
+    "Q:$$${\\text{If A is idompotent; i.e, }A^2=A \\text{ then }}$$ $${(I+A)^n=?}$$" +
     "A:$$${(I+A)^n=I+[n(n-1)+1]A}$$" +
     "" +
     "Q: Max value of determinant of an n×n matrix with entries ∈ {1,0} ?" +
@@ -362,15 +362,15 @@ MaD_TQA += "" +
     // "A: <img src='images/MaD/12.png'>" +
     // "" +
     "Q: If a,b,c are all differnt and <img src='images/MaD/13.png'> then <br> abc = ?" +
-    "A: For 1+a<sup>3</sup>, abc=-1 <br>For 1-a<sup>3</sup>, abc=1" +
+    "A: For 1+a³, abc=-1 <br>For 1-a³, abc=1" +
     "" +
     // "Q: <img src='images/MaD/14.png'>" +
     // "A:$$${-(b^2\\mathbf{p}+c^2\\mathbf{q}+a^2\\mathbf{r})+2abc+pqr}$$" +
     // "" +
-    "Q: If A is skew-symmetric, then A<sup>even</sup> is " +
+    "Q: If A is skew-symmetric, then <latex-js>$${A^{even}}$$</latex-js> is " +
     "A: Symmetric matrix" +
     "" +
-    "Q: If A is skew-symmetric, then A<sup>odd</sup> is " +
+    "Q: If A is skew-symmetric, then <latex-js>$${A^{odd}}$$</latex-js> is " +
     "A: Skew-Symmetric matrix" +
     "";
 
@@ -410,7 +410,7 @@ MaD_TQA += "" +
     "A:$$${k^{n-1}adj(A)}$$" +
     "" +
     "Q: What is an involuntary matrix?" +
-    "A: A<sup>-1</sup>=A" +
+    "A:$$${A^{-1}=A}$$" +
     "" +
     "Q:$$${diag(a_1,a_2,....a_n)\\times diag(b_1,b_2,....b_n)}$$" +
     "A:$$${diag(a_1 b_1,a_2 b_2,....a_n b_n)}$$"
