@@ -255,6 +255,12 @@ var ellipseHyperbola = "" +
     "Q: Focal lengths of hyperbola" +
     "A:$$${-a+ex_1, a+ex_1}$$" +
     "" +
+    "Q: Relation between F1P and F2P in the ellipse? <img src='images/ellipse/ellipse.jpg'>" +
+    "A:$$${F_1P+F_2P=2a}$$ Sum of focal distances is constant" +
+    "" +
+    "Q: Relation between SP and S'P in the Hyperbola? <img src='images/hyperbola/hyperbola.jpg'>" +
+    "A:$$${SP-S'P=2a}$$ Difference of focal distance is constant" +
+    "" +
     "Q: Parametric Coordinates of ellipse" +
     "A:$$${(a\\cos\\theta, b\\sin\\theta)}$$ where a is below x and b is below y" +
     "" +
