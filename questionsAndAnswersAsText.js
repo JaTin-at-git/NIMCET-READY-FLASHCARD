@@ -264,7 +264,7 @@ let MaD_TQA =
     "A:$$${A^{-1}= \\frac{1}{ \\left | A \\right |} \\cdot adj(A)}$$" +
     "" +
     "Q: A.adj(A)" +
-    "A:$$${|A|I_n}$$" +
+    "A:$$${A.adj(A)=adj(A).A=|A|I_n}$$" +
     "" +
     "Q:$$${(ABC)^{-1} = ?}$$" +
     "A:$$${C^{-1}B^{-1}A^{-1}}$$" +
@@ -275,14 +275,14 @@ let MaD_TQA =
     "Q: | adj adj adj(A) | = ?" +
     "A:$$${|A|^{(n-1)^3}}$$" +
     "" +
+    "Q: adj adj adj(A) = ?" +
+    "A:$$${|A|^{(n-3)}A}$$" +
+    "" +
     "Q: adj(AB) = ?" +
     "A: adj(B) adj(A)" +
     "" +
     "Q:$$${adj(A^T) = ?}$$" +
     "A:$$${(adj(A))^T}$$" +
-    "" +
-    "Q: adj adj adj(A) = ?" +
-    "A:$$${|A|^{(n-3)}A}$$" +
     "" +
     "Q:$$${|A^{-1}| = ?}$$" +
     "A:$$${|A|^{-1}}$$" +
@@ -309,7 +309,7 @@ let MaD_TQA =
     "A:$$${\\text{D = 0 and Any of }D_x, D_y \\text{ or } D_z \\text{ not equals to }0 }$$" +
     "" +
     "Q: For what value of D does non-homogenous equations have infinity many solution ?" +
-    "A:$$${D = D_x = D_y = D_z = 0 \\ \\ \\ }$$" +
+    "A:$$${D = D_x = D_y = D_z = 0 \\ \\ \\ }$$ $${\\text{Sab 0}}$$" +
     "" +
     "Q: For what value of D does Homogenous equations have unique solution ?" +
     "A: D≠0, the unique solution is trivial solution, x=y=z=0" +
@@ -396,7 +396,13 @@ let MaD_TQA =
     "A: <img src='images/MaD/10.png'>" +
     "" +
     "Q: Trace of a matrix ?" +
-    "A: Sum of elements of its principal diagonal";
+    "A: Sum of elements of its principal diagonal" +
+    "" +
+    "Q: Multiplication of two determinants <img src='images/MaD/matrix.jpg'>" +
+    "A: <img src='images/MaD/matrix%20(2).jpg'>" +
+    "" +
+    "Q: Characterstic equation of a matrix <img src='images/MaD/matrix%20(3).jpg'>" +
+    "A: |A-λI|=0  <img src='images/MaD/matrix%20(4).jpg'>";
 
 let Misc_TQA = "" +
     "Q:$Compendendo/ Dividendo for $${\\frac{a}{b}=\\frac{c}{d}}$$ = ?" +
