@@ -272,9 +272,6 @@ let MaD_TQA =
     "Q:$$${(A^T)^{-1}= ?}$$" +
     "A:$$${(A^{-1})^T}$$" +
     "" +
-    "Q: |adj(A)| = ?" +
-    "A:$$${|A|^{n-1}}$$" +
-    "" +
     "Q: | adj adj adj(A) | = ?" +
     "A:$$${|A|^{(n-1)^3}}$$" +
     "" +
@@ -283,9 +280,6 @@ let MaD_TQA =
     "" +
     "Q:$$${adj(A^T) = ?}$$" +
     "A:$$${(adj(A))^T}$$" +
-    "" +
-    "Q: adj adj(A) = ?" +
-    "A:$$${|A|^{(n-2)}A}$$" +
     "" +
     "Q: adj adj adj(A) = ?" +
     "A:$$${|A|^{(n-3)}A}$$" +
@@ -322,14 +316,15 @@ let MaD_TQA =
     "" +
     "Q: For what value of D does Homogenous equations have infinity many solution ?" +
     "A:$$${D = 0 \\ \\ \\ }$$" +
-    ""
-
-MaD_TQA += "" +
+    ""+
     "Q: Idompotent matrix => ?" +
     "A: A²=A" +
     "" +
-    "Q: Orthogonal matrix ?" +
-    "A:$$${AA'=I}$$  Or $${A'=A^{-1}}$$" +
+    "Q: Orthogonal matrix and its determinant ?" +
+    "A:$$${A^{-1}=A^T}$$  Or $${AA^T=A^TA=I}$$ $${det(A)=\\pm1}$$" +
+    "" +
+    "Q: What is an involuntary matrix?" +
+    "A:$$${A^{-1}=A}$$" +
     "" +
     "Q: Nilpotent matrix ?" +
     "A:$$${A^n=0}$$" +
@@ -343,57 +338,28 @@ MaD_TQA += "" +
     "Q: If AB=A and BA=B, then A and B are ?" +
     "A: Idompotent, A²=A and B²=B" +
     "" +
-    "Q: <img src='images/MaD/9.png'>" +
-    "A: <img src='images/MaD/10.png'>" +
-    "" +
     "Q:$$${\\text{If A is idompotent; i.e, }A^2=A \\text{ then }}$$ $${(I-A)^n=?}$$" +
     "A:$$${(I-A)^n=(I-A)}$$" +
     "" +
-    "Q:$$${\\text{If A is idompotent; i.e, }A^2=A \\text{ then }}$$ $${(I+A)^n=?}$$" +
-    "A:$$${(I+A)^n=I+[n(n-1)+1]A}$$" +
-    "" +
-    "Q: Max value of determinant of an n×n matrix with entries ∈ {1,0} ?" +
-    "A:$$${\\frac{(n+1)^{\\frac{n+1}{2}}}{2^n}}$$" +
-    "" +
-    "Q: if 2 rows/columns of a matrix are in AP, then its determinant is ?" +
-    "A: 0 😀" +
-    "" +
-    // "Q: <img src='images/MaD/11.png'>" +
-    // "A: <img src='images/MaD/12.png'>" +
-    // "" +
-    "Q: If a,b,c are all differnt and <img src='images/MaD/13.png'> then <br> abc = ?" +
-    "A: For 1+a³, abc=-1 <br>For 1-a³, abc=1" +
-    "" +
-    // "Q: <img src='images/MaD/14.png'>" +
-    // "A:$$${-(b^2\\mathbf{p}+c^2\\mathbf{q}+a^2\\mathbf{r})+2abc+pqr}$$" +
-    // "" +
     "Q: If A is skew-symmetric, then <latex-js>$${A^{even}}$$</latex-js> is " +
     "A: Symmetric matrix" +
     "" +
     "Q: If A is skew-symmetric, then <latex-js>$${A^{odd}}$$</latex-js> is " +
     "A: Skew-Symmetric matrix" +
-    "";
-
-MaD_TQA += "" +
+    "" +
     "Q: A + A' is <br> Symmetric / Skew-Symmetric ?" +
     "A: Symmetric" +
     "" +
     "Q: A - A' is <br> Symmetric / Skew-Symmetric ?" +
     "A: Skew-Symmetric" +
     "" +
-    // "Q: Symmetric + Symmetric is <br> Symmetric / Skew-Symmetric ?" +
-    // "A: Symmetric" +
-    // "" +
-    // "Q: Skew-Symmetric + Skew-Symmetric is <br> Symmetric / Skew-Symmetric ?" +
-    // "A: Skew-Symmetric" +
-    // ""
     "Q: If A and B are Symmetric, then AB + BA is " +
     "A: Symmetric Matrix" +
     "" +
     "Q: If A and B are Symmetric, then AB - BA is" +
     "A: Skew-Symmetric" +
     "" +
-    "Q: For a square matrix A, AA' and A'A is " +
+    "Q: For a square matrix A\ : AA' and A'A is " +
     "A: Symmetric Matrix" +
     "" +
     "Q: Determinant of skew-symmetric matrix of odd order ?" +
@@ -403,19 +369,14 @@ MaD_TQA += "" +
     "A: a.b.c" +
     "" +
     "Q: Trace(AB) = ?" +
-    "A: Trace(A).Trace(B)";
-
-MaD_TQA += "" +
+    "A: Trace(A).Trace(B)" +
+    "" +
     "Q: For an n×n matrix A, adj(kA) = ?" +
     "A:$$${k^{n-1}adj(A)}$$" +
     "" +
-    "Q: What is an involuntary matrix?" +
-    "A:$$${A^{-1}=A}$$" +
-    "" +
     "Q:$$${diag(a_1,a_2,....a_n)\\times diag(b_1,b_2,....b_n)}$$" +
-    "A:$$${diag(a_1 b_1,a_2 b_2,....a_n b_n)}$$"
-
-MaD_TQA += "" +
+    "A:$$${diag(a_1 b_1,a_2 b_2,....a_n b_n)}$$" +
+    "" +
     "Q: Sarrus rule for determinant of <img src='images/MaD/15.png'>" +
     "A: <img src='images/MaD/16.png'>" +
     "" +
@@ -431,11 +392,11 @@ MaD_TQA += "" +
     "Q: If determinant of an n×n matrix is △, then what is the determinant of its cofactor matrix" +
     "A:$$${\\Delta^c = \\Delta^{n-1}}$$" +
     "" +
-    "Q:$If $${ a.x^2 + b.y^2 + c + 2d.x + 2e.y + 2f.xy = 0 }$$ $${\\text{represents pairs of straight lines}}$$ $${ \\text{then represent this in form of determinant.}}$$" +
-    "A: <img src='images/MaD/20.png'>" +
-    "" +
     "Q: <img src='images/MaD/9.png'>" +
-    "A: <img src='images/MaD/10.png'>"
+    "A: <img src='images/MaD/10.png'>" +
+    "" +
+    "Q: Trace of a matrix ?" +
+    "A: Sum of elements of its principal diagonal";
 
 let Misc_TQA = "" +
     "Q:$Compendendo/ Dividendo for $${\\frac{a}{b}=\\frac{c}{d}}$$ = ?" +
