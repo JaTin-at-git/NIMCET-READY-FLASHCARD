@@ -113,7 +113,7 @@ var setsAndRelations = "" +
     "" +
     "Q:$$${A-(B\\cup C)= ?}$$" +
     "A:$$${A-(B\\cup C)= (A-B) \\cap (A-C)}$$" +
-    ""+
+    "" +
     "Q:$$${A-(B\\cap C)= ?}$$" +
     "A:$$${A-(B\\cap C)= (A-B) \\cup (A-C)}$$" +
     "" +
@@ -130,4 +130,132 @@ var setsAndRelations = "" +
     "A:$$${(A \\cap S)\\times(B \\cap T)}$$" +
     "" +
     "Q: If A and B have n elements in common, then how many elements does (A×B) have in common" +
-    "A:$$${n^2}$$"
+    "A:$$${n^2}$$";
+
+var stats = "" +
+    "Q: Arithmetic mean of distinct observations" +
+    "A:$$${\\frac{\\sum{x}}{n}}$$" +
+    "" +
+    "Q: Arithmetic mean of continuous observations" +
+    "A:$$${\\frac{\\sum{fx}}{N}}$$" +
+    "" +
+    "Q: Arithmetic mean using assumed mean" +
+    "A:$$${\\bar{x}=\\bar{A}+\\frac{\\sum{fu}}{N}i}$$ where" +
+    "   $${u=\\frac{x-\\bar{A}}{i}}$$" +
+    "   $${i=\\text{class width}}$$" +
+    "" +
+    "Q: Geometric mean of individual observations" +
+    "A:$$${G.M=(x_1.x_2.x_3....x_n)^{\\frac{1}{n}}}$$" +
+    "" +
+    "Q: Geometric mean of discrete observations" +
+    "A:$$${G.M=(x_1^{f1}.x_2^{f2}.x_3^{f3}....x_n^{fn})^{\\frac{1}{N}}}$$" +
+    "" +
+    "Q: Harmonic mean" +
+    "A:$$${HM=\\left (\\frac{\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+....+\\frac{1}{x_n}}{n}  \\right )^{reciprocal}}$$" +
+    "   $${HM=\\frac{n}{\\sum{\\frac{1}{x}}}}$$" +
+    "" +
+    "Q: Median of discrete observations" +
+    "A:$$${M_{d(even)}=\\frac{\\frac{n}{2}^{th}+(\\frac{n}{2}+1)^{th}}{2}}$$" +
+    "   $${M_{d(odd)}=\\frac{n+1}{2}^{th}}$$" +
+    "" +
+    "Q: Median of continuous observations" +
+    "A:$$${M_d=l_1+(\\frac{\\frac{N}{2}-C_0}{f_1})i}$$ where " +
+    "$${\\begin{cases}\n" +
+    "l_1 & \\text{ lower limit of median class } \\\\ \n" +
+    "N & \\sum{f}\\\\ \n" +
+    "C_0 & \\text{ C.F of class before median class }\\\\ \n" +
+    "f_1 & \\text{ frequency of median class }\\\\ \n" +
+    "i & \\text{ width of median class }\n" +
+    "\\end{cases}}$$" +
+    "" +
+    "Q: Mode of continuous observations" +
+    "A:$$${M_{ode}=l_1+(\\frac{f_1-f_0}{(f_1-f_0)+(f_1-f_2)})i}$$" +
+    "   where" +
+    "   $${\\begin{cases}\n" +
+    "l_1 & \\text{ lower limit of median class } \\\\\n" +
+    "i & \\text{ width of median class }\\\\ \n" +
+    "f_1 & \\text{ frequency of median class } \\\\\n" +
+    "f_0 & \\text{ frequency of class before median class }\n" +
+    "\\end{cases}}$$" +
+    "" +
+    "Q: Variance" +
+    "A:$$${\\sigma ^2=\\frac{1}{n}\\sum{(x-\\bar{x})^2}}$$" +
+    "   $${\\sigma ^2=\\text{(......) - (......)}^2}$$" +
+    "   $${\\sigma ^2=\\frac{1}{n}\\sum{x^2}-(\\frac{1}{n}\\sum{x})^2}$$" +
+    "" +
+    "Q: Standard deviation" +
+    "A:$$${\\sqrt{Variance}}$$" +
+    "" +
+    "Q: Mean deviation about mean" +
+    "A:$$${\\text{About mean}=\\frac{\\sum{(x-\\bar{x})}}{n}}$$" +
+    "" +
+    "Q: Mean deviation about median" +
+    "A:$$${\\text{About median}=\\frac{\\sum{(x-M_d)}}{n}}$$" +
+    "" +
+    "Q: Range ?" +
+    "A:$$${\\text{Range}=\\text{Highest value of Observation}-\\text{Lowest value of Observation}}$$" +
+    "" +
+    "Q: Range Coefficient ?" +
+    "A:$$${\\text{Range coefficient}=\\frac{\\text{Highest value of limit}-\\text{Lowest value of limit}}" +
+    "   {\\text{Highest value of limit}+\\text{Lowest value of limit}}}$$" +
+    "" +
+    //properties
+    "Q: sum of deviation of observations from its mean: ∑(x-x̄) = ?" +
+    "A:$$${\\sum{(x-\\bar{x})}=0}$$" +
+    "" +
+    "Q: sum of square of deviation of observations from its mean: ∑(x-x̄)² = ?" +
+    "A:$$${\\sum{(x-\\bar{x})^2} \\text{ is minimum}}$$" +
+    "" +
+    "Q: Which mean to use when distances covered are same?" +
+    "A: Harmonic mean" +
+    "" +
+    "Q: Combined variance" +
+    "A:$$${\\sigma ^2=\\frac{n_1[\\sigma_1^2+d_1^2]+n_2[\\sigma_2^2+d_2^2]}{n_1+n_2}}$$" +
+    "   $${\\begin{cases}\n" +
+    " \\bar{x_{12}}=\\frac{n_1\\bar{x_1}+n_2\\bar{x_2}}{n1+n2}\\\\ \n" +
+    " d_1=\\bar{x_{12}}-\\bar{x_1}\\\\ \n" +
+    " d_2=\\bar{x_{12}}-\\bar{x_2}\n" +
+    "\\end{cases}}$$" +
+    "" +
+    "Q: Mathematical relation between mean median mode ?" +
+    "A:$$${\\text{mode}+2\\text{mean}=3\\text{median}}$$" +
+    "" +
+    "Q: SD of first n natural numbers" +
+    "A:$$${\\sqrt{\\frac{n^2-1}{12}}}$$" +
+    "" +
+    "Q: What is root mean square and it's relation with arithmetic mean" +
+    "A:$$${RMS=\\sqrt{\\frac{\\sum x^2}{n}}}$$$${RMS\\ge AM \\ge GM \\ge HM}$$" +
+    "" +
+    "Q: Relation between SD and MeanDeviation" +
+    "A:$$${SD=\\frac{5}{4}MD}$$" +
+    "" +
+    "Q: New mean when k is added/subtracted?" +
+    "A:$$${\\bar{x}\\pm k}$$" +
+    "" +
+    "Q: New median when k is added/subtracted?" +
+    "A:$$${M_d\\pm k}$$" +
+    "" +
+    "Q: New mode when k is added/subtracted?" +
+    "A:$$${M_o\\pm k}$$" +
+    "" +
+    "Q: New variance when k is added/subtracted?" +
+    "A: Remains same" +
+    "" +
+    "Q: New SD when k is added/subtracted?" +
+    "A: Remains same" +
+    "" +
+    "Q: New mean when k is multiplied divided?" +
+    "A:$$${\\text{On multiplication: }\\bar{x}\\cdot k }$$$${\\text{On division: } \\frac{\\bar{x}}{k}}$$" +
+    "" +
+    "Q: New median when k is multiplied divided?" +
+    "A:$$${\\text{On multiplication: } M_d\\cdot k }$$$${\\text{On division: }\\frac{M_d}{k}}$$" +
+    "" +
+    "Q: New mode when k is multiplied divided?" +
+    "A:$$${\\text{On multiplication: } M_o\\cdot k }$$$${\\text{On division: }\\frac{M_o}{k}}$$" +
+    "" +
+    "Q: New variance when k is multiplied divided?" +
+    "A:$$${\\text{On multiplication: } \\sigma ^2 \\cdot k }$$$${\\text{On division: }\\frac{\\sigma ^2}{k^2}}$$" +
+    "" +
+    "Q: New SD when k is multiplied divided?" +
+    "A:$$${\\text{On multiplication: } \\sigma \\cdot k}$$$${\\text{On division: }\\frac{\\sigma}{k}}$$" +
+    ""
