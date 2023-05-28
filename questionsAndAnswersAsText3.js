@@ -130,7 +130,34 @@ var setsAndRelations = "" +
     "A:$$${(A \\cap S)\\times(B \\cap T)}$$" +
     "" +
     "Q: If A and B have n elements in common, then how many elements does (A×B) have in common" +
-    "A:$$${n^2}$$";
+    "A:$$${n^2}$$" +
+    "" +
+    "Q: What is a relation ?" +
+    "A: A subset of A×B" +
+    "" +
+    "Q: Identity relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(3).jpg'>" +
+    "Q: Reflexive relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(4).jpg'>" +
+    "Q: Symmetric relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(5).jpg'>" +
+    "Q: Anti-Symmetric relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(6).jpg'>" +
+    "Q: Transitive relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(7).jpg'>" +
+    "Q: Equivalence relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(8).jpg'>" +
+    "Q: Inverse relation ?" +
+    "A: <img src='images/setRelation/setRelation%20(9).jpg'>" +
+    "" +
+    "Q: Total number of binary operations on a set with n elements ?" +
+    "A: <img src='images/setRelation/setRelation%20(10).jpg'>" +
+    "" +
+    "Q: How many different Boolean functions of n variables are there ?" +
+    "A: <img src='images/setRelation/setRelation%20(11).jpg'>" +
+    "" +
+    "Q: Total number of cummulative binary operations on a set with n elements ? (cummulative means  changing the order of the operands does not change the resul)" +
+    "A:$$${n^{\\frac{n(n+1)}{2}}}$$";
 
 var stats = "" +
     "Q: Arithmetic mean of distinct observations" +

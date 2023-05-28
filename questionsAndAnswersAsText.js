@@ -45,6 +45,9 @@ let PnC_TQA = "" +
     "Q:$$${^nC_1+^nC_3+^nC_5+...=?}$$" +
     "A:$$${^nC_0+^nC_1+^nC_2+...=2^{n-1}}$$" +
     "" +
+    "Q:$$${^nC_n+^{n+1}C_n+^{n+2}C_n+...+^{2n-1}C_n=?}$$" +
+    "A:$$${^nC_n+^{n+1}C_n+^{n+2}C_n+...+^{2n-1}C_n=^{2n}C_{n+1}}$$" +
+    "" +
     "Q:$$${^nC_r}$$ has max value when r = ?" +
     "A:$$${ \\frac{n}{2},}$$$${ \\frac{n+1}{2},}$$$${ \\frac{n-1}{2},}$$" +
     "" +
@@ -127,7 +130,13 @@ let PnC_TQA = "" +
     "A:$$${^nC_r(n-r)![ \\frac{1}{0!}- \\frac{1}{1!}+ \\frac{1}{2!}- \\frac{1}{3!}... \\frac{-1^{n-r}}{(n-r)!}]}$$" +
     "" +
     "Q: Number of cases to get a sum=2,3,...12 when two dices are rolled" +
-    "A: <img src='images/PnC/1.png'>";
+    "A: <img src='images/PnC/1.png'>" +
+    "" +
+    "Q: Sum of digits in the unit place of all the numbers formed without repetation using <latex-js>$${(a_1,a_2,a_3,....,a_n)$$</latex-js>" +
+    "A:$$${(n-1)!\\times (a_1+a_2+a_3+.....+a_n)}$$" +
+    ""+
+    "Q: Sum of all the numbers formed without repetation using <latex-js>$${(a_1,a_2,a_3,....,a_n)$$</latex-js>" +
+    "A:$$${(n-1)!\\times (a_1+a_2+a_3+.....+a_n).(11111....nTimes)}$$";
 
 let Probability_TQA =
     "" +
@@ -175,8 +184,14 @@ let SequenceAndSeries_TQA =
     "Q:$$${n^{th}\\text{ term of an AP?}}$$" +
     "A:$$${T_n=a+(n-1)d}$$" +
     "" +
+    "Q: Kth and Pth term of an AP is given, then nth term is?" +
+    "A:$$${\\frac{T_n-T_k}{n-k}=\\frac{T_p-T_k}{p-k}}$$" +
+    "" +
     "Q: Sum of first n terms of an AP?" +
     "A:$$${S_n= \\frac{n}{2}[2a+(n-1)d]}$$ or $${S_n= \\frac{n}{2}[a+l]}$$" +
+    "" +
+    "Q: If sum of n terms of an AP is <latex-js>$${Pn^2+Q}$$</latex-js> then common-difference is" +
+    "A:$$${Pn^2+Q=\\frac{d}{2}n^2+Q}$$$${=>d=2P}$$" +
     "" +
     "Q: Terms to take in AP when sum is given, of 3,4 and 5 terms?" +
     "A: <img src='images/SeriesAndSequence/1.jpeg'>" +
@@ -184,8 +199,29 @@ let SequenceAndSeries_TQA =
     "Q: Realtion b/w a,b,c if thery are in AP" +
     "A:$$${b= \\frac{a+c}{2}}$$" +
     "" +
+    "Q:$$${\\text{If } p.T_p=q.T_q \\text{ then }T_{p+q}= ?}$$" +
+    "A:$$${T_{p+q}=0}$$" +
+    "" +
+    "Q:$$${\\text{If } S_p=S_q \\text{ then }S_{p+q}= ?}$$" +
+    "A:$$${S_{p+q}=0}$$" +
+    "" +
+    "Q:$$${\\text{If } T_p=\\frac{1}{q} \\text{ and } T_q=\\frac{1}{p} \\text{ then }T_{pq}= ?}$$" +
+    "A:$$${T_{pq}=1}$$" +
+    "" +
+    "Q:$$${\\text{If } S_p=\\frac{1}{q} \\text{ and } S_q=\\frac{1}{p} \\text{ then }S_{pq}= ?}$$" +
+    "A:$$${S_{pq}=\\frac{pq+1}{2}}$$" +
+    "" +
+    "Q:$$${\\text{If } T_p=q \\text{ and } T_q=p \\text{ then }T_{n} \\text{ and } T_{p+q} = ?}$$" +
+    "A:$$${T_{n}=p+q-n}$$$${T_{p+q}=0}$$" +
+    "" +
+    "Q:$$${\\text{If } S_p=q \\text{ and } S_q=p \\text{ then } S_{p+q} = ?}$$" +
+    "A:$$${S_{p+q}=-(p+q)}$$" +
+    "" +
     "Q:$$${n^{th}\\text{ term of an GP?}}$$" +
     "A:$$${T_n=ar^{n-1}}$$" +
+    "" +
+    "Q: If Kth and Pth term of an GP are given, then nth term is " +
+    "A:$$${\\left (  \\frac{T_n}{T_k}\\right )^{\\frac{1}{n-k}}=\\left (  \\frac{T_p}{T_k}\\right )^{\\frac{1}{p-k}}}$$" +
     "" +
     "Q: Sum of n terms of a GP?" +
     "A:$$${S_n= \\frac{a(r^n-1)}{r-1}}$$" +
@@ -205,6 +241,8 @@ let SequenceAndSeries_TQA =
     "Q: Realtion b/w a,b,c if thery are in HP" +
     "A:$$${b= \\frac{2ac}{a+c}}$$" +
     "" +
+    "Q: Example of terms in HP?" +
+    "A: (2,3,6) and (3,4,6)" +
     "Q:$$${n^{th}\\text{ term of an AGP?}}$$" +
     "A:$$${T_n=AP_{n^{th}term} \\cdot GP_{n^{th}term}}$$ $${T_n=[a+(n-1)d)] \\cdot[ar^{n-1}]}$$" +
     "" +
@@ -215,25 +253,34 @@ let SequenceAndSeries_TQA =
     "A:$$${ \\frac{K}{81}[10^{n+1}-9n-10]}$$" +
     "" +
     "Q: Sum of 'n' terms of series <br><br> 0.K, 0.KK, 0.KKK, 0.KKKK ...." +
-    "A:$$${ \\frac{K}{81}[ \\frac{1}{10^n}+9n-1]}$$" +
+    "A:$$${ \\frac{K}{81}[ \\frac{1}{10^n}+9n-1]}$$ replace n=>-(n+1) is series of K+KK+KKK...." +
     "" +
     "Q: If <br>'A' is Arithmetic Mean and 'G' is Geometric Mean<br> of two numbers 'a' and 'b', then 'a' and 'b' cab be calculated using ?" +
     "A:$$${a,b=A \\pm \\sqrt{A^2-G^2}}$$" +
     "" +
-    "Q: In AP, relation between S<sub>n</sub>, S<sub>2n</sub> and S<sub>3n</sub> ?" +
+    "Q: In AP, relation between Sn S2n S3n ?" +
     "A:$$${S_{3n}=3(S_{2n}-S_n)}$$" +
     "" +
     "Q:$In AP,<br>$${ \\frac{1}{a_1a_2}+ \\frac{1}{a_2a_3}+...+ \\frac{1}{a_{n-1}a_n} = ?}$$" +
     "A:$$${ \\frac{n-1}{a_na_1}}$$" +
     "" +
-    "Q: 1+2+3+...+n = ?" +
+    "Q:$$${1+2+3+...+n = ?}$$" +
     "A:$$${\\frac{n(n+1)}{2}}$$" +
+    "" +
+    "Q:$$${1+3+5+7+....n-terms = ?}$$" +
+    "A:$$${n^2}$$" +
     "" +
     "Q:$$${1^2+2^2+3^2+...+n^2}$$" +
     "A:$$${\\frac{n(n+1)(2n+1)}{6}}$$" +
     "" +
+    "Q:$$${1^2+3^2+5^2+....n-terms}$$" +
+    "A:$$${\\frac{n(2n+1)(2n-1)}{3}}$$" +
+    "" +
     "Q:$$${1^3+2^3+3^3+...+n^3}$$" +
-    "A:$$${\\left [ \\frac{n(n+1)}{2} \\right ]^2}$$";
+    "A:$$${\\left [ \\frac{n(n+1)}{2} \\right ]^2}$$" +
+    "" +
+    "Q: <img src='images/SeriesAndSequence/3.jpg'>"+
+    "A: <img src='images/SeriesAndSequence/4.jpg'>";
 
 let complex = "" +
     "Q: if ω is the cube root of unity, then <br> ω³ = ?" +
@@ -329,6 +376,18 @@ let MaD_TQA =
     "Q: Nilpotent matrix ?" +
     "A:$$${A^n=0}$$" +
     "" +
+    "Q: Singular matrix = ?" +
+    "A: determinant = 0 " +
+    "" +
+    "Q: Scalar matrix = ?" +
+    "A: determinant not 0 " +
+    "" +
+    "Q: Elementary matrix = ?" +
+    "A: Matrix that can be obtained by a single elementary row operation on identity matrix" +
+    "" +
+    "Q: Hermetian matrix and skew-hermitian matrix ?" +
+    "A: Hermetian means A = conjugate(A) <br> skew-hermetian means A = -conjugate(A)" +
+    "" +
     "Q: <img src='images/MaD/5.png'>" +
     "A: <img src='images/MaD/6.png'>" +
     "" +
@@ -419,8 +478,8 @@ let Misc_TQA = "" +
     "$${\\alpha \\beta \\gamma = \\frac{-d}{a}}$$";
 
 let quad = "" +
-    "Q: If one root of quadratic equation is a+ib then another is ?" +
-    "A: a-ib" +
+    "Q:$$${\\text{If one root of quadratic equation is } a+ib \\text{ then another is ?}}$$" +
+    "A:$$${a-ib}$$" +
     "" +
     "Q:$$${\\text{If one root of quadratic equation is }a+\\sqrt{b} \\text{ then other is ?}}$$" +
     "A:$$${a-\\sqrt{b}}$$" +
@@ -430,35 +489,32 @@ let quad = "" +
     "A:$$${\\alpha + \\beta = \\frac{-b}{a}}$$" +
     "$${\\alpha \\beta = \\frac{c}{a}}$$" +
     "" +
-    "Q:$$${\\alpha^2 + \\beta^2 = ?}$$" +
-    "A:$$${\\alpha^2 + \\beta^2 = ({\\alpha + \\beta})^2 - 2\\alpha\\beta}$$" +
-    "" +
-    "Q:$$${\\alpha^3 + \\beta^3 = ?}$$" +
-    "A:$$${\\alpha^3 + \\beta^3 = ({\\alpha + \\beta})^3 - 3\\alpha\\beta(\\alpha+\\beta)}$$" +
-    "" +
-    "Q:$$${|\\alpha-\\beta|}$$" +
-    "A:$$${\\sqrt{(\\alpha+\\beta)^2-4\\alpha\\beta}}$$" +
-    "" +
-    "Q:$$${\\alpha^4+\\beta^4}$$" +
-    "A:$$${(\\alpha^2+\\beta^2) - 4\\alpha^2\\beta^2 }$$" +
-    "" +
     "Q:$$${\\text{Relation between coefficients if } }$$ $${a_1x^2+b_1x+c_1=0 \\text{ and }}$$$${ a_2x^2+b_2x+c_2=0 \\text{ have one common root}}$$" +
-    "A:$$${\\frac{\\alpha^2}{b_1c_2-b_2c_1}=\\frac{-\\alpha}{c_2a_1-c_1a_2}=\\frac{1}{a_1b_2-a_2b_1}}$$" +
+    "A:$$${\\frac{\\alpha^2}{b_1c_2-b_2c_1}=\\frac{-\\alpha}{c_2a_1-c_1a_2}=\\frac{1}{a_1b_2-a_2b_1}}$$or$${(a_1b_2-a_2b_1)^2=(a_1-b_2)(a_2-b_1)}$$" +
+    "   To find the common root, make coefficient of second-degree terms equal in both equations and then subtract, the x thus obtained is the required common root" +
     "" +
     "Q:$$${\\text{Relation between coefficients if } }$$ $${a_1x^2+b_1x+c_1=0 \\text{ and }}$$$${ a_2x^2+b_2x+c_2=0 \\text{ have same roots}}$$" +
     "A:$$${\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}}$$" +
     "" +
     "Q: Coordinates of vertex for a quadratic equation ?" +
-    "A:$$${\\left ( \\frac{-b}{2a} , \\frac{D}{4a} \\right )}$$" +
+    "A:$$${\\left ( \\frac{-b}{2a} , \\frac{-D}{4a} \\right )}$$" +
     "" +
     "Q:$$${\\text{Condition at which } ax^2+bx+c>0 }$$" +
     "A:$$${D<0 \\Rightarrow  b^2-4ac<0}$$" +
+    "" +
+    "Q:$$${\\text{If roots of }ax^2+bx+c=0 \\text{ are in ratio } p:q \\text{ then relation between a,b,c,p,q is ?}}$$" +
+    "A:$$${\\frac{b^2}{ac}=\\frac{(p+q)^2}{pq}}$$" +
+    "" +
+    "Q:$$${\\text{If roots of equation }ax^2+bx+c=0 \\text{ are }\\alpha \\text{ and } \\beta \\text{ , then equation with roots } \\frac{1}{\\alpha} \\text{ and } \\frac{1}{\\beta} is }$$" +
+    "A:$$${cx^2+bx+a}$$" +
     "" +
     "Q:$$${\\text{Roots of }x^2+x+1=0}$$" +
     "A:$$${\\omega^2,\\omega}$$" +
     "" +
     "Q:$$${\\text{Roots of }x^2-x+1=0}$$" +
-    "A:$$${-\\omega^2,-\\omega}$$";
+    "A:$$${-\\omega^2,-\\omega}$$" +
+    "" +
+    "";
 
 let tRatio = "" +
     "Q:$$${\\sin(15) \\text{ and } \\cos(15) = \\ ?}$$" +

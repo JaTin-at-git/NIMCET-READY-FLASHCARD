@@ -31,10 +31,11 @@ let dictionary = {
     "ellipseHyperbola": ellipseHyperbola,
     "vector": vector,
     "setsAndRelations": setsAndRelations,
-    "stats": stats
+    "stats": stats,
+    "expansion": expansion
 }
 
-let topicForNotes = ["secondDegree"];
+let topicForNotes = [];
 
 /////////////////
 
@@ -89,7 +90,7 @@ function addNote(q, a) {
      <span class="A"><span style="color: black">Answer:</span><br>${a}</span>
     `;
     noteID1.appendChild(element);
-    element.scrollIntoView();
+    // element.scrollIntoView();
 }
 
 function addListnerToCheckboxes() {
