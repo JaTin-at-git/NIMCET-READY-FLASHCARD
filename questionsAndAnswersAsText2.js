@@ -367,7 +367,13 @@ var ellipseHyperbola = "" +
     "A:$$${\\frac{1}{e^2}+\\frac{1}{e_c^2}=1}$$" +
     "" +
     "Q: Equation of rectangular hyperbols" +
-    "A:$$${x^2-y^2=a^2}$$" +
+    "A:$$${x^2-y^2=a^2}$$$${xy=c^2}$$" +
+    "" +
+    "Q:$$${\\text{Picturize }x^2-y^2=a^2 \\text{ and } xy=c^2}$$" +
+    "A: <img src='images/hyperbola/hyperbola%20(4).jpg'> " +
+    "" +
+    "Q: Relation between c and a of <img src='images/hyperbola/hyperbola%20(4).jpg'>" +
+    "A:$$${c=\\sqrt{2}a}$$" +
     "" +
     "Q: Eccentricity of rectangular hyperbola" +
     "A:$$${\\sqrt{2}}$$" +
@@ -377,6 +383,15 @@ var ellipseHyperbola = "" +
     "" +
     "Q: Angle between assymptotes of hyperbola" +
     "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2-b^2} \\right |}$$" +
+    "" +
+    "Q: Tangent to xy=c² at (x1,y1)" +
+    "A: <img src='images/hyperbola/hyperbola%20(5).jpg'>" +
+    "" +
+    "Q: Normal to xy=c² at (x1,y1)" +
+    "A: <img src='images/hyperbola/hyperbola%20(5).jpg'>" +
+    "" +
+    "Q: Equation of chord bisected at (x1,y1) of xy=c²" +
+    "A: <img src='images/hyperbola/hyperbola%20(5).jpg'>" +
     "";
 
 

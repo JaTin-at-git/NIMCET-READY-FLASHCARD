@@ -32,7 +32,10 @@ let dictionary = {
     "vector": vector,
     "setsAndRelations": setsAndRelations,
     "stats": stats,
-    "expansion": expansion
+    "expansion": expansion,
+    "propTriangle": propTriangle,
+    "differentiation": differentiation,
+    "integration": integration
 }
 
 let topicForNotes = [];
@@ -90,7 +93,7 @@ function addNote(q, a) {
      <span class="A"><span style="color: black">Answer:</span><br>${a}</span>
     `;
     noteID1.appendChild(element);
-    // element.scrollIntoView();
+    element.scrollIntoView();
 }
 
 function addListnerToCheckboxes() {

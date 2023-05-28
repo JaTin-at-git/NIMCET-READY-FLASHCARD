@@ -134,7 +134,7 @@ let PnC_TQA = "" +
     "" +
     "Q: Sum of digits in the unit place of all the numbers formed without repetation using <latex-js>$${(a_1,a_2,a_3,....,a_n)$$</latex-js>" +
     "A:$$${(n-1)!\\times (a_1+a_2+a_3+.....+a_n)}$$" +
-    ""+
+    "" +
     "Q: Sum of all the numbers formed without repetation using <latex-js>$${(a_1,a_2,a_3,....,a_n)$$</latex-js>" +
     "A:$$${(n-1)!\\times (a_1+a_2+a_3+.....+a_n).(11111....nTimes)}$$";
 
@@ -279,7 +279,7 @@ let SequenceAndSeries_TQA =
     "Q:$$${1^3+2^3+3^3+...+n^3}$$" +
     "A:$$${\\left [ \\frac{n(n+1)}{2} \\right ]^2}$$" +
     "" +
-    "Q: <img src='images/SeriesAndSequence/3.jpg'>"+
+    "Q: <img src='images/SeriesAndSequence/3.jpg'>" +
     "A: <img src='images/SeriesAndSequence/4.jpg'>";
 
 let complex = "" +
@@ -363,7 +363,7 @@ let MaD_TQA =
     "" +
     "Q: For what value of D does Homogenous equations have infinity many solution ?" +
     "A:$$${D = 0 \\ \\ \\ }$$" +
-    ""+
+    "" +
     "Q: Idompotent matrix => ?" +
     "A: A²=A" +
     "" +
@@ -470,6 +470,9 @@ let Misc_TQA = "" +
     "Q: What is the sum of internal angles of a 'n' sided polygon?" +
     "A: 180(n-2)" +
     "" +
+    "Q: What is the length of an n sided polygon inscribed in a circle of radius r" +
+    "A:$$${side=2r\\sin(\\frac{\\pi}{n})}$$" +
+    "" +
     "Q:$$${ax^3+bx^2+cx+d=0}$$ then $${\\alpha + \\beta + \\gamma =\\ ? }$$ " +
     "$${\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha =\\ ? }$$" +
     "$${\\alpha \\beta \\gamma =\\  ?}$$" +
@@ -517,8 +520,8 @@ let quad = "" +
     "";
 
 let tRatio = "" +
-    "Q:$$${\\sin(15) \\text{ and } \\cos(15) = \\ ?}$$" +
-    "A:$$${\\sin(15) = \\frac{\\sqrt{3}-1}{2\\sqrt{2}}}$$ $${\\cos(15) = \\frac{\\sqrt{3}+1}{2\\sqrt{2}}}$$" +
+    "Q:$$${\\sin(15) \\text{ and } \\cos(15) \\text{ and } \\tan(15)= \\ ?}$$" +
+    "A:$$${\\sin(15) = \\frac{\\sqrt{3}-1}{2\\sqrt{2}}}$$ $${\\cos(15) = \\frac{\\sqrt{3}+1}{2\\sqrt{2}}}$$ $${\\tan(15)=2-\\sqrt{3}}$$" +
     "" +
     "Q:$$${\\sin(75) \\text{ and } \\cos(75) = \\ ?}$$" +
     "A:$$${\\sin(75) = \\frac{\\sqrt{3}+1}{2\\sqrt{2}}}$$ $${\\cos(75) = \\frac{\\sqrt{3}-1}{2\\sqrt{2}}}$$" +
@@ -528,6 +531,9 @@ let tRatio = "" +
     "" +
     "Q:$$${\\sin(45) \\text{ and } \\cos(45) = \\ ?}$$" +
     "A:$$${\\sin(45)=\\frac{1}{\\sqrt2} }$$ $${\\cos(45) =\\frac{1}{\\sqrt2} }$$" +
+    "" +
+    "Q:$$${\\tan(\\frac{\\pi}{8})}$$" +
+    "A:$$${\\sqrt{2}-1}$$" +
     "" +
     "Q:$$${\\sin(60) \\text{ and } \\cos(60) = \\ ?}$$" +
     "A:$$${\\sin(60)=\\frac{\\sqrt3}{2} }$$ $${ \\cos(60) =\\frac{1}{2} }$$" +
@@ -560,6 +566,9 @@ let trigSumPro = "" +
     "" +
     "Q:$$${tan(A-B)}$$" +
     "A:$$${\\frac{\\tan(A)-\\tan(B)}{1+\\tan(A)\\tan(B)}}$$" +
+    "" +
+    "Q:$$${tan(A+B+C)}$$" +
+    "A:$$${\\frac{\\tan(A)+\\tan(B)+\\tan(C)-\\tan(A)\\tan(B)\\tan(C)}{1-\\tan(A)\\tan(B)-\\tan(B)\\tan(C)-\\tan(C)\\tan(A)}}$$" +
     "" +
     "Q:$$${2\\sin(A)\\cos(B)}$$" +
     "A:$$${\\sin(A+B)+\\sin(A-B)}$$" +
@@ -668,7 +677,10 @@ let trigSeries = "" +
     "A:$$${\\frac{\\cos(\\alpha+\\frac{(n-1)\\beta}{2})\\cdot \\sin(\\frac{n\\cdot \\beta}{2})}{\\sin(\\frac{\\beta}{2})}}$$" +
     "" +
     "Q:$$${\\tan(A)+\\cot(A)}$$" +
-    "A:$$${2\\cdot cosec(2A)}$$";
+    "A:$$${2\\cdot cosec(2A)}$$" +
+    "" +
+    "Q:$$${sin\\frac{\\pi}{14}sin\\frac{\\3pi}{14}sin\\frac{\\7pi}{14}}$$" +
+    "A:$$${sin\\frac{\\pi}{14}sin\\frac{\\3pi}{14}sin\\frac{\\7pi}{14}\\frac{1}{8}}$$";
 
 let condTrig = "" +
     "Q:$If A+B+C=π, then $${\\sin(A)+\\sin(B)+\\sin(C)}$$" +
@@ -740,16 +752,23 @@ let trigMiscFacts = "" +
     "Q:$Min and Max value of $${A=k_1\\sin^n(\\theta)+k_2\\cos^m(\\theta)}$$ if 'n,m' are even is" +
     "A:$Min and Max value will occur at any of $${0^{\\circ},30^{\\circ},45^{\\circ},60^{\\circ},90^{\\circ},15^{\\circ}}$$" +
     "" +
-    "Q: Sine law for<br> <img src='images/Trig/img.png'>" +
-    "A:$$${\\frac{\\sin(A)}{a}=\\frac{\\sin(B)}{b}=\\frac{\\sin(C)}{c}=\\lambda=\\frac{1}{\\beta}}$$" +
-    "" +
-    "Q: Cosine law for<br> <img src='images/Trig/img.png'>" +
-    "A:$$${\\cos(A)=\\frac{b^2+c^2-a^2}{2bc}}$$ $${\\cos(B)=\\frac{c^2+a^2-b^2}{2ca}}$$ $${\\cos(C)=\\frac{a^2+b^2-c^2}{2ab}}$$" +
-    "" +
-    "Q: Angle between hour hand and minute hand of a clock?" +
-    "A:$$${\\left | 30h - 6m \\right |}$$<br>where, $${'h'=hours+\\frac{min}{60}}$$  $${'m'=minutes}$$" +
-    "" +
     "Q:$Min and Max value of $${a\\sin(\\theta)+b\\cos(\\theta)}$$" +
-    "A:$$${-\\sqrt{a^2+b^2} \\leqslant  a\\sin(\\theta)+b\\cos(\\theta) \\leqslant \\sqrt{a^2+b^2}}$$"
+    "A:$$${-\\sqrt{a^2+b^2} \\leqslant  a\\sin(\\theta)+b\\cos(\\theta) \\leqslant \\sqrt{a^2+b^2}}$$" +
+    "" +
+    "Q:$$${\\text{If }a\\sin\\theta+b\\cos\\theta=\\sqrt{a^2+b^2}\\text{ then sin and cos are }}$$" +
+    "A:$$${\\sin\\theta=\\frac{a}{\\sqrt{a^2+b^2}}}$$$${\\cos\\theta=\\frac{b}{\\sqrt{a^2+b^2}}}$$" +
+    "" +
+    "Q:$$${\\text{Min value of   } a\\sin^2\\theta+b\\cosed^2\\theta}$$" +
+    "A:$$${\\begin{cases}\n" +
+    "2\\sqrt{ab} & \\text{ if coeff(sin) greater than coeff(cosec)} \\\\ \n" +
+    "a+b & \\text{ otherwise } \n" +
+    "\\end{cases}}$$" +
+    "" +
+    "Q:$$${\\text{Min value of   } a\\cos^2\\theta+b\\sec^2\\theta}$$" +
+    "A:$$${\\begin{cases}\n" +
+    "2\\sqrt{ab} & \\text{ if coeff(cos) greater than coeff(sec)} \\\\ \n" +
+    "a+b & \\text{ otherwise } \n" +
+    "\\end{cases}}$$" +
+    "" ;
 //copy latex from here
 // https://latex.codecogs.com/eqneditor/editor.php
