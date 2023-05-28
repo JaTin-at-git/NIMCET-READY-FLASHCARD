@@ -369,6 +369,16 @@ latex-js {
     --size: 20px !important;
 }
 
+.questionPage latex-js{
+    --size: abcd !important;
+}
+
+.questionPage img{
+    max-height: 200px;
+    width: fit-content;
+    MAX-WIDTH: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     latex-js {
         transform: scale(1.5);

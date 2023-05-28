@@ -85,6 +85,9 @@ var secondDegree = "" +
     "Q: Angle between the lines represented by <img src='images/secondDegree/secondDegree%20(1).jpg'>" +
     "A: <img src='images/secondDegree/secondDegree%20(6).jpg'>" +
     "" +
+    "Q: Slope of lines represented by <img src='images/secondDegree/secondDegree%20(1).jpg'>" +
+    "A:$$${m_1,m_2=\\frac{-h\\pm\\sqrt{h^2-ab}}{b}}$$" +
+    "" +
     "Q: If <img src='images/secondDegree/secondDegree%20(7).jpg'> represents pair of lines passing through origin then SUM of their slopes is" +
     "A: <img src='images/secondDegree/secondDegree%20(8).jpg'>" +
     "" +
@@ -98,7 +101,25 @@ var secondDegree = "" +
     "A: <img src='images/secondDegree/secondDegree%20(11).jpg'>" +
     "" +
     "Q: Equation of perpendiculars of <img src='images/secondDegree/secondDegree%20(7).jpg'>" +
-    "A: <img src='images/secondDegree/secondDegree.jpg'>";
+    "A: <img src='images/secondDegree/secondDegree.jpg'>" +
+    "" +
+    "Q: Condition that <img src='images/secondDegree/secondDegree%20(1).jpg'> represents pair of parallel lines?" +
+    "A:$$${\\frac{a}{h}=\\frac{h}{b}=\\frac{g}{f}}$$" +
+    ""+
+    "Q: If <img src='images/secondDegree/secondDegree%20(1).jpg'> represents pair of parallel lines, then distance between them ?" +
+    "A:$$${2\\sqrt{\\frac{g^2-ac}{a(a+b)}}}$$$${2\\sqrt{\\frac{f^2-bc}{b(a+b)}}}$$" +
+    "" +
+    "Q: Angle bisector of <img src='images/secondDegree/secondDegree%20(1).jpg'> passing through (x1,y1)?" +
+    "A:$$${\\frac{(x-x_1)^2-(y-y_1)^2}{a-b}=\\frac{(x-x_1)(y-y_1)}{h}}$$" +
+    "" +
+    "Q: <img src='images/secondDegree/secondDegree%20(12).jpg'>"+
+    "A: <img src='images/secondDegree/secondDegree%20(13).jpg'>" +
+    "" +
+    "Q: <img src='images/secondDegree/secondDegree%20(14).jpg'>"+
+    "A: <img src='images/secondDegree/secondDegree%20(15).jpg'>" +
+    "" +
+    "Q: <img src='images/secondDegree/secondDegree%20(16).jpg'>"+
+    "A: <img src='images/secondDegree/secondDegree%20(17).jpg'>";
 
 var circle = "" +
     "Q: Centre and radius of circle represented by <img src='images/circle/circle%20(2).jpg'>" +
@@ -356,7 +377,7 @@ var ellipseHyperbola = "" +
     "" +
     "Q: Angle between assymptotes of hyperbola" +
     "A:$$${\\tan\\theta=\\left | \\frac{2ab}{a^2-b^2} \\right |}$$" +
-    "" ;
+    "";
 
 
 

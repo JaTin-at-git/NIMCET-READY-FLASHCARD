@@ -258,4 +258,6 @@ var stats = "" +
     "" +
     "Q: New SD when k is multiplied divided?" +
     "A:$$${\\text{On multiplication: } \\sigma \\cdot k}$$$${\\text{On division: }\\frac{\\sigma}{k}}$$" +
-    ""
+    "" +
+    "Q: Coefficient of variation?" +
+    "A:$$${CV=\\frac{SD}{Mean}}$$"
