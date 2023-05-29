@@ -1,7 +1,7 @@
 // This file contains questions over 1the following topics:
 let algebraicFormulas = "" +
     "Q:$$${a^3+b^3}$$" +
-    "A:$$${(a+b)(a^2+b^2+ab)}$$" +
+    "A:$$${(a+b)(a^2+b^2-ab)}$$" +
     "$${(a+b)^3-3ab(a+b)}$$" +
     "" +
     "Q:$$${a^3-b^3}$$" +
@@ -250,7 +250,7 @@ var parabola = "" +
 
 var ellipseHyperbola = "" +
     "Q: Eccentricity of ellipse <img src='images/ellipse/ellipse.jpg'>" +
-    "A:$$${0< e<1}$$$${e=\\frac{F_2P}{PL}}$$" +
+    "A:$$${0< e<1}$$$${e=\\frac{F_2P}{P\\text{ to directrix}}}$$" +
     "" +
     "Q: Eccentricity of hyperbola <img src='images/hyperbola/hyperbola.jpg'>" +
     "A:$$${e>1}$$$${e=\\frac{SP}{PL}}$$" +
@@ -262,19 +262,19 @@ var ellipseHyperbola = "" +
     "A:$$${x=\\pm \\frac{\\text{a}}{e}}$$" +
     "" +
     "Q: Relation between a,b,e of ellipse" +
-    "A:$$${e^2=1-\\frac{b^2}{a}}$$" +
+    "A:$$${e^2=1-\\frac{b^2}{a^2}}$$" +
     "" +
     "Q: Relation between a,b,e of hyperbola" +
-    "A:$$${e^2=1+\\frac{b^2}{a}}$$" +
+    "A:$$${e^2=1+\\frac{b^2}{a^2}}$$" +
     "" +
     "Q: Length of latus rectum or ellipse/hyperbola" +
-    "A:$$${\\frac{2b^2}{a}}$$" +
+    "A:$$${\\frac{b^2}{a}+\\frac{b^2}{a}}$$" +
     "" +
     "Q: Focal lengths of ellipse" +
-    "A:$$${a-ex_1, a+ex_1}$$" +
+    "A:$$${a-ex_1, a+ex_1}$$$${\\text{e is with x}}$$" +
     "" +
     "Q: Focal lengths of hyperbola" +
-    "A:$$${-a+ex_1, a+ex_1}$$" +
+    "A:$$${-a+ex_1, a+ex_1}$$$${\\text{e is with x}}$$" +
     "" +
     "Q: Relation between F1P and F2P in the ellipse? <img src='images/ellipse/ellipse.jpg'>" +
     "A:$$${F_1P+F_2P=2a}$$ Sum of focal distances is constant" +
@@ -307,10 +307,10 @@ var ellipseHyperbola = "" +
     "A:$$${c^2=a^2m^2-b^2}$$ where a is under x and b is under y" +
     "" +
     "Q: Condition of normal for ellipse" +
-    "A:$$${\\frac{(a^2-b^2)m}{\\sqrt{a^2 + b^2m^2}}}$$ where a is under x and b is under y" +
+    "A:$$${c^2=\\frac{(a^2-b^2)m}{\\sqrt{a^2 + b^2m^2}}}$$ where a is under x and b is under y" +
     "" +
     "Q: Condition of normal for hyperbola" +
-    "A:$$${\\frac{(a^2+b^2)m}{\\sqrt{a^2 - b^2m^2}}}$$ where a is under x and b is under y" +
+    "A:$$${c^2=\\frac{(a^2+b^2)m}{\\sqrt{a^2 - b^2m^2}}}$$ where a is under x and b is under y" +
     "" +
     "Q: Slope form of tangent of ellipse" +
     "A:$$${y=mx+\\sqrt{a^2m^2+b^2}}$$ where a is under x and b is under y" +

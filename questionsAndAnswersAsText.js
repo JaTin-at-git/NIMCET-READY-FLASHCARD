@@ -758,7 +758,7 @@ let trigMiscFacts = "" +
     "Q:$$${\\text{If }a\\sin\\theta+b\\cos\\theta=\\sqrt{a^2+b^2}\\text{ then sin and cos are }}$$" +
     "A:$$${\\sin\\theta=\\frac{a}{\\sqrt{a^2+b^2}}}$$$${\\cos\\theta=\\frac{b}{\\sqrt{a^2+b^2}}}$$" +
     "" +
-    "Q:$$${\\text{Min value of   } a\\sin^2\\theta+b\\cosed^2\\theta}$$" +
+    "Q:$$${\\text{Min value of   } a\\sin^2\\theta+b\\cosec^2\\theta}$$" +
     "A:$$${\\begin{cases}\n" +
     "2\\sqrt{ab} & \\text{ if coeff(sin) greater than coeff(cosec)} \\\\ \n" +
     "a+b & \\text{ otherwise } \n" +

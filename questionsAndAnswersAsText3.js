@@ -100,7 +100,7 @@ var setsAndRelations = "" +
     "A:$$${\\text{Elements in proper set = }2^n}$$" +
     "" +
     "Q: The only ways to represent a null set" +
-    "A:$$${\\phi \\text{ or } \\{\\} }$" +
+    "A:$$${\\phi \\text{ or } \\{\\} }$$" +
     "" +
     "Q:$$${\\text{For two sets A and B}}$$$${A-B = ?}$$" +
     "A:$$${A-B=A\\cap B'}$$$${A-B=B'-A'}$$" +

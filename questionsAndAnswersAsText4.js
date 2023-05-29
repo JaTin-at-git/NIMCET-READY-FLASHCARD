@@ -24,10 +24,10 @@ var expansion = "" +
     "A:$$${(1+x)^{-\\frac{1}{2}}=1-\\frac{1}{2}x+\\frac{3}{8}x^2-\\frac{5}{16}x^3-....}$$" +
     "" +
     "Q:$$${\\text{Expansion of }sin(x)}$$" +
-    "A:$$${sin(x)=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\frac{x^7}{7!}+....}$$$${\\text{somewhat similar to }e^x+e^{-x} \\text{ but with alternate signs}}$$" +
+    "A:$$${sin(x)=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\frac{x^7}{7!}+....}$$$${\\text{somewhat similar to }e^x-e^{-x} \\text{ but with alternate signs}}$$" +
     "" +
     "Q:$$${\\text{Expansion of }cos(x)}$$" +
-    "A:$$${\\cos(x)=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\frac{x^6}{6!}+....}$$$${\\text{somewhat similar to log(2)}}$$" +
+    "A:$$${\\cos(x)=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\frac{x^6}{6!}+....}$$$${\\text{somewhat similar to log(2) and }e^x+e^{-x} }$$" +
     "" +
     "Q:$$${\\text{Expansion of }tan(x)}$$" +
     "A:$$${\\tan(x)=x+\\frac{x^3}{3}+\\frac{2}{15}x^5+...}$$";
@@ -126,7 +126,7 @@ var integration = "" +
     "A: <img src='images/integration/integration.jpg'>" +
     "" +
     "Q:$$${\\int \\frac{x^2+1}{x^4+1}}$$" +
-    "A:$$${\\int \\frac{x^2+1}{x^4+1}=\\frac{1}{2} tan^{-1}\\left ( \\frac{x^2-1}{\\sqrt{2}x} \\right )}$$" +
+    "A:$$${\\int \\frac{x^2+1}{x^4+1}=\\frac{1}{\\sqrt2} tan^{-1}\\left ( \\frac{x^2-1}{\\sqrt{2}x} \\right )}$$" +
     "" +
     "Q:$$${\\int \\frac{x^2-1}{x^4+1}}$$" +
     "A:$$${\\int \\frac{x^2-1}{x^4+1}=\\frac{1}{2\\sqrt2} log\\left | \\frac{x^2+1-\\sqrt2x}{x^2+1+\\sqrt2x} \\right |}$$" +
